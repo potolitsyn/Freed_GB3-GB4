@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:764.35px;\" coordsize=\"950.00,764.35\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:764.35px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/4789_2.0_jpn_9504175_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:764.35px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:152.761851px;top:73.356234px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">昇降リレー(下降)6Pカプラ<br>昇降リレー(上昇)6Pカプラ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:402.434936px;top:76.272057px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">回転ロック解除<br>アクチュエータ2Pカプラ<br>警報ブザー2Pカプラ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:605.053212px;top:74.788864px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">回転昇降スイッチ5Pカプラ<br>エマージェンシ スイッチ5Pカプラ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:160.948222px;top:322.448426px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">シフト ポジション センサ<br>10Pカプラ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:397.590399px;top:321.032651px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">シフト ロック ソレノイド<br>2Pカプラ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:607.722193px;top:318.116828px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">シフト ロック リレー5Pカプラ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:412.976290px;top:693.718661px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">メス端子のコード側</font></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:224.958910px;top:560.130143px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リモコン レシーバ ユニット4Pカプラ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:529.402178px;top:554.399623px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">振出リレー4Pカプラ<br>格納リレー4Pカプラ</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

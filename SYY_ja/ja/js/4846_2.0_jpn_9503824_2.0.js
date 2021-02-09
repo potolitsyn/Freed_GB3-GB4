@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group100\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475.00px; height:319.74px;\" coordsize=\"475.00,319.74\">");
+write("<v:rect id=\"rect100\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:475.00px;height:319.74px;\">");
+write("<img id=\"img100\" name=\"PrtImgId\" src=\"../img/4846_2.0_jpn_9503824_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475.00px;height:319.74px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p100_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:174.765744px;top:138.508141px;font-weight:normal;font-size:6.7pt;color:black;\" prt_font_size=\"7.7pt\" disp_font_size=\"6.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.25[S]</font></nobr>");
+write("</p>");
+write("<p id=\"p100_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:213.786350px;top:138.508141px;font-weight:normal;font-size:6.7pt;color:black;\" prt_font_size=\"7.7pt\" disp_font_size=\"6.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.25[S]</font></nobr>");
+write("</p>");
+write("<p id=\"p100_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:246.490173px;top:260.459189px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.2pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ワーニング点灯</font></nobr>");
+write("</p>");
+write("<p id=\"p100_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:12.617897px;top:78.929004px;font-weight:normal;font-size:9.7pt;color:black;\" prt_font_size=\"10.8pt\" disp_font_size=\"9.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\">作動表示<br>インジケータ</font></nobr>");
+write("</p>");
+write("<p id=\"p100_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:12.617897px;top:177.079974px;font-weight:normal;font-size:9.7pt;color:black;\" prt_font_size=\"10.8pt\" disp_font_size=\"9.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ベルトフリー<br>表示<br>インジケータ</font></nobr>");
+write("</p>");
+write("<p id=\"p100_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:285.104101px;top:24.400232px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.2pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.25秒間隔の交互点滅を繰返す</font></nobr>");
+write("</p>");
+write("<p id=\"p100_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:113.778421px;top:102.893121px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">消灯</font></nobr>");
+write("</p>");
+write("<p id=\"p100_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:113.778421px;top:67.056647px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">点灯</font></nobr>");
+write("</p>");
+write("<p id=\"p100_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:113.778421px;top:208.930289px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">消灯</font></nobr>");
+write("</p>");
+write("<p id=\"p100_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:113.778421px;top:173.093815px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">点灯</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

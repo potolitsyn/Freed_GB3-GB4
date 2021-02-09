@@ -1,0 +1,278 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX0JJ46172100000NNNLPXT00(2581_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 1;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV_DISABLE.PNG" onClick="BackFunc()" disabled>
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">L.サイド リフト アップ シートの初期位置学習
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="i00001">
+</a>
+<div>バッテリ（－）端子の接続を外した場合またはリフタAssy.カプラA（3P）の接続を外した場合、L.サイド リフト アップ シートの初期位置学習を行う。
+</div>
+<a name="i00002">
+</a>
+<div class="procedure_sub_title">学習方法
+</div>
+<a name="i00003">
+</a>
+<ol>
+<li value="1">
+<div>イグニッション スイッチをOFFにする。
+</div>
+</li>
+</ol>
+<a name="i00004">
+</a>
+<ol>
+<li value="2">
+<div>
+<a name="i00010">
+</a>
+<a title="バッテリ キャンセル時の注意" href="javascript:CtsProc('2','000000000002904','')">バッテリ（－）端子の接続を外し、再接続する。
+</a>
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+ブザーが吹鳴し、初期位置学習モードに入る。
+</font>
+</div>
+</li>
+</ol>
+<a name="i00005">
+</a>
+<ol>
+<li value="3">
+<div>エマージェンシ スイッチ リッドのシールを剥がす。
+</div>
+</li>
+</ol>
+<a name="i00006">
+</a>
+<ol>
+<li value="4">
+<div>エマージェンシ スイッチを操作し、L.サイド リフト アップ シートを車両後方に止まるまでスライドさせスイッチをOFFにする。
+</div>
+</li>
+</ol>
+<a name="i00007">
+</a>
+<ol>
+<li value="5">
+<div>シートが自動的に車両前方にスライドし停止する。
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+ブザー吹鳴が終了すれば初期位置学習は完了する。
+</font>
+</div>
+</li>
+</ol>
+<a name="i00008">
+</a>
+<ol>
+<li value="6">
+<div>L.サイド リフト アップ シートの作動を確認し、正常に作動しない場合はステップ2から再度初期位置学習を行う。
+</div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+<span style="display:block" id="imgId1">
+<div>
+<script src="../js/2581_3.0_jpn_9507064_3.0.js">
+</script>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

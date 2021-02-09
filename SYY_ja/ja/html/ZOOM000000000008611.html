@@ -1,0 +1,930 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX38J10324700000NNNFQXT00(2865_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 0;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV_DISABLE.PNG" onClick="BackFunc()" disabled>
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">ETC症状別故障診断
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i00083">
+</a>
+<a name="i00084">
+</a>
+
+<div class="test_procedure_title">ETCシステムが作動しない
+</div>
+<a name="i00085">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>フロント ガラスにフィルムやステッカなどが貼られていないこと
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>GPS/ETCアンテナ周辺に遮へい物があるとETC通信に異常が発生する可能性があるため、インストルメント パネル上に物が置かれていないこと
+</div>
+</td>
+</tr>
+</table>
+</img>
+</div>
+<a name="i00086">
+</a>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>ETCユニットのLED点灯状態と音声案内の確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00011">
+</a>
+<div>1-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをACC（
+<font style="font-weight:normal;">
+I
+</font>
+）にする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00012">
+</a>
+<div>1-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>音量設定がOFFになっていないことを確認する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00013">
+</a>
+<div>1-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ETCカード未挿入状態でLED点灯状態と音声案内の内容を確認する
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+ETCユニット不良の場合、イグニッション スイッチをACC（I）にすると、エラー コード04、09と10が音声とLEDの点滅により表示される
+</font>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00087">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ LEDが橙色点灯し、‘‘ETCカードを入れてください’’の音声案内が聞こえるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00146">
+</a>
+<a title="ETCユニットのLED点灯状態と音声案内の確認" href="#i00020">2
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00147">
+</a>
+<a title="音声案内の確認" href="#i00060">6
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i00094">
+</a>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>ETCユニットのLED点灯状態と音声案内の確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00021">
+</a>
+<div>2-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ETCカードが有効期限内であることを確認する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00022">
+</a>
+<div>2-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ETCカードに汚れや損傷がないことを確認する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00023">
+</a>
+<div>2-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ETCカードを挿入し、LED点灯状態と音声案内の内容を確認する
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+カード認識異常があった場合、エラー コード01、02、03と05が音声とLEDの点滅により表示される
+</font>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00095">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ LEDが緑色点灯し、‘‘ETCカードを認識しました’’の音声案内が聞こえるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00148">
+</a>
+<a title="エラー コード履歴の確認" href="#i00030">3
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00149">
+</a>
+<a title="LED点灯状態の確認" href="#i00050">5
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i00102">
+</a>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>エラー コード履歴の確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00031">
+</a>
+<div>3-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>
+<a name="i00150">
+</a>
+<a title="ETCエラー コード履歴の呼び出し機能" href="javascript:CtsProc('2','000000000000394','')">エラー コード履歴の確認を行う
+</a>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00104">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ エラー コードが確認されたか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>確認されたエラー コードの点検を行う
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00151">
+</a>
+<a title="GPS/ETCアンテナの確認" href="#i00040">4
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i00110">
+</a>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>GPS/ETCアンテナの確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00041">
+</a>
+<div>4-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ETCカードを抜き取る
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00042">
+</a>
+<div>4-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ETCカードを再度挿入する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00043">
+</a>
+<div>4-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>
+<a name="i00152">
+</a>
+<a title="ETCユニットの点検" href="javascript:CtsProc('2','000000000000402','')">ETCテスタを使用してETCアンテナの点検を行う
+</a>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00112">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 正常か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>一過性の故障、現在システムは正常
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>GPS/ETCアンテナを交換し、再度不具合が発生する場合は、ETCユニットを交換する
+</div>
+</td>
+</tr>
+</table>
+<a name="i00117">
+</a>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>LED点灯状態の確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00051">
+</a>
+<div>5-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>LEDの点灯状態を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00118">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ LEDが橙色点滅するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00153">
+</a>
+<a title="音声案内の確認" href="#i00060">6
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00154">
+</a>
+<a title="LED点灯状態の再確認" href="#i00080">8
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i00125">
+</a>
+<a name="i00060">
+</a>
+<ol>
+<li value="6">
+<div>音声案内の確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00061">
+</a>
+<div>6-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>‘‘ETCアンテナ接続を確認してください’’の音声案内を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00126">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 音声案内はされたか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>GPS/ETCアンテナの接続状態を確認する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00155">
+</a>
+<a title="ETCユニットのLED点灯状態と音声案内の確認" href="#i00070">7
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i00132">
+</a>
+<a name="i00070">
+</a>
+<ol>
+<li value="7">
+<div>ETCユニットのLED点灯状態と音声案内の確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00071">
+</a>
+<div>7-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ETCカードが有効期限内であることを確認する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00072">
+</a>
+<div>7-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ETCカードに汚れや損傷がないことを確認する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00073">
+</a>
+<div>7-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ETCカードを挿入し、LED点灯状態と音声案内の内容を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00133">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ LEDが橙色点滅し、‘‘セット アップされていません’’の音声案内が聞こえるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ETCユニットの再セット アップを行う
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i00157">
+</a>
+<a title="ETCユニットの入力点検" href="javascript:CtsProc('2','000000000000397','')">ETCユニットの入力点検
+</a>
+を行い、全て正常であれば、ETCユニットを交換する
+</div>
+</td>
+</tr>
+</table>
+<a name="i00139">
+</a>
+<a name="i00080">
+</a>
+<ol>
+<li value="8">
+<div>LED点灯状態の再確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00081">
+</a>
+<div>8-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ETCカードを抜き取る
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00082">
+</a>
+<div>8-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ETCカードを再度挿入する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00140">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ LEDが点灯しない、または橙色点灯するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ETCユニットを交換する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>一過性の故障、現在システムは正常
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

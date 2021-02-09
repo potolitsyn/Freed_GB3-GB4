@@ -1,0 +1,928 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX27J10310G00000NNNCAXT03(4729_2.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   _prSetPrtFontSize();
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("印刷設定をA4横向きにしてください。");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      var orgWid;
+
+      orgWid = parent.document.body.offsetWidth + 8;
+      parent.resizeBy(paper_wid-orgWid,0);
+
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      _prSetDispFontSize();
+      parent.resizeBy(orgWid-paper_wid,0);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="system_desc_sub_title">AVNユニットのナビゲーション機能
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<a name="i00002">
+</a>
+<a name="i00002">
+</a>
+<a name="i00113">
+</a>
+<br>
+<div class="topic_title">システム構成
+</div>
+<br>
+<span style="display:none" id="imgId1">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i00003">
+</a>
+<div>
+<script src="../js/4729_2.0_jpn_9502843_2.0.js">
+</script>
+</div>
+<div>AVNユニットは自車位置を計算し、地図と自車位置データの処理を行い、NAV.画面を表示する。また、マップ マッチング補正、GPS補正、自動距離補正、地図スクロール、地図縮尺切替え、2画面地図、地図移動、地図検索、メニュー内機能などの制御を行う。NAV.システムのプログラムおよび地図データはハードディスクよりローディングする。
+</div>
+<a name="i00005">
+</a>
+<br>
+<div class="topic_title">自車位置の計算
+</div>
+<br>
+<div>AVNユニットは、ジャイロ センサからの方向変化信号と、傾斜センサからの上下変化信号、車速センサからの走行距離信号により、自車位置（方向と現在位置）を計算する。また、自車位置データを集計することにより走行軌跡を作成する。
+</div>
+<a name="i00006">
+</a>
+<br>
+<div class="topic_title">地図と自車位置データの処理
+</div>
+<br>
+<div>AVNユニットは、自車位置データおよび走行軌跡データとハードディスクより送られてきた地図データを処理し、地図上に自車位置および走行軌跡を表示する。
+</div>
+<a name="i00007">
+</a>
+<br>
+<div class="topic_title">マップ マッチング補正
+</div>
+<br>
+<div>マップ マッチング補正とは、ハードディスクより送られてきた地図データと自車位置および走行データを照合し、自車位置を直近の道路に合わせることをいう。しかし、地図に表示されていない道路を走行した場合や、自車位置が大きく離れている場合は、マップ マッチング補正を行うことはできない。
+</div>
+<a name="i00008">
+</a>
+<br>
+<div class="topic_title">距離補正
+</div>
+<br>
+<div>AVNユニットは、PGM-FI ECUからの車速信号を基にした距離データと地図上の距離データとの差を低減するため、補正値の学習をしている。
+</div>
+<div>PGM-FI ECUからの車速信号には、タイヤと路面間のスリップ、タイヤの摩耗などの誤差が付随しない。このことから、
+<nobr>AVN
+</nobr>
+ユニットで実際の距離を計算して誤差を低減している。
+</div>
+<div>補正値は、学習を行う度に更新される。
+</div>
+<a name="i00009">
+</a>
+<br>
+<div class="topic_title">地図スクロール
+</div>
+<br>
+<div>地図スクロールとは、自車位置マークを画面中央部に位置させるため、地図画面を移動させることである。
+</div>
+<div>スクロールにより地図データが不足した場合、AVNユニットは、データをハードディスクへ読みにいき、フラッシュメモリに記憶させた後、地図表示を行う。
+</div>
+<a name="i00010">
+</a>
+<br>
+<div class="topic_title">地図縮尺切替え
+</div>
+<br>
+<div>縮尺ボタンで選択された縮尺の地図表示を行う。AVNユニットは、選択された縮尺の地図データ毎に自車位置および走行データを合わせ表示する。
+</div>
+<a name="i00011">
+</a>
+<br>
+<div class="topic_title">2画面地図
+</div>
+<br>
+<div>ワイド画面の採用に伴い、2画面地図表示を可能としている。一方の画面に広範囲の地図を、もう一方の画面に詳細地図を表示させることにより、自車位置の認識と誘導道路の確認をよりしやすくしている。
+</div>
+<a name="i00012">
+</a>
+<br>
+<div class="topic_title">地図移動
+</div>
+<br>
+<div>ジョイスティックを倒すと地図移動モードに入り、一定量画面スクロールして、隣接した地図を見ることができる。
+</div>
+<a name="i00013">
+</a>
+<br>
+<div class="topic_title">地図検索
+</div>
+<br>
+<div>停車中にジョイスティックを一回倒すと地図検索モードに入り、ジョイスティック操作により探したい場所の地図を検索できる。また、設定によって周辺施設検索を行うことができる。この時目的地をセットし、誘導を開始することができる。
+</div>
+<a name="i00014">
+</a>
+<br>
+<div class="topic_title">ハードディスク
+</div>
+<br>
+<div>ハードディスクには次のものが記録してある。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>システム プログラム
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>11段階＋市街3段階の縮尺率毎の、日本地図データ
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>目的地誘導の際に表示する交差点拡大図および音声誘導のデータ
+</div>
+</td>
+</tr>
+</table>
+<a name="i00015">
+</a>
+<br>
+<div class="topic_title">地図データ
+</div>
+<br>
+<div>11段階の縮尺および市街3段階の日本地図データをハードディスクに収録している。
+</div>
+<div>地図データは、「全国デジタル道路地図データ ベース」（財団法人日本デジタル道路地図協会作成）と「交通規制データ ベース」（財団法人日本交通管理技術協会作成）をもとに作成したものである。元図の作成時期などの関係から、本道路地図に新規道路が収録されていなかったり、名称や道路形状などが実際と異なっている場合もある。また、交通規制は恒久的なものではなく、変更されることもあるため、現地情報とくい違いを生じることがあるので、その場合は現地の規制や指示にしたがうこと。
+</div>
+<a name="i00016">
+</a>
+<br>
+<div class="topic_title">GPS補正
+</div>
+<br>
+<div>GPS補正とは、自車位置をGPSの測位位置へ合わせることを言う。補正は、GPSアンテナからの測位位置データと自車位置および走行データの照合により行われ、測位位置データと自車位置データが大きく離れている場合は、測位位置に合わせて補正を行う。
+</div>
+<a name="i00017">
+</a>
+<br>
+<div class="topic_title">GPS概要
+</div>
+<br>
+<div>GPSとは、高度約21,000kmの軌道上の人工衛星から送られてくる1.5GHzの電波を利用して、現在位置を知ることができるシステムである。人工衛星は、衛星識別信号、軌道情報、発信時刻信号などを電波に乗せて発信している。
+</div>
+<div>GPSレシーバは、3個以上の人工衛星の電波を同時に受信できた時、人工衛星までの距離と人工衛星の軌道上の位置から現在位置を計算により求めている。
+</div>
+<span style="display:none" id="imgId2">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i00018">
+</a>
+<div>
+<div class="figure_title">GPS衛星による測位イメージ
+</div>
+<script src="../js/4729_2.0_jpn_9502844_2.0.js">
+</script>
+</div>
+<a name="i00020">
+</a>
+<br>
+<div class="topic_title">GPSレシーバ
+</div>
+<br>
+<div>AVNユニットに内蔵しており、GPSアンテナからの信号を受け、測位位置を計算している。測位位置や受信状態などの情報はGPSレシーバからNAV.制御部へ送信し、自車位置の補正に使用される。
+</div>
+<a name="i00021">
+</a>
+<br>
+<div class="topic_title">GPSの精度
+</div>
+<br>
+<div>GPSは、受信できる人工衛星の数や制御状態により精度が変化することがある。
+</div>
+<a name="i00022">
+</a>
+<div>
+<table width="100%" class="Viewer" frame="border">
+<col width="15.5%">
+<col width="17.4%">
+<col width="67.1%">
+<thead valign="top">
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>受信衛星数
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>状態
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>説明
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>2個以下
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>測位不可能
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>GPS機能に異常はない。
+</div>
+<div>受信衛星数が少ないので、現在位置を求めることはできない。
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>3個以上
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>2次元以上測位可能
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>現在位置の経度、緯度がわかり、受信状況により高度もわかる。
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<a name="i00026">
+</a>
+<br>
+<div class="topic_title">車速信号
+</div>
+<br>
+<div>PGM-FI ECUは、車速センサからの信号をパルス信号に変換し、信号駆動トランジスタをON、OFFさせる。信号駆動トランジスタは、AVNユニットのセンサ電源をON、OFFし、車速信号としている。
+</div>
+<span style="display:none" id="imgId3">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i00027">
+</a>
+<div>
+<script src="../js/4729_2.0_jpn_9502845_2.0.js">
+</script>
+</div>
+<a name="i00028">
+</a>
+<br>
+<div class="topic_title">ジャイロ センサ
+</div>
+<br>
+<div>車両の左右方向を検出するセンサで、AVNユニットに内蔵している。
+</div>
+<a name="i00290">
+</a>
+<br>
+<div class="topic_title">傾斜センサ
+</div>
+<br>
+<div>車両の傾斜角を検出するセンサで、AVNユニットに内蔵している。
+</div>
+<a name="i00029">
+</a>
+<br>
+<div class="topic_title">メニュー内機能
+</div>
+<br>
+<div>操作モードには、簡単操作および標準操作の2通りの操作モードがあり、簡単操作モードを選択すると、使用頻度の高い機能について操作が簡略化される。工場出荷時は標準操作モードに設定される。
+</div>
+<div>簡単操作モードでは機能設定（音量、VICS、電話およびその他設定）と標準操作モードへの切換え、標準操作モードでは機能設定（マーク、ルート、VICSおよび音量）と簡単操作モードへの切換えを選択できる。
+</div>
+<a name="i00030">
+</a>
+<br>
+<div class="topic_title">経路誘導機能
+</div>
+<br>
+<div>AVNユニットは、目的地あるいは自宅への誘導を選択すると、自動でルート計算を行う。この場合、推奨、一般道優先、距離優先、道幅優先および別ルートから選択することができる。誘導中に方向変換する交差点が近づくと、ルートを示した拡大図を表示する。
+</div>
+<a name="i00031">
+</a>
+<br>
+<div class="topic_title">音声誘導機能
+</div>
+<br>
+<div>AVNユニットは、経路誘導中に方向転換する交差点や、分岐点などの前で音声による誘導を行う。ナビゲーション機能からの音声誘導をオーディオ スピーカに出力する。
+</div>
+<div>ラジオ、テレビの音声出力中であっても、スピーカ出力を音声誘導（フロント運転席側スピーカ）に切換える。
+</div>
+<a name="i00032">
+</a>
+<br>
+<div class="topic_title">音声認識機能/HFT機能
+</div>
+<br>
+<div>音声でナビゲーション、エアコン、オーディオなどの各操作を行うことができる音声認識機能を備えている。
+</div>
+<div>音声認識機能は、音声認識マイク、ステアリング スイッチ、AVNユニットで構成されている。また、携帯電話を接続した場合にはHFT（ハンズフリー テレホン）として機能する。
+</div>
+<div>HFT使用時の音声入力は、マップ ライト内の音声認識マイクで行い、音声出力はフロント助手席側スピーカより出力される。
+</div>
+<a name="i00033">
+</a>
+<br>
+<div class="topic_title">サウンド コンテナ機能
+</div>
+<br>
+<div>サウンド コンテナはCD内の音楽データをAVNユニット本体のハードディスクに保存し、保存した音楽データの再生ができる機能で、これによりCDを一度読込ませればCDを持ち運ぶ必要がなくなる。
+</div>
+<div>CDの録音は、3つの方法から選択できる。
+</div>
+<a name="i00034">
+</a>
+<div>
+<table width="100%" class="Viewer" frame="border">
+<col width="12.8%">
+<col width="87.2%">
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>自動録音
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CDを再生すると自動的にすべて録音される
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>手動録音
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CDを再生し、ボタンを操作して録音したい曲だけ録音する
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シングル録音
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CDの1曲目だけが自動的に録音される
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>プレイ リストは、録音時に自動作成される。また、好みによりユーザ プレイ リストを作成することもできる。
+</div>
+<div>DVD、TVなどCD以外の音声は録音できない。また、CD-R/RWなどデジタル録音した記憶媒体から、サウンド コンテナに録音（孫コピー）することはできない。
+</div>
+<div>CDは、4倍速で録音することができる。CD録音中は、サウンド コンテナの圧縮音声を出力する。
+</div>
+<a name="i00038">
+</a>
+<br>
+<div class="topic_title">VICS
+</div>
+<br>
+<div>VICSとは、Vehicle Information and Communication System（道路交通情報通信システム）と言い、最新の交通情報（渋滞、事故、交通規制、駐車場の情報）などをドライバに提供するための通信システムである。このVICS情報をAVNユニットに入力し、地図情報、文字情報、図形情報としてディスプレイに表示する。
+</div>
+<div>VICS情報の提供方法には次のものがある。
+</div>
+<a name="i00039">
+</a>
+<div>
+<table width="100%" class="Viewer" frame="border">
+<col width="12.3%">
+<col width="14.3%">
+<col width="14.3%">
+<col width="28.6%">
+<col width="30.5%">
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="4" valign="top" align="left">
+<div>VICSセンタ
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>電波ビーコン
+<sup>*
+</sup>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>主に高速道路
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>電波を使ったビーコンで情報が提供される
+</div>
+<div>情報提供時間:24時間
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="2" valign="top" align="left">
+<div>ビーコンとは、道路脇に一定間隔で設置されたVICS情報を送信する装置。電波ビーコン、光ビーコンを受信するにはビーコン アンテナ キットの取付けが必要
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>光ビーコン
+<sup>*
+</sup>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>主に一般道路
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>赤外線を使ったビーコンで情報が提供される
+</div>
+<div>情報提供時間:24時間
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>FM多重放送
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>FM放送エリア
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>FM多重放送の電波で情報が提供される
+</div>
+<div>情報提供時間:24時間（メンテナンスのため、運用を休止する場合がある）
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>AVNユニット本体に内蔵のVICS/FM多重チューナにより受信
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>インターナビ
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>携帯電話受信エリア
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>携帯電話
+</div>
+<div>情報提供時間:24時間
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>インターナビVICSは、携帯電話や通信カード
+<sup>*
+</sup>
+の接続とインターナビ プレミアム クラブへの入会が必要
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<a name="i00044">
+</a>
+<div>
+<table width="100%" class="Viewer" frame="void">
+<col width="3.7%">
+<col width="96.3%">
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>*:
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>工場出荷時は非装備
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<a name="i00046">
+</a>
+<br>
+<div class="topic_title">情報検索機能
+</div>
+<br>
+<div>情報検索機能は、操作パネルの目的地ボタンで施設検索、地名検索、電話番号検索などにより、ハードディスクに記録されている各種情報を画面に表示させる機能である。さらに拡張機能としてネットワーク通信（インターナビ）に対応している。
+</div>
+<a name="i00051">
+</a>
+<br>
+<div class="topic_title">ネットワーク通信（インターナビ）
+</div>
+<br>
+<div>ネットワークに対応している携帯電話と接続し、情報センタと通信することによって各種情報を得ることができる。情報の内容として、ルート ガイド、天気予報、地域情報、各種施設情報などがあり、すべて位置情報が付加されている。また、情報センタ側でルート計算した経路を取得することができる。
+</div>
+<span style="display:none" id="imgId4">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i00052">
+</a>
+<div>
+<script src="../js/4729_2.0_jpn_9502846_2.0.js">
+</script>
+</div>
+<a name="i00340">
+</a>
+<br>
+<div class="topic_title">地図差分更新
+</div>
+<br>
+<div>HDDナビゲーションの地図データを全て更新する場合、ディーラにて地図更新用DVDをAVNユニットに挿入して必須部分を更新できる。（この間は、ナビゲーションシステムの使用不可）その後、ユーザーにてDVDをAVNユニットに挿入しておくと、ナビゲーションシステムを使用しながら地図データ更新が可能になる。また、部分データ更新をする場合は目的地を設定後インターナビにアクセスし、目的地までの経路周辺で新規道路がある場合は該当の道路を地図上に反映し、最新経路で誘導する。
+</div>
+<span style="display:none" id="imgId5">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i00341">
+</a>
+<div>
+<div class="figure_title">全データ更新
+</div>
+<script src="../js/4729_2.0_jpn_9502847_2.0.js">
+</script>
+</div>
+<span style="display:none" id="imgId6">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i00342">
+</a>
+<div>
+<div class="figure_title">部分データ更新
+</div>
+<script src="../js/4729_2.0_jpn_9502848_2.0.js">
+</script>
+</div>
+<a name="i00114">
+</a>
+<br>
+<div class="topic_title">ふらつき検知警報機能
+</div>
+<br>
+<div>ふらつき検知警報はナビゲーション システムの機能として、ナビゲーション プログラム内に組込まれている。車速信号およびヨーレート信号から実際の走行軌跡を算出し、その軌跡から中心基準線を予測して、基準線に対し実際の走行軌跡が通常の車両の挙動よりもふらついているかを算出する。しきい値よりもふらつきが大きい場合は、画面および音声案内により警告を行う機能である。また、車線変更はターン シグナル ライトの信号により判断され、この場合ふらつきの検出がリセットされる。
+</div>
+<span style="display:none" id="imgId7">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i00115">
+</a>
+<div>
+<script src="../js/4729_2.0_jpn_9502849_2.0.js">
+</script>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ふらつき判定情報
+</div>
+</td>
+</tr>
+<tr>
+<td width="30">
+</td>
+<td>
+<table class="list2_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>ヨーレート信号、ヨーレート オフセット信号
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>車速信号
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>ターン シグナル ライト信号（車線変更による、ふらつき検出対象外情報）
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>条件（以下をすべて満たした時、画面と音声にて警告を行う）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30">
+</td>
+<td>
+<table class="list2_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>車速60km/h－140km/h（10秒間の平均車速）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>直線および一定曲線走行時のみ案内対象とする（道路形状を判定する）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>ターン シグナル ライトが点灯していない
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>ふらつきを検出した
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="i00145">
+</a>
+<br>
+<div class="topic_title">ふらつき検知ON/OFF操作方法
+</div>
+<br>
+<a name="i00146">
+</a>
+<ol>
+<li value="1">
+<div>メニュー ボタンを押す。
+</div>
+</li>
+</ol>
+<a name="i00147">
+</a>
+<ol>
+<li value="2">
+<div>機能設定（サブ メニュー表示）を選択する。
+</div>
+</li>
+</ol>
+<a name="i00148">
+</a>
+<ol>
+<li value="3">
+<div>その他設定を選択する。
+</div>
+</li>
+</ol>
+<a name="i00149">
+</a>
+<ol>
+<li value="4">
+<div>ふらつき検知警報を選択し、ON/OFFの選択をする。
+</div>
+</li>
+</ol>
+</div></div>
+</body>
+</html>

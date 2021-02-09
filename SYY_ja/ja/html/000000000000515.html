@@ -1,0 +1,1525 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX32E10410624601NNNCDXT00(378_2.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   _prSetPrtFontSize();
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("印刷設定をA4横向きにしてください。");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      var orgWid;
+
+      orgWid = parent.document.body.offsetWidth + 8;
+      parent.resizeBy(paper_wid-orgWid,0);
+
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      _prSetDispFontSize();
+      parent.resizeBy(orgWid-paper_wid,0);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">PGM-FI ECU ATコントロール システム カプラ端子配列
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<a name="i03647">
+</a>
+<span style="display:none" id="imgId1">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03648">
+</a>
+<div>
+<script src="../js/378_2.0_jpn_9511839_2.0.js">
+</script>
+</div>
+<a name="i03649">
+</a>
+<div>
+<div class="table_title">カプラA（49P）□
+</div>
+<br>
+<table width="100%" class="Viewer" frame="border">
+<col width="11.6%">
+<col width="10.5%">
+<col width="7.0%">
+<col width="14.0%">
+<col width="26.7%">
+<col width="30.2%">
+<thead valign="top">
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>端子No.
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>ハーネス色
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>端子
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>名称
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>内容
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>信号
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>茶
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>VBSOL
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>AT SOL.V.用電源
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>AT SOL.V.用駆動電源の検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>バッテリ電圧
+</nobr>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>白
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CANH
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CAN通信HIGH
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CAN通信信号の出力
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>パルス信号
+</nobr>
+（約2.5V）
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>赤
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CANL
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CAN通信LOW
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CAN通信信号の出力
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>パルス信号
+</nobr>
+（約2.5V）
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>若葉
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>IGP
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>PGM-FI ECUメイン電源
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>PGM-FI ECU制御回路電源
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>バッテリ電圧
+</nobr>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>28
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>桃
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>SLS
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト ロック ソレノイド
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト ロック ソレノイドの駆動
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）、
+<nobr>Pポジション
+</nobr>
+、ブレーキ ペダル
+<nobr>踏込み、
+</nobr>
+アクセル ペダル踏込んでいないとき:約0V
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>32
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>黄
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>SCS
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>サービス チェック シグナル
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>データ リンク カプラSCS端子信号の検出（PGM-FI警告灯の点滅表示で不良DTCを表示させる信号）
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>短絡時:約0V
+</div>
+<div>開放時:約5.0V
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>42
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>若葉
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>BKSW
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ブレーキ スイッチ
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ブレーキング中であることの検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>通常:約0V
+</div>
+<div>ブレーキ ペダルを踏んだ時:バッテリ電圧
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>43
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>灰
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>D3SW
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>D3スイッチ
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>D3スイッチ信号の検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>D3スイッチONのとき:約0V
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>D3スイッチOFFのとき:バッテリ電圧
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<a name="i03650">
+</a>
+<div>
+<div class="table_title">カプラB（49P）△
+</div>
+<br>
+<table width="100%" class="Viewer" frame="border">
+<col width="11.6%">
+<col width="10.5%">
+<col width="7.0%">
+<col width="14.0%">
+<col width="26.7%">
+<col width="30.2%">
+<thead valign="top">
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>端子No.
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>ハーネス色
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>端子
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>名称
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>内容
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>信号
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>茶
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>PG2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>パワー グランド
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>PGM-FI ECU制御回路のアース
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>8
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>青/赤
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>OP2SW
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>2速クラッチ圧スイッチ
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>2速クラッチ圧スイッチ信号の検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>約5.0V
+</nobr>
+（2速時:約0V）
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>青/白
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>OP3SW
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>3速クラッチ圧スイッチ
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>3速クラッチ圧スイッチ信号の検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>約5.0V
+</nobr>
+（3速時:約0V）
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>10
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>黒
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>PG1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>パワー グランド
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>PGM-FI ECU制御回路のアース
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top">
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>11
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>青/黒
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>SHA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト コントロールSOL.V.A
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト コントロールSOL.V.Aの駆動
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>2ポジション時、Dポジション（2速、4速）時:バッテリ電圧
+</div>
+<div>P、R、N、1ポジション時、Dポジション（1速、3速、5速）時:約0V
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>12
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>緑/赤
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>SHD
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト コントロールSOL.V.D
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト コントロールSOL.V.Dの駆動
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>P、Rポジション時:バッテリ電圧
+</div>
+<div>Nポジション時:約0V
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>13
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>赤/黒
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPN
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPNスイッチ シグナル
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>Nポジションに入っていることの検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>Nポジション時:約0V
+</div>
+<div>Nポジション以外時:バッテリ電圧
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>14
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>青/黒
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPP
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPPスイッチ シグナル
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>Pポジションに入っていることの検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>Pポジション時:約0V
+</div>
+<div>Pポジション以外時:バッテリ電圧
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>15
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>白
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPR
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPRスイッチ シグナル
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>Rポジションに入っていることの検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>Rポジション時:約0V
+</div>
+<div>Rポジション以外時:バッテリ電圧
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>16
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>茶
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATP1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATP1スイッチ シグナル
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>1ポジションに入っていることの検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>1ポジション時:約0V
+</div>
+<div>1ポジション以外時:バッテリ電圧
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>17
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>青
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATP2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATP2スイッチ シグナル
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>2ポジションに入っていることの検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>2ポジション時:約0V
+</div>
+<div>2ポジション以外時:バッテリ電圧
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>18
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>白/赤
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>NM
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>メインシャフト スピード センサ
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>メインシャフト スピード センサ信号の検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>約0V
+</nobr>
+または約5.0V
+</div>
+<div>Nポジション、アイドリング時:
+<nobr>約1.5－
+</nobr>
+3.5V
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<span style="display:none" id="imgId2">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03689">
+</a>
+<div>
+<script src="../js/378_2.0_jpn_9511840_2.0.js">
+</script>
+</div>
+<a name="i03675">
+</a>
+<div>
+<div class="table_title">カプラB（49P）△
+</div>
+<br>
+<table width="100%" class="Viewer" frame="border">
+<col width="11.6%">
+<col width="10.5%">
+<col width="7.0%">
+<col width="14.0%">
+<col width="26.7%">
+<col width="30.2%">
+<thead valign="top">
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>端子No.
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>ハーネス色
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>端子
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>名称
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>内容
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>信号
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>19
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>黄/青
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>VCC2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>センサ出力電圧
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>センサ用の電圧の出力
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>約5.0V
+</nobr>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>21
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>緑
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>SHC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト コントロールSOL.V.C
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト コントロールSOL.V.Cの駆動
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>Rポジション時、Dポジション（3速、4速）時:バッテリ電圧
+</div>
+<div>P、N、2、1ポジション時、Dポジション（1速、2速、5速）時:約0V
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>22
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>桃
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPD
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPDスイッチ シグナル
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>Dポジションに入っていることの検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>Dポジション時:約0V
+</div>
+<div>Dポジション以外時:バッテリ電圧
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>23
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>黄
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPRVS
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPRVSスイッチ シグナル
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト ポジション センサRVS（AT Rポジション）信号の検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>RVS（R）ポジション時:約0V
+</div>
+<div>RVS（R）ポジション以外時:バッテリ電圧
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>26
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>青/黄
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>LSC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATクラッチ プレッシャ コントロール
+<nobr>SOL.V.C
+</nobr>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATクラッチ プレッシャ コントロールSOL.V.Cの駆動
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>パルス
+</nobr>
+信号
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>27
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>緑/白
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>SHB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト コントロールSOL.V.B
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト コントロールSOL.V.Bの駆動
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>R、1ポジション時、Dポジション（1速、4速、5速）時:バッテリ電圧
+</div>
+<div>P、N、2ポジション時、Dポジション（2速、3速時）:約0V
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>28
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>赤/黄
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>TATF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATF温度センサ
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATF温度の検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時ATF温度に応じて変化:
+<nobr>約0.1－
+</nobr>
+4.8V
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>29
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>青/黄
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPFWD
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATPポジションD、2、1スイッチ シグナル
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>シフト ポジション センサFWD（D、2、1ポジション）信号の検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>FWD（D、2、1）ポジション時:約0V
+</div>
+<div>FWD（D、2、1）ポジション以外時:バッテリ電圧
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>34
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>緑/黄
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>SG2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>センサ グランド
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>センサ用アース
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top">
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>38
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>黒/白
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>NC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>カウンタシャフト スピード センサ
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>カウンタシャフト スピード センサ信号の検出
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>約0V
+</nobr>
+または約5.0V
+</div>
+<div>前輪回転時（走行時）:約1.5－3.5V
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>40
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>赤/黒
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>LSA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATクラッチ プレッシャ コントロールSOL.V.A
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATクラッチ プレッシャ コントロールSOL.V.Aの駆動
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>パルス信号
+</nobr>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>48
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>茶/白
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>LSB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATクラッチ プレッシャ コントロールSOL.V.B
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ATクラッチ プレッシャ コントロールSOL.V.Bの駆動
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>パルス信号
+</nobr>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<a name="i03654">
+</a>
+<div>
+<div class="table_title">カプラC（49P）○
+</div>
+<br>
+<table width="100%" class="Viewer" frame="border">
+<col width="11.6%">
+<col width="10.5%">
+<col width="7.0%">
+<col width="14.0%">
+<col width="26.7%">
+<col width="30.2%">
+<thead valign="top">
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>端子No.
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>ハーネス色
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>端子
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>名称
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>内容
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>信号
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>10
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>黒/赤
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>IG1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション信号
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチ電源
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>バッテリ電圧
+</nobr>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>13
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>黄/赤
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>VCC1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>センサ出力電源
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>センサ用の電圧の出力
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時:
+<nobr>約5.0V
+</nobr>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>14
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>緑/白
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>SG1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>センサ グランド
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>センサ用のアース
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>44
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>茶/黄
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>LG1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ロジック グランド1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>PGM-FI ECU制御回路のアース
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>48
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>茶/黄
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>LG2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ロジック グランド2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>PGM-FI ECU制御回路のアース
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</div></div>
+</body>
+</html>

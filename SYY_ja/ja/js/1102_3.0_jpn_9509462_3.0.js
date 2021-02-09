@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475.00px; height:387.38px;\" coordsize=\"475.00,387.38\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:475.00px;height:387.38px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/1102_3.0_jpn_9509462_3.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475.00px;height:387.38px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:25.540351px;top:189.561909px;font-weight:normal;font-size:23.2pt;color:black;\" prt_font_size=\"24.6pt\" disp_font_size=\"23.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi2\" style=\"height:31.0px;\" src=\"../img/symbol/SymbolGaiji00007.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:132.609639px;top:189.531041px;font-weight:normal;font-size:23.2pt;color:black;\" prt_font_size=\"24.6pt\" disp_font_size=\"23.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi2\" style=\"height:31.0px;\" src=\"../img/symbol/SymbolGaiji00007.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:161.822064px;top:37.206075px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">メス端子のコード側</font></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:82.859195px;top:17.001792px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">オートA/Cコントロール ユニット36Pカプラ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:87.706328px;top:82.704765px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">若葉</font></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:245.966846px;top:298.078771px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">若葉</font></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:219.519742px;top:233.181050px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">紫</font></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:91.476168px;top:145.503534px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">紫</font></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:158.925739px;top:353.201073px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">メス端子のコード側</font></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:157.934903px;top:333.643303px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">日射センサ2Pカプラ</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

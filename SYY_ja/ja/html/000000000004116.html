@@ -1,0 +1,406 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00A20300000000NNNCAXT01(1663_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   _prSetPrtFontSize();
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("印刷設定をA4横向きにしてください。");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      var orgWid;
+
+      orgWid = parent.document.body.offsetWidth + 8;
+      parent.resizeBy(paper_wid-orgWid,0);
+
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      _prSetDispFontSize();
+      parent.resizeBy(orgWid-paper_wid,0);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="system_desc_sub_title">
+<font style="font-weight:bold;">
+三元触媒装置
+</font>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<a name="i02803">
+</a>
+<a name="i02803">
+</a>
+<div>
+<a name="ref_20080405224619578">
+</a>
+<a title="三元触媒装置構造説明 - 概要" href="javascript:CtsProc('0','000000000001756','')">三元触媒装置には、シリンダ ヘッド直下と床下に装着した、白金·パラジウム·ロジウム系のモノリス型触媒コンバータを採用している。触媒コンバータは、CO·HCを酸化させるとともにNOxの還元を図っている。
+</a>
+</div>
+<span style="display:none" id="imgId1">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03620">
+</a>
+<div>
+<script src="../js/1663_3.0_jpn_9507872_3.0.js">
+</script>
+</div>
+<a name="i03621">
+</a>
+<div>
+<table width="100%" class="Viewer" frame="border">
+<col width="15.0%">
+<col width="43.8%">
+<col width="41.3%">
+<thead valign="top">
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>排出ガス対策
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>装置名
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>目的
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="4" valign="top" align="center">
+<div>エンジン改良
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="ref_20080405224638531">
+</a>
+<a title="フューエル、エミッション コントロール構造説明 - 燃料噴射制御" href="javascript:CtsProc('0','000000000001829','')">燃料噴射制御
+</a>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CO、HC、NOxの低減
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="ref_20080405224655234">
+</a>
+<a title="フューエル、エミッション コントロール構造説明 - 燃料カット制御" href="javascript:CtsProc('0','000000000001790','')">燃料カット制御
+</a>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>触媒保護、HC低減、燃費向上
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="ref_20080405224723546">
+</a>
+<a title="フューエル、エミッション コントロール構造説明 - LAF/O2フィードバック空..." href="javascript:CtsProc('0','000000000001830','')">LAF/O
+<sub>2
+</sub>
+フィードバック空燃比制御
+</a>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CO、HC、NOxの低減
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="ref_20080405224742390">
+</a>
+<a title="フューエル、エミッション コントロール構造説明 - 電子式点火時期制御装置" href="javascript:CtsProc('0','000000000001847','')">電子式点火時期制御
+</a>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>排出ガス レベルと運転性能とのバランス
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>排気ガス
+<br>
+再循環装置
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="ref_20080405224801500">
+</a>
+<a title="排気ガス再循環装置構造説明 - 概要" href="javascript:CtsProc('0','000000000001767','')">排気ガス再循環装置
+</a>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>NOxの低減
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>触媒
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="ref_20080405224824109">
+</a>
+<a title="三元触媒装置構造説明 - 概要" href="javascript:CtsProc('0','000000000001756','')">三元触媒装置
+</a>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>CO、HC、NOxの低減
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="3" valign="top" align="center">
+<div>その他
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="ref_20080405224842468">
+</a>
+<a title="フューエル、エミッション コントロール構造説明 - 車載式故障検知装置" href="javascript:CtsProc('0','000000000001750','')">車載式故障検知装置
+</a>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>エンジンの失火などの異常、故障の発生を警告し、安全性の確保と排出ガスの抑止装置の保護をする
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="ref_20080405224906500">
+</a>
+<a title="ブローバイ ガス還元装置構造説明 - 概要" href="javascript:CtsProc('0','000000000001885','')">ブローバイ ガス還元装置
+</a>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>HCの低減
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="ref_20080405224941671">
+</a>
+<a title="燃料蒸発ガス排出抑止装置構造説明 - 概要" href="javascript:CtsProc('0','000000000001760','')">燃料蒸発ガス排出抑止装置
+</a>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>HCの低減
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</div></div>
+</body>
+</html>

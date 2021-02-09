@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:873.13px;\" coordsize=\"950.00,873.13\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:873.13px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/2533_2.0_jpn_9507401_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:873.13px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:154.984054px;top:665.857714px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">アウタ パネル</font></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:156.113628px;top:52.142901px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">センタ ピラー インナ セパレータ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:593.345506px;top:86.374122px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">A部</font></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:452.264658px;top:52.419664px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ミドル フロア フレーム</font></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:701.017042px;top:679.419105px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リヤ フレーム アウトリガ<br>（再使用）</font></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:205.235598px;top:360.660886px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">サイド シル スチフナ<br>エクステンション<br>（再使用）</font></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:237.573263px;top:262.235200px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">サイド シル<br>エクステンション</font></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:804.155802px;top:440.761944px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ホイール アーチ <br>アウタ セパレータ</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

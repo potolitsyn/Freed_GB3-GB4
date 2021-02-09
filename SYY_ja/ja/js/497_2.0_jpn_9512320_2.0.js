@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475.00px; height:897.73px;\" coordsize=\"475.00,897.73\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:475.00px;height:897.73px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/497_2.0_jpn_9512320_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475.00px;height:897.73px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:257.580516px;top:18.006854px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スラスト シム76mm<br><font style=\"font-weight:normal;\">選択部品</font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:257.580516px;top:65.337245px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スペーサ76.2mm</font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:257.580516px;top:103.041117px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">テーパ ローラ ベアリング<br>アウタ レース<br><font style=\"font-weight:normal;\"><a title=\"テーパ ローラ ベアリング アウタ レースの交換\" href=\"javascript:CtsProc('0','000000000000595','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:257.580516px;top:170.587200px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">テーパ ローラ ベアリング<br><font style=\"font-weight:normal;\"><a title=\"テーパ ローラ ベアリングの交換\" href=\"javascript:CtsProc('0','000000000000597','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:270.409536px;top:346.912968px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ファイナル ドリブン ギヤ<br><font style=\"font-weight:normal;\"><a title=\"デファレンシャル ケース、ファイナル ドリブン ギヤ、トランスファ ドライブ ギヤの交換\" href=\"javascript:CtsProc('0','000000000000601','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:257.660693px;top:422.240489px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">デファレンシャル ケース<br><font style=\"font-weight:normal;\"><a title=\"ピニオン ギヤ バックラッシュの点検\" href=\"javascript:CtsProc('0','000000000000610','')\">バックラッシュの点検<br></a><br><a title=\"デファレンシャル ケース、ファイナル ドリブン ギヤ、トランスファ ドライブ ギヤの交換\" href=\"javascript:CtsProc('0','000000000000601','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:257.821063px;top:690.258882px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">テーパ ローラ ベアリング<br><font style=\"font-weight:normal;\"><a title=\"テーパ ローラ ベアリングの交換\" href=\"javascript:CtsProc('0','000000000000597','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:257.660693px;top:748.178437px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">テーパ ローラ ベアリング<br>アウタ レース<br><font style=\"font-weight:normal;\"><a title=\"テーパ ローラ ベアリング アウタ レースの交換\" href=\"javascript:CtsProc('0','000000000000595','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:257.821063px;top:822.142179px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スペーサ80mm</font></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:257.580516px;top:551.075436px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">トランスファ ドライブ ギヤ<br><font style=\"font-weight:normal;\"><a title=\"デファレンシャル ケース、ファイナル ドリブン ギヤ、トランスファ ドライブ ギヤの交換\" href=\"javascript:CtsProc('0','000000000000601','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("</v:group>");
+}

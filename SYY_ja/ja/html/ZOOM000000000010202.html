@@ -1,0 +1,496 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00J46635300000NNNFQXT05(1260_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 1;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function BackFunc()
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace("ZOOM000000000010201.html#000?"+strPara);
+	}
+	else{
+		window.location.replace("ZOOM000000000010201.html");
+	}
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV.PNG" onClick="BackFunc()">
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">Hondaスマート キー システム症状別故障診断 - 内蔵イモビライザ キーでエンジンが始動できない（Hondaスマート キーでのエンジン始動は可能）
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03603">
+</a>
+
+<a name="i03628">
+</a>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>イモビライザ ユニットのLGラインの点検
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00041">
+</a>
+<div>4-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00042">
+</a>
+<div>4-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イモビライザ ユニット8PカプラのNo.1端子とボディ アース間の導通を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03630">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 導通があるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>イモビライザ ユニット不良
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>LGラインの断線
+</div>
+</td>
+</tr>
+</table>
+<a name="i03635">
+</a>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>スタータの作動確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00051">
+</a>
+<div>5-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>スタータの作動を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03636">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ スタータは回るか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03639">
+</a>
+<a title="エンジン始動確認" href="#i00060">6
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>スタータの点検をする
+</div>
+</td>
+</tr>
+</table>
+<a name="i03642">
+</a>
+<a name="i00060">
+</a>
+<ol>
+<li value="6">
+<div>エンジン始動確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00061">
+</a>
+<div>6-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>エンジンが始動するか確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03643">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ エンジンは始動するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03646">
+</a>
+<a title="エンジン始動後の確認" href="#i00070">7
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>PGM-FIシステムの点検をする
+</div>
+</td>
+</tr>
+</table>
+<a name="i03649">
+</a>
+<a name="i00070">
+</a>
+<ol>
+<li value="7">
+<div>エンジン始動後の確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00071">
+</a>
+<div>7-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>始動後、エンジンが自然に停止するか確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03650">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 自然に停止するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>PGM-FIシステムの点検をする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>一過性故障、現在システムは正常
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+<span style="display:block" id="imgId1">
+<div>
+<script src="../js/1260_3.0_jpn_9508811_3.0.js">
+</script>
+</div>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

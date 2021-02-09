@@ -1,0 +1,418 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX4JB00000065181NNNMBXT00(720_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 1;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function BackFunc()
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace("ZOOM000000000016102.html#000?"+strPara);
+	}
+	else{
+		window.location.replace("ZOOM000000000016102.html");
+	}
+}
+function NextFunc()
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace("ZOOM000000000016104.html#000?"+strPara);
+	}
+	else{
+		window.location.replace("ZOOM000000000016104.html");
+	}
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV.PNG" onClick="BackFunc()">
+<input type="image" src="../img/GL_NEXT.PNG" onClick="NextFunc()">
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">ホイール アライメント
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03642">
+</a>
+<a name="i02703">
+</a>
+<div class="procedure_sub_title">キャンバ角度の点検
+</div>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>ホイールを取外す。
+<a name="i03673">
+</a>
+<a title="フロント ナックル/ハブ/ホイール ベアリングの交換" href="javascript:CtsProc('2','000000000001676','')">フロント
+</a>
+、
+<a name="i03674">
+</a>
+<a title="リヤ ハブ ベアリング ユニットの交換" href="javascript:CtsProc('2','000000000002343','')">リヤ2WD車
+</a>
+、
+<a name="i03675">
+</a>
+<a title="リヤ ハブ ベアリング ユニットの交換" href="javascript:CtsProc('2','000000000002342','')">リヤ4WD車
+</a>
+</div>
+</li>
+</ol>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>ホイールのセンタ キャップを外す。
+</div>
+</li>
+</ol>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>ホイールを取付ける。
+</div>
+<div>
+<font style="font-weight:normal;">
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+ホイールは、ブレーキ ディスクまたはブレーキ ドラムとの合わせ面をそれぞれ清掃してから取付ける。
+</font>
+</div>
+</li>
+</ol>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>専用工具を介してキャンバ キャスタ ゲージ（A）をハブ端面に取付ける。
+</div>
+</li>
+</ol>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>フロント ホイールを直進状態にする。
+</div>
+</li>
+</ol>
+<a name="i00060">
+</a>
+<ol>
+<li value="6">
+<div>ゲージの取付け水準器の気泡が中央になるようにゲージの位置を修正し、キャンバ水準器の目盛りを読みとる。
+</div>
+<a name="i03649">
+</a>
+<div>
+<table width="87%" class="Viewer" frame="void">
+<col width="4.4%">
+<col width="4.4%">
+<col width="45.6%">
+<col width="45.6%">
+<thead>
+<tr>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" colspan="4" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:bold;">
+キャンバ角度:
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" colspan="3" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:bold;">
+基準値:
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" colspan="2" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:bold;">
+フロント ホイール:
+</font>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:bold;">
+0°00’±1°
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" colspan="2" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:bold;">
+左右差限度値:
+</font>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:bold;">
+±0°45’
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" colspan="2" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:bold;">
+リヤ ホイール:
+</font>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:bold;">
+-1°00’±1°
+</font>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+フロント サスペンションは、ダンパとナックルを接続するダンパ取付けボルトまたは、アジャスティング ボルトの取付け穴の遊び分で、キャンバ角度の調整を行うことができる。アジャスティング ボルトを使用しても基準値にならない場合は、サスペンション構成部品または、ボディの変形を点検する。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+リヤ サスペンションは、キャンバ角度を調整することはできない。基準値から外れている場合は、サスペンション構成部品または、ボディの変形を点検する。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+<span style="display:block" id="imgId1">
+<div>
+<script src="../js/720_3.0_jpn_9510931_3.0.js">
+</script>
+</div>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

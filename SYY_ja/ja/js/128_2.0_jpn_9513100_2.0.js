@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:1054.43px;\" coordsize=\"950.00,1054.43\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:1054.43px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/128_2.0_jpn_9513100_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:1054.43px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:539.206174px;top:32.198370px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ピストン リング<br><font style=\"font-weight:normal;\"><a title=\"ピストン リングの点検、交換\" href=\"javascript:CtsProc('0','000000000001538','')\">点検、交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:543.289636px;top:152.704611px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ピストン<br><font style=\"font-weight:normal;\"><a title=\"ピストン/クランクシャフトの取外し\" href=\"javascript:CtsProc('0','000000000001521','')\">取外し</a><br><a title=\"ピストンの点検\" href=\"javascript:CtsProc('0','000000000001523','')\">点検</a><br><a title=\"ピストン/クランクシャフトの取付け\" href=\"javascript:CtsProc('0','000000000001522','')\">取付け</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:80.642003px;top:344.428302px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ピストン ピン<br><font style=\"font-weight:normal;\"><a title=\"ピストン ピンの取外し\" href=\"javascript:CtsProc('0','000000000001524','i02701')\">取外し</a><br><a title=\"ピストン ピンの点検\" href=\"javascript:CtsProc('0','000000000001524','i02703')\">点検</a><br><a title=\"ピストン ピンの取付け\" href=\"javascript:CtsProc('0','000000000001524','i02704')\">取付け</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:90.705856px;top:505.504011px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">コンロッド<br><font style=\"font-weight:normal;\"><a title=\"コンロッド大端部軸方向がたの点検\" href=\"javascript:CtsProc('0','000000000001495','')\">軸方向のがたの点検</a><br><a title=\"コンロッドの点検\" href=\"javascript:CtsProc('0','000000000001524','i02702')\">点検</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:120.940856px;top:939.471317px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">コンロッド ベアリング<br><font style=\"font-weight:normal;\"><a title=\"コンロッド ベアリングの点検、交換\" href=\"javascript:CtsProc('0','000000000001502','')\">点検、交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:540.089476px;top:911.386990px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">コンロッド キャップ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:540.408044px;top:989.064270px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">コンロッド ボルト<br><font style=\"font-weight:normal;\"><a title=\"コンロッド ボルト外径の差\" href=\"javascript:CtsProc('0','000000000001522','i00100')\">点検</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:681.606074px;top:828.698272px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">シリンダ ブロック<br><font style=\"font-weight:normal;\"><a title=\"シリンダ ブロックの点検\" href=\"javascript:CtsProc('0','000000000001486','')\">点検</a></font></font></nobr>");
+write("</p>");
+write("</v:group>");
+}

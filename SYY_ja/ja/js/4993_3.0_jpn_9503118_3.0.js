@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:655.57px;\" coordsize=\"950.00,655.57\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:655.57px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/4993_3.0_jpn_9503118_3.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:655.57px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:29.552846px;top:38.305689px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">エラー コード</font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:480.168070px;top:38.313276px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">LED点灯パターン</font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:22.273535px;top:84.288469px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">エラー コード01</font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:22.278889px;top:144.712582px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">エラー コード02</font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:22.278889px;top:205.247890px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">エラー コード03</font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:22.278889px;top:265.706113px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">エラー コード04</font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:22.278889px;top:325.963915px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">エラー コード05</font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:22.278889px;top:386.061763px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">エラー コード06</font></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:22.278889px;top:446.437120px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">エラー コード07</font></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:22.278889px;top:506.976282px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">エラー コード11</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

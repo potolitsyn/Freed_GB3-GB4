@@ -1,0 +1,478 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00F00000057111NNNKCXT00(702_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 1;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function BackFunc()
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace("ZOOM000000000015022.html#000?"+strPara);
+	}
+	else{
+		window.location.replace("ZOOM000000000015022.html");
+	}
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV.PNG" onClick="BackFunc()">
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">ステアリング ギヤボックスの取付け
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03622">
+</a>
+<a name="i00240">
+</a>
+<ol>
+<li value="30">
+<div>ステアリング ジョイント カバー（A）を取付ける。
+</div>
+<a name="i03652">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<div>
+<font style="font-weight:normal;">
+取付け後、ステアリング ジョイント カバーにガタ、ゆるみ、浮きがないことを点検する。もし、異常がある場合は、新品に交換すること。
+</font>
+</div>
+</img>
+</div>
+</li>
+</ol>
+<a name="i00250">
+</a>
+<ol>
+<li value="31">
+<div>
+<a name="i03678">
+</a>
+<a title="取付け" href="javascript:CtsProc('2','000000000000086','i02702')">ステアリング ホイールを取付ける。
+</a>
+</div>
+<a name="i03655">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<div>
+</div>
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+ステアリング ラックとステアリング ホイールの直進位置が一致していること。
+</font>
+</div>
+</td>
+</tr>
+</table>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+コラムのチルト、テレスコピック ステアリング装備車はテレスコピックの作動を確認すること。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00260">
+</a>
+<ol>
+<li value="32">
+<div>フロント ホイールを取付ける。
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+ホイールとブレーキ ディスクの合わせ面をそれぞれ清掃してから取付ける。
+</font>
+</div>
+</li>
+</ol>
+<a name="i00270">
+</a>
+<ol>
+<li value="33">
+<div>タイヤを床に接地させない（リフト アップ）状態でステアリング ホイールを左右いっぱいに数回転舵しながら、次の表の症状がないか点検する。
+</div>
+<a name="i03656">
+</a>
+<div>
+<table width="87%" class="Viewer" frame="border">
+<col width="47.7%">
+<col width="52.3%">
+<thead valign="top">
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>症状
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>考えられる原因
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>足元付近からの樹脂がこすれるような音
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ステアリング ジョイントとカバーの接触
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>足元付近からゴリ、ゴリ音、ハンドルを通して手に感じるゴリ、ゴリ感、または転舵中の引っ掛かり感
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ステアリング ジョイントとピニオン シャフトのセレーションかみ合い不良
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>周期的な操舵力のうねり
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ステアリング ジョイントの接続不良（こじれ、突っ張り）
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ハンドル付近でのカシャ、カシャ音
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>ハンドルとSRSケーブルの嵌合不良（またはケーブルの破損）
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<a name="i00280">
+</a>
+<ol>
+<li value="34">
+<div>
+<a name="i03657">
+</a>
+<a title="バッテリ ターミナルの接続" href="javascript:CtsProc('2','000000000002904','i03607')">バッテリにマイナス ケーブルを接続する。
+</a>
+</div>
+</li>
+</ol>
+<a name="i00290">
+</a>
+<ol>
+<li value="35">
+<div>タイヤを接地させエンジンを始動し、次の項目を点検する。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>EPS警告灯が消灯することを確認する。消灯しない場合は、
+<a name="i03673">
+</a>
+<a title="電動パワー ステアリング（EPS）故障診断を始める前の注意" href="javascript:CtsProc('2','000000000001454','')">EPS故障診断を行う。
+</a>
+また、他の警告灯も消灯していることを確認する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="i03679">
+</a>
+<a title="ステアリング据え切り操作荷重の点検" href="javascript:CtsProc('2','000000000000014','')">据え切り操作荷重の点検をする。
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>コラムのチルト位置、テレスコピック ステアリング装備車はテレスコ位置を中央付近にし、直進走行を行い、ステアリング ホイールが直進位置の状態であることを確認する。調整が必要な場合は、タイロッドを左右同量分回して調整する。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00300">
+</a>
+<ol>
+<li value="36">
+<div>
+<a name="i03680">
+</a>
+<a title="ホイール アライメント" href="javascript:CtsProc('2','000000000000094','')">ホイール アライメントの点検、調整を行う。
+</a>
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+フロント ホイールの切れ角に左右差がある場合、ステアリング ジョイントとシャフトのセレーションかみ合いを修正した後、トーの調整を行う。
+</font>
+</div>
+</li>
+</ol>
+<a name="i00310">
+</a>
+<ol>
+<li value="37">
+<div>
+<a name="i03681">
+</a>
+<a title="ヘッドライトの初期位置学習" href="javascript:CtsProc('2','000000000002192','')">ディスチャージ ヘッドライト装備車はヘッドライトの初期位置学習を行う。
+</a>
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+<span style="display:block" id="imgId1">
+<div>
+<script src="../js/702_3.0_jpn_9511219_3.0.js">
+</script>
+</div>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475.00px; height:464.24px;\" coordsize=\"475.00,464.24\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:475.00px;height:464.24px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/1856_2.0_jpn_9507523_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475.00px;height:464.24px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:207.662678px;top:355.940191px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.5pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ピンA</font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:244.363536px;top:433.442958px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.5pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">レバー</font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:325.217587px;top:53.711507px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.5pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">SRSユニット</font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:351.340931px;top:137.231569px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.5pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">カプラ</font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:287.555159px;top:18.169350px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.5pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スリーブ</font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:178.013512px;top:18.329811px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.5pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ピンB</font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:374.339043px;top:415.551520px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.5pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">爪</font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:120.798649px;top:331.710542px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.5pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">フック</font></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:37.861123px;top:52.508048px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.5pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ロック</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

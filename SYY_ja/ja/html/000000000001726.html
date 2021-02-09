@@ -1,0 +1,334 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX27A20300000000NNNHAXT13(4733_3.0_jpn_013)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   _prSetPrtFontSize();
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("印刷設定をA4横向きにしてください。");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      var orgWid;
+
+      orgWid = parent.document.body.offsetWidth + 8;
+      parent.resizeBy(paper_wid-orgWid,0);
+
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      _prSetDispFontSize();
+      parent.resizeBy(orgWid-paper_wid,0);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">暖機後エンジン ストールしやすい
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<a name="i03729">
+</a>
+<div>
+<div>点検項目
+</div>
+</div>
+<ol>
+<li>
+<div>アイドル コントロール システム、負圧配管の点検
+</div>
+</li>
+<li>
+<div>
+<a name="i03730">
+</a>
+<a title="スロットル ボディの点検" href="javascript:CtsProc('0','000000000001883','')">スロットル ボディの点検
+</a>
+</div>
+</li>
+<li>
+<div>
+<a name="i03731">
+</a>
+<a title="VTEC油圧回路故障診断" href="javascript:CtsProc('0','000000000001008','')">VTEC油圧回路の点検
+</a>
+</div>
+</li>
+<li>
+<div>
+<a name="i03732">
+</a>
+<a title="VTECロッカ アームAssy.の点検" href="javascript:CtsProc('0','000000000001006','')">VTECロッカ アームAssy.の点検
+</a>
+</div>
+</li>
+<li>
+<div>
+<a name="i03733">
+</a>
+<a title="燃圧の点検" href="javascript:CtsProc('0','000000000001778','')">燃料およびフューエル ライン（燃圧）の点検
+</a>
+</div>
+</li>
+<li>
+<div>
+<a name="i03734">
+</a>
+<a title="フューエル インジェクタの点検" href="javascript:CtsProc('0','000000000001792','')">フューエル インジェクタの点検
+</a>
+</div>
+</li>
+<li>
+<div>
+<a name="i03735">
+</a>
+<a title="スパーク プラグの点検" href="javascript:CtsProc('0','000000000002051','')">スパーク プラグの点検
+</a>
+</div>
+</li>
+<li>
+<div>
+<a name="i03736">
+</a>
+<a title="イグニッション コイルの脱着" href="javascript:CtsProc('0','000000000002042','')">イグニッション コイルの点検
+</a>
+</div>
+</li>
+<li>
+<div>ガソリン性状不良
+</div>
+</li>
+<li>
+<div>パージ コントロールSOL.V.の不良
+</div>
+</li>
+<li>
+<div>
+<a name="i03737">
+</a>
+<a title="三元触媒装置の点検" href="javascript:CtsProc('0','000000000001759','')">三元触媒装置の点検
+</a>
+</div>
+</li>
+<li>
+<div>
+<a name="i03738">
+</a>
+<a title="アイドリングの学習" href="javascript:CtsProc('0','000000000001853','')">アイドリングの学習
+</a>
+</div>
+</li>
+<li>
+<div>
+<a name="i03739">
+</a>
+<a title="フューエル フィルタの交換" href="javascript:CtsProc('0','000000000001779','')">フューエル フィルタの交換
+</a>
+</div>
+</li>
+<li>
+<div>プレッシャ レギュレータの不良
+</div>
+</li>
+</ol>
+<div>
+<div>推定原因
+</div>
+</div>
+<ul>
+<li>
+<div>アイドル制御系の不良
+</div>
+</li>
+<li>
+<div>燃料供給系の不良
+</div>
+</li>
+<li>
+<div>排出ガス制御系の不良
+</div>
+</li>
+<li>
+<div>VTECの不良
+</div>
+</li>
+</ul>
+</div></div>
+</body>
+</html>

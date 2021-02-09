@@ -1,0 +1,706 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00G24100000000NNNBAXT01(1051_2.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 0;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV_DISABLE.PNG" onClick="BackFunc()" disabled>
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">冷房サイクル整備上の注意事項
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03610">
+</a>
+<div>エア コンディショナを正しく、安全に整備するために次の注意事項を必ず守ること。
+</div>
+<a name="i03611">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226722_1.0.png">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+脱着作業は、必ずバッテリのマイナス端子を取外してから行うこと。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+エア コンディショナ部品内部に湿気やごみ、空気は決して入れないこと。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30">
+</td>
+<td>
+<table class="list2_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+屋外での作業、または雨天時の作業はできるだけ避けること。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+エア コンディショナ部品は、シール プラグを外したまま放置しないこと。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+シール プラグの取外しは、接続作業直前に行うこと。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+取外し作業後は、直ちにシール プラグ、ビニール テープなどで大気を遮断すること。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+ホース、パイプの接続時、Oリングにコンプレッサ オイル
+</font>
+<sup>*
+</sup>
+<font style="font-weight:normal;">
+を塗布すること。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+ホース、パイプの接続は、規定トルクで締付けること。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+冷媒缶HFC-134a（R-134a）の取扱い上の注意事項
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30">
+</td>
+<td>
+<table class="list2_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+冷媒缶を顔の近くで取扱わない。また、必ず保護メガネを着用すること。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+冷媒（液）が直接皮膚にかからないようにすること。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+冷媒缶HFC-134a（R-134a）は、絶対35°C以上に温めないこと。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+冷媒缶HFC-134a（R-134a）の取扱いは、換気の良い所で行うこと。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+冷媒ガスが炎などの熱源に触れると有害ガスを発生するため、熱源の近くでの作業は行わないこと。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+冷媒が目に入ったときの処理
+</font>
+</div>
+<div>
+<font style="font-weight:normal;">
+（1）目を手やハンカチでこすらない。
+</font>
+</div>
+<div>
+<font style="font-weight:normal;">
+（2）水で充分に洗う。
+</font>
+</div>
+<div>
+<font style="font-weight:normal;">
+（3）眼科医の手当てを受ける。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+その他冷媒缶に貼付けてあるラベルの注意事項を守ること。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+冷媒を抜いた状態でコンプレッサを回転させないこと。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+各部品を交換するときは、旧部品にある程度コンプレッサ オイルが残留したままになるため、冷房サイクルにオイルが不足するので、オイル漏れが無い場合は、旧部品に残留したオイル量を計り、その量をコンプレッサに補充する。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</img>
+</div>
+<a name="i03614">
+</a>
+<div>
+<table width="100%" class="Viewer" frame="void">
+<col width="3.5%">
+<col width="38.2%">
+<col width="58.4%">
+<thead>
+<tr>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:normal;">
+コンデンサ交換時（乾燥剤容量10mL含む）
+</font>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>25mL
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:normal;">
+乾燥剤交換時
+</font>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>10mL
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:normal;">
+エバポレータ交換時
+</font>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>35mL
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:normal;">
+配管類交換時（1本当り）
+</font>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>10mL
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:normal;">
+冷媒ガス洩れ時
+</font>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>25mL
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:normal;">
+コンプレッサ交換時
+</font>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:normal;">
+不要
+</font>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<a name="i03612">
+</a>
+<div>
+<table width="100%" class="Viewer" frame="void">
+<col width="5.2%">
+<col width="94.8%">
+<thead>
+<tr>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+<th style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;">
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>
+<font style="font-weight:normal;">
+冷媒HFC-134a（R-134a）のA/Cシステムに指定外のオイルを使用すると潤滑不良によりコンプレッサの故障原因になるので必ず指定のオイルを使用すること。冷媒HFC-134a（R-134a）専用オイルは、アクリル樹脂に悪影響をおよぼすのでオイルを飛び散らせないこと。また、吸水性が高いので使用後は、必ず栓をすること。
+</font>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+冷媒封入前は、必ず真空引きを行いサイクル内の水分を除去すること。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+冷媒封入量調節時は、サイクル内の冷媒を全量回収後、規定量を封入する。（追加補充禁止）
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+冷媒封入量は重量で管理すること。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+修理等で冷媒を抜取る場合は、必ず冷媒回収機を使用し、冷媒を大気に放出しないこと。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+車両廃棄時またはエア コンディショナ廃棄時には、必ず冷媒の回収を行うこと。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+コンプレッサ作動中は、ラジエータ ファン、コンデンサ ファンも回転していることを確認する。
+</font>
+</div>
+</td>
+</tr>
+</table>
+<a name="i03613">
+</a>
+<div>
+<table width="100%" class="Viewer" frame="void">
+<col width="3.1%">
+<col width="96.9%">
+<tbody>
+<tr>
+<td class="ViewerTD" colspan="2" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<div>*SP-10:
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" valign="top" align="left">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>P/N 38897-P13-003（120mL）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>P/N 38898-P13-003（250mL）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>P/N 38899-P13-J01（40mL）
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

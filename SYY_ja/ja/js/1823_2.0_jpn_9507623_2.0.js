@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group4\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:327.79px;\" coordsize=\"950.00,327.79\">");
+write("<v:rect id=\"rect4\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:327.79px;\">");
+write("<img id=\"img4\" name=\"PrtImgId\" src=\"../img/1823_2.0_jpn_9507623_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:327.79px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p4_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:375.033683px;top:48.036182px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">昇圧回路</font></nobr>");
+write("</p>");
+write("<p id=\"p4_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:226.784387px;top:132.320838px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">電源<br>ノイズ<br>フィルタ</font></nobr>");
+write("</p>");
+write("<p id=\"p4_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:300.814904px;top:137.722956px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">DC-DC<br>コンバータ</font></nobr>");
+write("</p>");
+write("<p id=\"p4_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:381.955942px;top:137.650347px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">矩形波<br>インバータ</font></nobr>");
+write("</p>");
+write("<p id=\"p4_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:467.238749px;top:131.739965px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">出力<br>ノイズ<br>フィルタ</font></nobr>");
+write("</p>");
+write("<p id=\"p4_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:562.847018px;top:117.189099px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">イグナイタ</font></nobr>");
+write("</p>");
+write("<p id=\"p4_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:311.473445px;top:243.587040px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">制御部</font></nobr>");
+write("</p>");
+write("<p id=\"p4_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:166.931467px;top:62.819397px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">12V</font></nobr>");
+write("</p>");
+write("<p id=\"p4_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:266.971141px;top:294.442461px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ディスチャージ ヘッドライト ユニット</font></nobr>");
+write("</p>");
+write("<p id=\"p4_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:682.234260px;top:69.397783px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">HIDバルブ</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:983.36px;\" coordsize=\"950.00,983.36\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:983.36px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/2458_2.0_jpn_9506875_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:983.36px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:246.526305px;top:803.762956px;font-weight:normal;font-size:17.2pt;color:black;\" prt_font_size=\"18.3pt\" disp_font_size=\"17.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:23px;\" src=\"../img/symbol/Gaiji00137.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:71.885191px;top:803.762956px;font-weight:normal;font-size:17.2pt;color:black;\" prt_font_size=\"18.3pt\" disp_font_size=\"17.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:23px;\" src=\"../img/symbol/Gaiji00136.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:71.827396px;top:858.367190px;font-weight:normal;font-size:17.2pt;color:black;\" prt_font_size=\"18.3pt\" disp_font_size=\"17.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:23px;\" src=\"../img/symbol/Gaiji00136.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:258.316422px;top:858.367190px;font-weight:normal;font-size:17.2pt;color:black;\" prt_font_size=\"18.3pt\" disp_font_size=\"17.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:23px;\" src=\"../img/symbol/Gaiji00137.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:87.706488px;top:789.462682px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">後側固定スイッチ リレー</font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:93.543752px;top:807.517874px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">コード色: 白、空、黒、<br>緑<br></font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:87.720937px;top:843.575619px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">後退防止ベルト スイッチ リレー</font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:93.529304px;top:861.174606px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">コード色： 橙、緑、紫、<br>青、橙</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

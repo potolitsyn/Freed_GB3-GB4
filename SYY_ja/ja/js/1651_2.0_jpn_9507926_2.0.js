@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:765.80px;\" coordsize=\"950.00,765.80\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:765.80px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/1651_2.0_jpn_9507926_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:765.80px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17.543165px;top:45.833336px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:14px;\" src=\"../img/symbol/Gaiji00132.png\"></img>2つの部品を別々に鋳造·切削</font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:16.515549px;top:326.269686px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:14px;\" src=\"../img/symbol/Gaiji00038.png\"></img>合わせ面の加工 <img id=\"gi1\" style=\"height:14px;\" src=\"../img/symbol/Gaiji00039.png\"></img>位置決めピンの挿入</font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17.210276px;top:501.882600px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:14px;\" src=\"../img/symbol/Gaiji00040.png\"></img>ボルト締め付け</font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:530.945749px;top:45.992576px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:14px;\" src=\"../img/symbol/Gaiji00036.png\"></img>一体のままで鋳造·切削</font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:531.351006px;top:326.269686px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:14px;\" src=\"../img/symbol/Gaiji00037.png\"></img>クラッキング</font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:531.032590px;top:501.086399px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:14px;\" src=\"../img/symbol/Gaiji00038.png\"></img>ボルト締め付け</font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:100.021855px;top:17.546936px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">一般的なコンロッド製造手法</font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:597.928362px;top:17.387063px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">クラッキング コンロッド製造手法</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

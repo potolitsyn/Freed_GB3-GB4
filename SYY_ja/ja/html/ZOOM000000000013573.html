@@ -1,0 +1,385 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00K791000HNN854XNFAXT00(1578_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 0;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV_DISABLE.PNG" onClick="BackFunc()" disabled>
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">SRS DTC 85-4x, 85-63, 85-64, 85-71, 85-78
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i01606">
+</a>
+<div>DTC 85-4x（‘‘x’’は0から9またはAからFを表している）、85-63、85-64、85-71、85-78:
+</div>
+<div>OPDSユニットの故障
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+<a name="i01607">
+</a>
+<a title="OPDS（乗員姿勢検知）ユニットの初期化" href="javascript:CtsProc('2','000000000003448','i01605')">DTC 85-63、85-64、85-71、85-78については、故障診断を行う前に、OPDSユニットの初期化
+</a>
+を行ってから次の点検を行う。
+</font>
+</div>
+
+<a name="i01608">
+</a>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>
+<font style="font-weight:normal;">
+<a name="i01609">
+</a>
+<a title="DTCのクリア" href="javascript:CtsProc('2','000000000003448','i01603')">DTCをクリアする
+</a>
+</font>
+</div>
+</li>
+</ol>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>
+<font style="font-weight:normal;">
+イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、SRS警告灯が6秒間点灯し、その後消灯するか確認する
+</font>
+</div>
+</li>
+</ol>
+<a name="i01610">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ SRS警告灯は消灯するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i01613">
+</a>
+<a title="一過性故障の点検" href="javascript:CtsProc('2','000000000003448','i01604')">一過性故障の点検を行う
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i01616">
+</a>
+<a title="イグニッション スイッチをOFFにする" href="#i00030">3
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i01617">
+</a>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>
+<font style="font-weight:normal;">
+イグニッション スイッチをOFFにする
+</font>
+</div>
+</li>
+</ol>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>
+<font style="font-weight:normal;">
+<a name="i01618">
+</a>
+<a title="OPDS（乗員姿勢検知）ユニットの初期化" href="javascript:CtsProc('2','000000000003448','i01605')">OPDSユニットの初期化をする
+</a>
+</font>
+</div>
+</li>
+</ol>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>
+<font style="font-weight:normal;">
+イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、SRS警告灯が6秒間点灯し、その後消灯するか確認する
+</font>
+</div>
+</li>
+</ol>
+<a name="i01619">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ SRS警告灯は消灯するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>現在正常に復帰している
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i01624">
+</a>
+<a title="OPDSユニットの脱着" href="javascript:CtsProc('2','000000000002680','')">OPDSユニットを交換し
+</a>
+、再度不良となる場合は
+<a name="i01625">
+</a>
+<a title="フロント シート バック トリム カバー/パッドの交換" href="javascript:CtsProc('2','000000000002373','')">OPDSセンサ（助手席用シート バック カバー/パッド）を交換する
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

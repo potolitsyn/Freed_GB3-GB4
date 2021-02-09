@@ -1,0 +1,1680 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00A20326428302NNNFAXT00(315_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">フューエル ポンプ ワイヤ ハーネス故障診断
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03617">
+</a>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+イグニッション スイッチをON（II）にした時、フューエル ポンプの作動音が約2秒間することを確認する
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+作動音がしない場合は以下の故障診断を行う
+</font>
+</div>
+</td>
+</tr>
+</table>
+<a name="i03711">
+</a>
+
+<a name="i03618">
+</a>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>
+<font style="font-weight:normal;">
+PGM-FIメイン リレー1と2間（IGP1ライン）の断線点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00011">
+</a>
+<div>1-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00012">
+</a>
+<div>1-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>PGM-FIメイン リレー2（A）を外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00013">
+</a>
+<div>1-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00014">
+</a>
+<div>1-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>PGM-FIメイン リレー2 4PカプラのNo.4端子とボディ アース間の電圧を測定する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03620">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ バッテリ電圧が出るか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03623">
+</a>
+<a title="電源系の点検（IG1ライン）" href="javascript:parent.Jmp('i00020')">2
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>PGM-FIメイン リレー1を交換する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080405233015375">
+</a>
+<a title="ヒューズ ボックスの交換" href="javascript:CtsProc('0','000000000002929','')">ヒューズ ボックスを交換する
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i00012">
+</a>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004229','1');">
+<img width="143" src="../tn/315_3.0_jpn_9512703_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512703_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+<a name="i03619">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004229','2');">
+<img width="143" src="../tn/315_3.0_jpn_9512704_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512704_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03617">
+</a>
+<a name="i03711">
+</a>
+
+<a name="i03627">
+</a>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>
+<font style="font-weight:normal;">
+電源系の点検（IG1ライン）
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00021">
+</a>
+<div>2-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>PGM-FIメイン リレー2 4PカプラのNo.1端子とボディ アース間の電圧を測定する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03629">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ バッテリ電圧が出るか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03632">
+</a>
+<a title="PGM-FIメイン リレー2とECU間（IMOFPRライン）の断線点検" href="javascript:parent.Jmp('i00030')">3
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>No.20フューエル ポンプ（15A）ヒューズを交換する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080405233126125">
+</a>
+<a title="ヒューズ ボックスの交換" href="javascript:CtsProc('0','000000000002929','')">ヒューズ ボックスを交換する
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03628">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004230','1');">
+<img width="143" src="../tn/315_3.0_jpn_9512705_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512705_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03617">
+</a>
+<a name="i03711">
+</a>
+
+<a name="i03636">
+</a>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>
+<font style="font-weight:normal;">
+PGM-FIメイン リレー2とECU間（IMOFPRライン）の断線点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00031">
+</a>
+<div>3-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00032">
+</a>
+<div>3-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>PGM-FIメイン リレー2 4PカプラのNo.3端子とボディ アース間をジャンパ ワイヤで短絡させる
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00033">
+</a>
+<div>3-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSでSCSモードのSCSショートを実行する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00034">
+</a>
+<div>3-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ECUカプラA（49P）を外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00035">
+</a>
+<div>3-5
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ECUカプラA（49P）のNo.16端子(No.12端子)*とボディ アース間の導通を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03638">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 導通があるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03641">
+</a>
+<a title="PGM-FIメイン リレー2の点検" href="javascript:parent.Jmp('i00040')">4
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>PGM-FIメイン リレー2とECU（A16端子）間コードの断線
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i00032">
+</a>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004231','1');">
+<img width="143" src="../tn/315_3.0_jpn_9512706_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512706_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+<a name="i03637">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004231','2');">
+<img width="143" src="../tn/315_3.0_jpn_9512707_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512707_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03617">
+</a>
+<a name="i03711">
+</a>
+
+<a name="i03644">
+</a>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>
+<font style="font-weight:normal;">
+PGM-FIメイン リレー2の点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00041">
+</a>
+<div>4-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>PGM-FIメイン リレー2を取付ける
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00042">
+</a>
+<div>4-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ECUカプラA（49P）のNo.7端子とボディ アース間をジャンパ ワイヤで短絡させる
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00043">
+</a>
+<div>4-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00044">
+</a>
+<div>4-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ECUカプラA（49P）のNo.16端子とボディ アース間の電圧を測定する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03646">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ バッテリ電圧が出るか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03649">
+</a>
+<a title="ECUの点検" href="javascript:parent.Jmp('i00050')">5
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ヒューズ ボックスとECU（A7端子、A16端子）間コードの断線
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>PGM-FIメイン リレー2を交換する
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i00042">
+</a>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004232','1');">
+<img width="143" src="../tn/315_3.0_jpn_9512708_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512708_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+<a name="i03645">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004232','2');">
+<img width="143" src="../tn/315_3.0_jpn_9512709_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512709_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03617">
+</a>
+<a name="i03711">
+</a>
+
+<a name="i03653">
+</a>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>
+<font style="font-weight:normal;">
+ECUの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00051">
+</a>
+<div>5-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00052">
+</a>
+<div>5-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ECUカプラA（49P）を接続する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00053">
+</a>
+<div>5-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、2秒間以内にヒューズ ボックスB（36P）カプラのNo.32端子とボディ アース間の電圧を測定する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03655">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ バッテリ電圧が出るか（イグニッション スイッチON（II）後、2秒以内）
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ECUのプログラムが最新でない場合は、
+<a name="i03706">
+</a>
+<a title="ECUのアップデート" href="javascript:CtsProc('0','000000000001842','')">最新のプログラムにアップデート
+</a>
+し、再診断する
+</div>
+<div>既にプログラムが最新であった場合は、
+<a name="i03707">
+</a>
+<a title="ECUの脱着" href="javascript:CtsProc('0','000000000001840','')">新品ECUに交換
+</a>
+し、再診断する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03662">
+</a>
+<a title="ヒューズ ボックスの点検" href="javascript:parent.Jmp('i00060')">6
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03654">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004233','1');">
+<img width="143" src="../tn/315_3.0_jpn_9512710_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512710_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03617">
+</a>
+<a name="i03711">
+</a>
+
+<a name="i03663">
+</a>
+<a name="i00060">
+</a>
+<ol>
+<li value="6">
+<div>
+<font style="font-weight:normal;">
+ヒューズ ボックスの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00061">
+</a>
+<div>6-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、2秒間後にヒューズ ボックスB（36P）カプラのNo.32端子とボディ アース間の電圧を測定する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03665">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ バッテリ電圧が出るか（イグニッション スイッチON（II）後、2秒後）
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03668">
+</a>
+<a title="フューエル ポンプの点検" href="javascript:parent.Jmp('i00070')">7
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i03708">
+</a>
+<a title="ヒューズ ボックスの交換" href="javascript:CtsProc('0','000000000002929','')">ヒューズ ボックスを交換
+</a>
+し、ステップ
+<a name="i03672">
+</a>
+<a title="フューエル ポンプの点検" href="javascript:parent.Jmp('i00070')">7
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03664">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004234','1');">
+<img width="143" src="../tn/315_3.0_jpn_9512711_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512711_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03617">
+</a>
+<a name="i03711">
+</a>
+
+<a name="i03673">
+</a>
+<a name="i00070">
+</a>
+<ol>
+<li value="7">
+<div>
+<font style="font-weight:normal;">
+フューエル ポンプの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00071">
+</a>
+<div>7-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00072">
+</a>
+<div>7-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>
+<a name="i03709">
+</a>
+<a title="フューエル ポンプの脱着" href="javascript:CtsProc('0','000000000001805','')">メンテナンス リッド、フューエル ポンプ4Pカプラを取外す
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00073">
+</a>
+<div>7-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>4WD車:
+<a name="i03710">
+</a>
+<a title="フューエル ポンプの脱着" href="javascript:CtsProc('0','000000000001807','')">左側メンテナンス リッド、フューエル ポンプ5Pカプラを取外す
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00074">
+</a>
+<div>7-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、2秒以内にフューエル ポンプ4PカプラのNo.2端子とボディ アース間（4WD車:フューエル ポンプ5PカプラのNo.5端子とボディ アース間）の電圧を測定する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03680">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ バッテリ電圧が出るか（イグニッション スイッチON（II）後、2秒以内）
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03683">
+</a>
+<a title="フューエル ポンプの点検" href="javascript:parent.Jmp('i00090')">9
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03686">
+</a>
+<a title="PGM-FIメイン リレー2とフューエル ポンプ間（FUEL PUMPライン）の..." href="javascript:parent.Jmp('i00080')">8
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03678">
+</a>
+<div>
+<div class="figure_title">2WD車
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004235','1');">
+<img width="143" src="../tn/315_3.0_jpn_9512712_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512712_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<a name="i03679">
+</a>
+<div>
+<div class="figure_title">4WD車
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004235','2');">
+<img width="143" src="../tn/315_3.0_jpn_9512713_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512713_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03617">
+</a>
+<a name="i03711">
+</a>
+
+<a name="i03687">
+</a>
+<a name="i00080">
+</a>
+<ol>
+<li value="8">
+<div>
+<font style="font-weight:normal;">
+PGM-FIメイン リレー2とフューエル ポンプ間（FUEL PUMPライン）の断線点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00081">
+</a>
+<div>8-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00082">
+</a>
+<div>8-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>PGM-FIメイン リレー2を外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00083">
+</a>
+<div>8-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>PGM-FIメイン リレー2 4PカプラのNo.1端子とNo.2端子間をジャンパ ワイヤで短絡させる
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00084">
+</a>
+<div>8-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、フューエル ポンプ4PカプラのNo.2端子とボディ アース間（4WD車:フューエル ポンプ5PカプラのNo.5端子とボディ アース間）の電圧を測定する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03690">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ バッテリ電圧が出るか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>PGM-FIメイン リレー2（FUEL PUMP）を交換する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>フューエル ポンプとPGM-FIメイン リレー2（FUEL PUMP）間コードの断線
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i00083">
+</a>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004236','1');">
+<img width="143" src="../tn/315_3.0_jpn_9512714_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512714_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+<a name="i03688">
+</a>
+<div>
+<div class="figure_title">2WD車
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004236','2');">
+<img width="143" src="../tn/315_3.0_jpn_9512715_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512715_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<a name="i03689">
+</a>
+<div>
+<div class="figure_title">4WD車
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004236','3');">
+<img width="143" src="../tn/315_3.0_jpn_9512716_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512716_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03617">
+</a>
+<a name="i03711">
+</a>
+
+<a name="i03696">
+</a>
+<a name="i00090">
+</a>
+<ol>
+<li value="9">
+<div>
+<font style="font-weight:normal;">
+フューエル ポンプの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00091">
+</a>
+<div>9-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00092">
+</a>
+<div>9-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>フューエル ポンプ4PカプラのNo.4端子とボディ アース間（4WD車:フューエル ポンプ5PカプラのNo.4端子とボディ アース間）の導通を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03699">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 導通があるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>フューエル ポンプを交換する
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080405233850062">
+</a>
+<a title="フューエル ポンプの脱着" href="javascript:CtsProc('0','000000000001805','')">2WD車
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080405233918218">
+</a>
+<a title="フューエル ポンプの脱着" href="javascript:CtsProc('0','000000000001807','')">4WD車
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>フューエル ポンプとG502（2WD車）、
+<nobr>G603
+</nobr>
+（4WD車）間コードの断線
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03697">
+</a>
+<div>
+<div class="figure_title">2WD車
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004237','1');">
+<img width="143" src="../tn/315_3.0_jpn_9512717_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512717_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<a name="i03698">
+</a>
+<div>
+<div class="figure_title">4WD車
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004237','2');">
+<img width="143" src="../tn/315_3.0_jpn_9512718_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/315_3.0_jpn_9512718_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00K722000HNN2103NFAXT00(690_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 0;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV_DISABLE.PNG" onClick="BackFunc()" disabled>
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">EPS DTC 21-03
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03606">
+</a>
+<div>DTC 21-03:
+</div>
+<div>CAN車速固着故障
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+<a name="i03626">
+</a>
+<a title="フューエル、エミッション コントロール故障診断の進め方" href="javascript:CtsProc('2','000000000003054','')">EPS警告の点灯と同時にPGM-FI警告灯が点灯、もしくはD表示灯が点滅した場合、最初にPGM-FIシステムの故障診断
+</a>
+、
+<a name="i03627">
+</a>
+<a title="オートマチック トランスミッション電装系故障診断の進め方" href="javascript:CtsProc('2','000000000003053','')">もしくはオートマチック トランスミッション システムの故障診断
+</a>
+、
+<a name="i03628">
+</a>
+<a title="CVT電装系故障診断の進め方" href="javascript:CtsProc('2','000000000003052','')">CVT車はHondaマルチマチック トランスミッション コントロール システムの故障診断
+</a>
+を行う。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+停車中、故意にエンジン回転数を上げる作業（PGM-FIシステム故障診断の再現テスト時（暖機運転）など）において、EPS警告灯が点灯する場合がある。これはDTC21-03の判定条件によるものであり、EPSシステムは正常な場合がある。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+診断中にABS警告灯が点灯する場合があるが、これはABSのDTC判定条件によるものである。ABS警告灯が点灯した場合はABSのDTCを消去する。
+</font>
+</div>
+</td>
+</tr>
+</table>
+
+<a name="i03610">
+</a>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>
+<font style="font-weight:normal;">
+車速信号の点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00011">
+</a>
+<div>1-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>車体をジャッキ アップし、全輪を地面から浮かせる
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00013">
+</a>
+<div>1-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>エンジンを始動し、Dポジションで車輪を空転させる
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00016">
+</a>
+<div>1-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>データ リスト内の車速をHDSで確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03611">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 0km/hが表示されているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03614">
+</a>
+<a title="再現テスト" href="#i00020">2
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>現在システムは正常
+</div>
+</td>
+</tr>
+</table>
+<a name="i03617">
+</a>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>
+<font style="font-weight:normal;">
+再現テスト
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00021">
+</a>
+<div>2-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00022">
+</a>
+<div>2-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>エンジンを始動する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00023">
+</a>
+<div>2-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>タコメータおよびスピード メータが正常に作動しているか確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03618">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 正常か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>接続カプラの接触不良を点検し、異常がなければ
+<a name="i03630">
+</a>
+<a title="EPSコントロール ユニットの交換" href="javascript:CtsProc('2','000000000001466','')">EPSコントロール ユニットを交換する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i03629">
+</a>
+<a title="コンビネーション メータ自己診断の進め方" href="javascript:CtsProc('2','000000000001900','')">コンビネーション メータの故障診断を行う
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

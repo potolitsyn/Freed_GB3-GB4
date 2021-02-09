@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475.00px; height:479.61px;\" coordsize=\"475.00,479.61\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:475.00px;height:479.61px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/89_3.0_jpn_9513402_3.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475.00px;height:479.61px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:71.963446px;top:396.563283px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:15px;\" src=\"../img/symbol/Gaiji00001.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:318.761598px;top:396.501991px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:15px;\" src=\"../img/symbol/Gaiji00002.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:181.571714px;top:330.291302px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:15px;\" src=\"../img/symbol/Gaiji00030.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:347.550386px;top:291.294263px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:15px;\" src=\"../img/symbol/Gaiji00030.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2.222454px;top:294.312894px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:15px;\" src=\"../img/symbol/Gaiji00030.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:94.395474px;top:396.563283px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">14x1.5mm<br>トルク 103N·m<br>(10.5kgf·m)<br><font style=\"font-weight:normal;\">分解時交換</font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:341.132503px;top:396.501991px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">14x1.5mm<br>トルク 103N·m<br>(10.5kgf·m)<br><font style=\"font-weight:normal;\">分解時交換</font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:204.003743px;top:330.291302px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">14x1.5mm<br>トルク 103N·m<br>(10.5kgf·m)<br><font style=\"font-weight:normal;\">分解時交換</font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:369.967134px;top:291.309586px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">14x1.5mm<br>トルク 93N·m<br>(9.5kgf·m)<br><font style=\"font-weight:normal;\">分解時交換</font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:24.605027px;top:294.352647px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">14x1.5mm<br>トルク 93N·m<br>(9.5kgf·m)<br><font style=\"font-weight:normal;\">分解時交換</font></font></nobr>");
+write("</p>");
+write("</v:group>");
+}

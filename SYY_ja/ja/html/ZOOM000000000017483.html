@@ -1,0 +1,924 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX27K801000HNN8812NFAXT00(4477_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 0;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV_DISABLE.PNG" onClick="BackFunc()" disabled>
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">VSA DTC 88-12
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03607">
+</a>
+<div>DTC 88-12:
+</div>
+<div>ABS連続作動
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+故障診断を始める前に、フリーズ データおよびオンボード スナップショット情報をHDSに保存し、
+<a name="i03680">
+</a>
+<a title="ビークル スタビリティ アシスト（VSA）システム故障診断の進め方" href="javascript:CtsProc('2','000000000003554','')">故障診断の進め方を確認する
+</a>
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+ホイール ベアリングの向きを間違って組付けた場合、このコードが検知される場合がある
+</font>
+</div>
+</td>
+</tr>
+</table>
+<a name="i03679">
+</a>
+
+<a name="i03608">
+</a>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>
+<font style="font-weight:normal;">
+タイヤの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00013">
+</a>
+<div>1-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00011">
+</a>
+<div>1-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>車両に装着されている4輪全てのタイヤ サイズ、空気圧および摩耗を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03609">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 標準タイヤ、適切空気圧か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03666">
+</a>
+<a title="再現テスト" href="#i03682">2
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>同一種類、同一銘柄、同一サイズで摩耗差の少ないタイヤに交換し、再点検
+</div>
+</td>
+</tr>
+</table>
+<a name="i03681">
+</a>
+<a name="i03682">
+</a>
+<ol>
+<li value="2">
+<div>
+<font style="font-weight:normal;">
+再現テスト
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03683">
+</a>
+<div>2-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03684">
+</a>
+<div>2-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSでDTCをクリアする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03685">
+</a>
+<div>2-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03686">
+</a>
+<div>2-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>車速50Km/ｈ以上で10秒以上、走行テストを行う
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03687">
+</a>
+<div>2-5
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>DTCメニュー内のDTCをHDSで確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03688">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ DTC 88-12は表示されているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03691">
+</a>
+<a title="エンコーダの点検" href="#i03649">3
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>VSAモジュレータ コントロール ユニット38P カプラの一時的な接触不良
+</div>
+</td>
+</tr>
+</table>
+<a name="i03648">
+</a>
+<a name="i03649">
+</a>
+<ol>
+<li value="3">
+<div>
+<font style="font-weight:normal;">
+エンコーダの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03662">
+</a>
+<div>3-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03663">
+</a>
+<div>3-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>エンコーダの点検を行う
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>フロント: 
+<a name="i03713">
+</a>
+<a title="フロント ドライブシャフトの取外し" href="javascript:CtsProc('2','000000000001408','')">ドライブシャフト アウトボード ジョイントを取外す
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>リヤ: ハブ ベアリング ユニットを取外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30">
+</td>
+<td>
+<table class="list2_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<a name="i03695">
+</a>
+<a title="リヤ ハブ ベアリング ユニットの交換" href="javascript:CtsProc('2','000000000002343','')">2WD車
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<a name="i03696">
+</a>
+<a title="リヤ ハブ ベアリング ユニットの交換" href="javascript:CtsProc('2','000000000002342','')">4WD車
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03650">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ エンコーダの表面は正常か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03668">
+</a>
+<a title="ホイール センサの点検" href="#i00020">4
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>エンコーダの表面からほこりや汚れを取除き、ステップ1へ戻り再点検し、再度DTCが表示される場合は、ホイール ベアリングまたはハブ ベアリング ユニット交換
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>フロント: 
+<a name="i03676">
+</a>
+<a title="フロント ナックル/ハブ/ホイール ベアリングの交換" href="javascript:CtsProc('2','000000000001676','')">ホイール ベアリング交換
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>リヤ: ハブ ベアリング ユニット交換
+</div>
+</td>
+</tr>
+<tr>
+<td width="30">
+</td>
+<td>
+<table class="list2_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+<a name="i03697">
+</a>
+<a title="リヤ ハブ ベアリング ユニットの交換" href="javascript:CtsProc('2','000000000002343','')">2WD車
+</a>
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+<a name="i03698">
+</a>
+<a title="リヤ ハブ ベアリング ユニットの交換" href="javascript:CtsProc('2','000000000002342','')">4WD車
+</a>
+</font>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="i03641">
+</a>
+<a name="i00020">
+</a>
+<ol>
+<li value="4">
+<div>
+<font style="font-weight:normal;">
+ホイール センサの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00021">
+</a>
+<div>4-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>車速50Km/ｈ以上で10秒以上、走行テストを行う
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00022">
+</a>
+<div>4-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>データ リスト内の右フロント、左フロント、右リヤ、左リヤ ホイール スピードをHDSで確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03643">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 各表示の値は同一か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03715">
+</a>
+<a title="VSAモジュレータ コントロール ユニットのプログラムの点検" href="#i03656">5
+</a>
+へ進む 
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i03712">
+</a>
+<a title="ホイール センサの脱着" href="javascript:CtsProc('2','000000000002875','')">該当するホイール センサ交換
+</a>
+</div>
+</td>
+</tr>
+</table>
+<a name="i03655">
+</a>
+<a name="i03656">
+</a>
+<ol>
+<li value="5">
+<div>
+<font style="font-weight:normal;">
+VSAモジュレータ コントロール ユニットのプログラムの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03665">
+</a>
+<div>5-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>VSAモジュレータ コントロール ユニットのプログラムが最新か確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03657">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ プログラムは最新か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>VSAモジュレータ コントロール ユニット38Pカプラの接続不良を点検し、異常がなければ
+<a name="i03673">
+</a>
+<a title="VSAモジュレータ コントロール ユニットの脱着" href="javascript:CtsProc('2','000000000002869','')">VSAモジュレータ コントロール ユニット交換
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03714">
+</a>
+<a title="VSAモジュレータ コントロール ユニットのアップデート" href="#i03700">6
+</a>
+へ進む 
+</div>
+</td>
+</tr>
+</table>
+<a name="i03699">
+</a>
+<a name="i03700">
+</a>
+<ol>
+<li value="6">
+<div>
+<font style="font-weight:normal;">
+VSAモジュレータ コントロール ユニットのアップデート
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03701">
+</a>
+<div>6-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>
+<a name="i03702">
+</a>
+<a title="VSAモジュレータ コントロール ユニットのアップデート" href="javascript:CtsProc('2','000000000002871','')">VSAモジュレータ コントロール ユニットのプログラムを最新のプログラムにアップデートする
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03703">
+</a>
+<div>6-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03704">
+</a>
+<div>6-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>車速50Km/ｈ以上で10秒以上、走行テストを行う
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03705">
+</a>
+<div>6-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>DTCメニュー内のDTCをHDSで確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03706">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ DTC 88-12は表示されているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>VSAモジュレータ コントロール ユニット38Pカプラの接続不良を点検し、異常がなければ
+<a name="i03709">
+</a>
+<a title="VSAモジュレータ コントロール ユニットの脱着" href="javascript:CtsProc('2','000000000002869','')">VSAモジュレータ コントロール ユニット交換
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>故障診断完了
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

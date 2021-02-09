@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:540.99px;\" coordsize=\"950.00,540.99\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:540.99px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/1681_2.0_jpn_9507901_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:540.99px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:685.073165px;top:48.045734px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">PGM-FI ECU</font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1.490687px;top:106.970373px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">エキゾースト プライマリ<br>ロッカ アーム<br>(エキゾースト バルブ1駆動)</font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:294.430710px;top:107.563436px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">エキゾースト セカンダリ<br>ロッカ アーム<br>(エキゾースト バルブ2駆動)</font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:55.437372px;top:459.409374px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">インテーク プライマリ<br>ロッカ アーム<br>(インテーク バルブ1、<br>インテーク バルブ2駆動）</font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:277.290980px;top:414.027989px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">インテーク セカンダリ<br>ロッカ アーム</font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:259.918195px;top:459.396353px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">VTEC切換えピストン</font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:178.074865px;top:414.027989px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ストッパ <br>ピストン</font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:783.253334px;top:204.598603px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">VTECスプール<br>SOL.V.</font></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:463.689766px;top:322.093124px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">油圧</font></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:698.541057px;top:321.054758px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">VTECスプール<br>バルブ</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

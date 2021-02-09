@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:327.79px;\" coordsize=\"950.00,327.79\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:327.79px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/1731_2.0_jpn_9507807_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:327.79px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:569.174366px;top:57.915232px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">メイン信号</font></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:226.863044px;top:16.088751px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">トルク センサ特性</font></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:437.771211px;top:43.549122px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">出力電圧(V)</font></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:475.324879px;top:218.283797px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">2.5V</font></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:585.058721px;top:260.110278px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">サブ信号</font></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:257.216729px;top:287.527290px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">左転舵時</font></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:596.600890px;top:287.527290px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">右転舵時</font></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:238.446832px;top:127.230989px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.5 N·m以下</font></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:608.143059px;top:180.663089px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">入力<br>(N·m)</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

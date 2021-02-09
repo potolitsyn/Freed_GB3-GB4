@@ -1,0 +1,1448 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX3PA20326919461NNNFAXT00(3485_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 1;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function NextFunc()
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace("ZOOM000000000006354.html#000?"+strPara);
+	}
+	else{
+		window.location.replace("ZOOM000000000006354.html");
+	}
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV_DISABLE.PNG" onClick="BackFunc()" disabled>
+<input type="image" src="../img/GL_NEXT.PNG" onClick="NextFunc()">
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">PGM-FIシステム データ リンク回路故障診断
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03647">
+</a>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+診断を始める前に、HDSおよび付属のケーブルが正常であることを確認する
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+装備していないシステムのステップは跳び越して故障診断を行う
+</font>
+</div>
+</td>
+</tr>
+</table>
+<a name="i04074">
+</a>
+
+<a name="i03648">
+</a>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>
+<font style="font-weight:normal;">
+ECUとの通信の確認
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00011">
+</a>
+<div>1-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00012">
+</a>
+<div>1-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>
+<a name="ref_20080331135523890">
+</a>
+<a title="フューエル、エミッション コントロール故障診断DTCの確認" href="javascript:CtsProc('2','000000000003055','')">データ リンク カプラにHDSを接続する
+</a>
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+HDSを接続する際に、HDSのカプラが、データ リンク カプラへ確実に接続できる状態か確認すること
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00013">
+</a>
+<div>1-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、HDSが車両を認識しているか確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03650">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ HDSが車両を認識しているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03653">
+</a>
+<a title="PGM-FIシステムのDTCの確認" href="#i00020">2
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03656">
+</a>
+<a title="B-CAN DTCの確認" href="javascript:JumpFunc('ZOOM000000000006354.html#i00130')">13
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03657">
+</a>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>
+<font style="font-weight:normal;">
+PGM-FIシステムのDTCの確認
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00021">
+</a>
+<div>2-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>PGM-FIシステムDTCメニュー内のテンポラリDTCまたはDTCをHDSで確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03658">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ テンポラリDTCまたはDTCは表示されているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>表示されたDTCの故障診断を行う
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03663">
+</a>
+<a title="SRSシステムの故障点検" href="#i00030">3
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03664">
+</a>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>
+<font style="font-weight:normal;">
+SRSシステムの故障点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00031">
+</a>
+<div>3-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00032">
+</a>
+<div>3-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、SRS警告灯を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03665">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 警告灯は点灯したままか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="ref_20080331135627000">
+</a>
+<a title="SRSエアバッグ システム故障診断の進め方" href="javascript:CtsProc('2','000000000003448','')">SRSシステムの故障診断の進め方を参照する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ABS装備車:ステップ
+<a name="i03671">
+</a>
+<a title="ABSシステムの故障点検" href="#i00040">4
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>VSA装備車:ステップ
+<a name="i03672">
+</a>
+<a title="VSAシステムの故障点検" href="#i00050">5
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="i03673">
+</a>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>
+<font style="font-weight:normal;">
+ABSシステムの故障点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00041">
+</a>
+<div>4-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00042">
+</a>
+<div>4-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、ABS警告灯を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03674">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 警告灯は点灯したままか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="ref_20080331154949362">
+</a>
+<a title="アンチロック ブレーキ システム（ABS）故障診断の進め方" href="javascript:CtsProc('2','000000000003013','')">ABSシステムの故障診断の進め方を参照する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03680">
+</a>
+<a title="EPSシステムの故障点検" href="#i00060">6
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03681">
+</a>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>
+<font style="font-weight:normal;">
+VSAシステムの故障点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00051">
+</a>
+<div>5-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00052">
+</a>
+<div>5-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、VSA警告灯を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03682">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 警告灯は点灯したままか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="ref_20080331155948080">
+</a>
+<a title="ビークル スタビリティ アシスト（VSA）システム故障診断の進め方" href="javascript:CtsProc('2','000000000003553','')">VSAシステムの故障診断の進め方を参照する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03688">
+</a>
+<a title="EPSシステムの故障点検" href="#i00060">6
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03689">
+</a>
+<a name="i00060">
+</a>
+<ol>
+<li value="6">
+<div>
+<font style="font-weight:normal;">
+EPSシステムの故障点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00061">
+</a>
+<div>6-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00062">
+</a>
+<div>6-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、EPS警告灯を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03690">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 警告灯は点灯したままか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="ref_20080331160335674">
+</a>
+<a title="電動パワー ステアリング（EPS）故障診断DTCの確認" href="javascript:CtsProc('2','000000000003307','')">EPSシステムの故障診断の進め方を参照する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>イモビライザ システム装備車:ステップ
+<a name="i04047">
+</a>
+<a title="イモビライザ システムの故障点検" href="#i00070">7
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>イモビライザ システム装備車:ステップ
+<a name="i04048">
+</a>
+<a title="B-CAN DTCの確認" href="#i00090">9
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="i03697">
+</a>
+<a name="i00070">
+</a>
+<ol>
+<li value="7">
+<div>
+<font style="font-weight:normal;">
+イモビライザ システムの故障点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00071">
+</a>
+<div>7-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00072">
+</a>
+<div>7-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、イモビライザ警告灯を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03698">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 警告灯は点灯または点滅したままか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="ref_20080331161152346">
+</a>
+<a title="イモビライザ システム症状別故障診断 - イモビライザ インジケータ" href="javascript:CtsProc('2','000000000002755','')">イモビライザ システムの故障診断を参照する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>Hondaスマート キー システム装備車:ステップ
+<a name="i03704">
+</a>
+<a title="Hondaスマート キー システムの故障点検" href="#i00080">8
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>Hondaスマート キー システム非装備車:ステップ
+<a name="i03705">
+</a>
+<a title="B-CAN DTCの確認" href="#i00090">9
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="i03706">
+</a>
+<a name="i00080">
+</a>
+<ol>
+<li value="8">
+<div>
+<font style="font-weight:normal;">
+Hondaスマート キー システムの故障点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00081">
+</a>
+<div>8-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00082">
+</a>
+<div>8-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、スマート警告灯を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03707">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 警告灯は点灯または点滅したままか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="ref_20080331161254690">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断" href="javascript:CtsProc('2','000000000002730','')">Hondaスマート キー システムの故障診断を参照する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03713">
+</a>
+<a title="B-CAN DTCの確認" href="#i00090">9
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03714">
+</a>
+<a name="i00090">
+</a>
+<ol>
+<li value="9">
+<div>
+<font style="font-weight:normal;">
+B-CAN DTCの確認
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00091">
+</a>
+<div>9-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>
+<a name="ref_20080331161620143">
+</a>
+<a title="ネットワーク コミュニケーション故障診断DTCの確認 - HDS未使用" href="javascript:CtsProc('2','000000000003403','')">B-CANのDTCを「コンビネーション メータにDTCを表示する方法」で確認する
+</a>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03716">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ DTCは表示されているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>表示されたDTCの故障診断を行う
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03721">
+</a>
+<a title="データ リンク カプラと各ユニット間（K-ライン）の短絡点検" href="#i00100">10
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03722">
+</a>
+<a name="i00100">
+</a>
+<ol>
+<li value="10">
+<div>
+<font style="font-weight:normal;">
+データ リンク カプラと各ユニット間（K-ライン）の短絡点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00101">
+</a>
+<div>10-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00102">
+</a>
+<div>10-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>データ リンク カプラよりHDSのカプラを外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00103">
+</a>
+<div>10-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>データ リンク カプラのNo.7端子とボディ アース間の導通を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03724">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 導通があるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03727">
+</a>
+<a title="データ リンク カプラと各ユニット間（K-ライン）の短絡点検" href="#i00110">11
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03730">
+</a>
+<a title="データ リンク カプラと各ユニット間（K-ライン）の断線点検" href="javascript:JumpFunc('ZOOM000000000006354.html#i00120')">12
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03731">
+</a>
+<a name="i00110">
+</a>
+<ol>
+<li value="11">
+<div>
+<font style="font-weight:normal;">
+データ リンク カプラと各ユニット間（K-ライン）の短絡点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00111">
+</a>
+<div>11-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>以下のカプラを一つずつ外し、それぞれについてデータ リンク カプラのNo.7端子とボディ アース間の導通を確認する
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>SRSユニットAカプラ（39P）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ABSモジュレータ コントロール ユニット26Pカプラ（ABS装備車）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>VSAモジュレータ コントロール ユニット46Pカプラ（VSA装備車）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>EPSコントロール ユニット11Pカプラ
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>イモビライザ/キーレス レシーバ ユニット
+<nobr>
+</nobr>
+（イモビライザ システム装備車）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>スマートECU Aカプラ（31P）（Hondaスマート キー システム装備車）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>オーディオ ユニット24Pカプラ
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ヒューズ ボックス（Q）カプラ（16P）
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03732">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ カプラを外したとき導通がなくなるユニットがあるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>カプラを外したとき導通がなくなるユニットを交換する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>データ リンク カプラ（K-ライン）と以下のユニット間コードの短絡
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>SRSユニット
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ABSモジュレータ コントロール ユニット（ABS装備車）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>VSAモジュレータ コントロール ユニット（VSA装備車）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>EPSコントロール ユニット
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>イモビライザ/キーレス レシーバ ユニット
+<nobr>
+</nobr>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>スマートECU（Hondaスマート キー システム装備車）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>オーディオ ユニット
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ヒューズ ボックス
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+<span style="display:block" id="imgId1">
+<div>
+<script src="../js/3485_3.0_jpn_9505516_3.0.js">
+</script>
+</div>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

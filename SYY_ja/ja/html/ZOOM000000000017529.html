@@ -1,0 +1,1087 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX27A20326926935NNNFAXT00(4210_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 1;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function BackFunc()
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace("ZOOM000000000017528.html#000?"+strPara);
+	}
+	else{
+		window.location.replace("ZOOM000000000017528.html");
+	}
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV.PNG" onClick="BackFunc()">
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">F-CAN通信故障診断
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03621">
+</a>
+<a name="i03845">
+</a>
+
+<a name="i03781">
+</a>
+<a name="i00180">
+</a>
+<ol>
+<li value="16">
+<div>
+<font style="font-weight:normal;">
+ECUと各ユニット間（CANLライン）の短絡点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00181">
+</a>
+<div>16-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ECUカプラA（49P）のNo.4端子とボディ アース間の導通を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03783">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 導通があるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ECU（A4端子）と以下のユニットまたはカプラ間コードの短絡
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>データ リンク カプラ
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>コンビネーション メータ
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>VSAモジュレータ コントロール ユニット
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>舵角センサ
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>SRSユニット
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>EPSコントロール ユニット
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>オーディオ＆ナビゲーション　ユニット（NAV.装備車）
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03788">
+</a>
+<a title="コンビネーション メータの点検" href="#i00190">17
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03789">
+</a>
+<a name="i00190">
+</a>
+<ol>
+<li value="17">
+<div>
+<font style="font-weight:normal;">
+コンビネーション メータの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00191">
+</a>
+<div>17-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>すべてのカプラを再接続する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00192">
+</a>
+<div>17-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>
+<a name="ref_20080329211714281">
+</a>
+<a title="フューエル、エミッション コントロール故障診断DTCの確認" href="javascript:CtsProc('2','000000000003055','')">データ リンク カプラにHDSを接続する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00193">
+</a>
+<div>17-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>コンビネーション メータ32Pカプラを外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00194">
+</a>
+<div>17-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、ECUとHDS間で通信が行われているか確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03791">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 通信が行われているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="ref_20080329211752078">
+</a>
+<a title="コンビネーション メータの取外し" href="javascript:CtsProc('2','000000000001898','')">コンビネーション メータを交換する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03949">
+</a>
+<a title="VSAコントロール ユニットの点検" href="#i00210">18
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03807">
+</a>
+<a name="i00210">
+</a>
+<ol>
+<li value="18">
+<div>
+<font style="font-weight:normal;">
+VSAコントロール ユニットの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00211">
+</a>
+<div>18-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00212">
+</a>
+<div>18-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>コンビネーション メータ32Pカプラを接続する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00213">
+</a>
+<div>18-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>VSAモジュレータ コントロール ユニット38Pカプラを外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00214">
+</a>
+<div>18-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、ECUとHDS間で通信が行われているか確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03808">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 通信が行われているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="ref_20080329212040953">
+</a>
+<a title="VSAモジュレータ コントロール ユニットの脱着" href="javascript:CtsProc('2','000000000002869','')">VSAモジュレータ コントロール ユニットを交換する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03814">
+</a>
+<a title="舵角センサの点検" href="#i00220">19
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03815">
+</a>
+<a name="i00220">
+</a>
+<ol>
+<li value="19">
+<div>
+<font style="font-weight:normal;">
+舵角センサの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00221">
+</a>
+<div>19-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00222">
+</a>
+<div>19-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>VSAモジュレータ コントロール ユニット38Pカプラを接続する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00223">
+</a>
+<div>19-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>舵角センサ5Pカプラを外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00224">
+</a>
+<div>19-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、ECUとHDS間で通信が行われているか確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03816">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 通信が行われているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i03950">
+</a>
+<a title="舵角センサ（コンビネーション スイッチ）の脱着" href="javascript:CtsProc('2','000000000002859','')">舵角センサを交換する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03822">
+</a>
+<a title="SRSユニットの点検" href="#i00230">20
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03823">
+</a>
+<a name="i00230">
+</a>
+<ol>
+<li value="20">
+<div>
+<font style="font-weight:normal;">
+SRSユニットの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00231">
+</a>
+<div>20-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00232">
+</a>
+<div>20-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>舵角センサ5Pカプラを接続する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00233">
+</a>
+<div>20-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>SRSユニットAカプラ（39P）を外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00234">
+</a>
+<div>20-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、ECUとHDS間で通信が行われているか確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03824">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 通信が行われているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="ref_20080329212330328">
+</a>
+<a title="SRSユニットの脱着" href="javascript:CtsProc('2','000000000002694','')">SRSユニットを交換する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03830">
+</a>
+<a title="EPSコントロール ユニットの点検" href="#i00240">21
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03831">
+</a>
+<a name="i00240">
+</a>
+<ol>
+<li value="21">
+<div>
+<font style="font-weight:normal;">
+EPSコントロール ユニットの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00241">
+</a>
+<div>21-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00242">
+</a>
+<div>21-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>SRSユニットAカプラ（39P）を接続する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00243">
+</a>
+<div>21-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>EPSコントロール ユニット カプラA（11P）を外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00244">
+</a>
+<div>21-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、ECUとHDS間で通信が行われているか確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03832">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 通信が行われているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="ref_20080329212418937">
+</a>
+<a title="EPSコントロール ユニットの交換" href="javascript:CtsProc('2','000000000001466','')">EPSコントロール ユニットを交換する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>NAV.装備車:ステップ
+<a name="i03929">
+</a>
+<a title="オーディオ＆ナビゲーション　ユニットの点検" href="#i03933">22
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>NAV.非装備車:ECUのプログラムが最新でない場合は、
+<a name="i03930">
+</a>
+<a title="ECUのアップデート" href="javascript:CtsProc('2','000000000001841','')">最新のプログラムにアップデート
+</a>
+し、再診断する既にプログラムが最新であった場合は、
+<a name="i03931">
+</a>
+<a title="ECUの脱着" href="javascript:CtsProc('2','000000000001839','')">新品ECUに交換
+</a>
+し、再診断する
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="i03932">
+</a>
+<a name="i03933">
+</a>
+<ol>
+<li value="22">
+<div>
+<font style="font-weight:normal;">
+オーディオ＆ナビゲーション　ユニットの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03934">
+</a>
+<div>22-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03935">
+</a>
+<div>22-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>EPSコントロール ユニット カプラA（11P）を接続する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03936">
+</a>
+<div>22-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>オーディオ＆ナビゲーション　ユニットBカプラ（20P）を外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03937">
+</a>
+<div>22-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、ECUとHDS間で通信が行われているか確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03938">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 通信が行われているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i03941">
+</a>
+<a title="AVNユニットの交換" href="javascript:CtsProc('2','000000000000355','')">オーディオ＆ナビゲーション　ユニットを交換する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ECUのプログラムが最新でない場合は、
+<a name="i03947">
+</a>
+<a title="ECUのアップデート" href="javascript:CtsProc('2','000000000001841','')">最新のプログラムにアップデート
+</a>
+し、再診断する既にプログラムが最新であった場合は、
+<a name="i03948">
+</a>
+<a title="ECUの脱着" href="javascript:CtsProc('2','000000000001839','')">新品ECUに交換し
+</a>
+、再診断する
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+<span style="display:block" id="imgId1">
+<div>
+<script src="../js/4210_3.0_jpn_9503663_3.0.js">
+</script>
+</div>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

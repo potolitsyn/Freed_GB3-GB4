@@ -1,0 +1,484 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX1E0000000K0061NNNBAXT00(2875_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 1;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function BackFunc()
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace("ZOOM000000000001985.html#000?"+strPara);
+	}
+	else{
+		window.location.replace("ZOOM000000000001985.html");
+	}
+}
+function NextFunc()
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace("ZOOM000000000001987.html#000?"+strPara);
+	}
+	else{
+		window.location.replace("ZOOM000000000001987.html");
+	}
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV.PNG" onClick="BackFunc()">
+<input type="image" src="../img/GL_NEXT.PNG" onClick="NextFunc()">
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">作業上の注意
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03674">
+</a>
+<a name="i01604">
+</a>
+<div class="servinfosub_title">この機種特有の注意（エンジン関連）
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>点火プラグはISO（国際標準化機構）規格品を使用している。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ヘッドライトを点灯して作業する場合、ヘッドライトは点灯すると高温になるため、レンズ全面を覆わないこと。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>燃料配管系の脱着時
+</div>
+</td>
+</tr>
+<tr>
+<td width="30">
+</td>
+<td>
+<table class="list2_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<a name="i03755">
+</a>
+<a title="バッテリの交換" href="javascript:CtsProc('2','000000000002902','')">バッテリのマイナス（－）端子を取外すこと。
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>燃料配管系の脱着は、
+<a name="i03683">
+</a>
+<a title="燃圧の除去" href="javascript:CtsProc('2','000000000001777','')">燃圧除去方法
+</a>
+により燃圧を抜いてから行うこと。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>燃料配管系の脱着および交換時は、必ず新品のOリングに交換すること。
+</div>
+<div>Oリングには必ずエンジン オイルを塗布してから組付けること。ブレーキ液、ラジエータ液および植物系またはアルコール系の油脂の塗布は絶対に行わないこと。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>フューエル インジェクタ（A）の脱着および交換時は、必ず新品のOリング（B）に交換すること。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<a name="i03762">
+</a>
+<a title="フューエル ラインの点検" href="javascript:CtsProc('2','000000000001795','')">高圧燃料ホースのジョイント部組付け時には、ジョイント部を洗浄してから締付けること。
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>
+<a name="i03685">
+</a>
+<a title="クイック コネクタ式フューエル チューブの脱着" href="javascript:CtsProc('2','000000000001794','')">クイック コネクタ脱着時、リテーナをパイプより取外した場合は、必ず新品のリテーナに交換すること。
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>取付け後、イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）（スタータは絶対に回さない）にするとフューエル ポンプが約2秒間作動して、高圧燃料配管系の燃圧が上昇する。この動作を2－3回繰返して燃料系統の各部に燃料漏れがないか点検すること。
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>アマチュア無線機を搭載する場合、PGM-FIのエレクトロニック コントロール ユニット（ECU）およびその配線は、外部からの妨害電波に対し誤作動しないように配慮されているが、非常に強力な電波が入った場合、コントロール ユニットが誤作動することもある。コントロール ユニットの誤作動を防ぐために次の内容に注意すること。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30">
+</td>
+<td>
+<table class="list2_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>アンテナおよび無線機本体は、コントロール ユニットより20cm以上離すこと。
+<a name="i03756">
+</a>
+<a title="リレー/コントロール ユニット配置図 - エンジン ルーム" href="javascript:CtsProc('2','000000000002888','')">コントロール ユニットの取付け位置は、リレー/コントロール ユニット配置図を参照のこと。
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>アンテナ フィーダ線、同軸ケーブルは配線類と平行にして長く引き廻すのは避け、配線類と交差する場合は直角になるようにすること。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>出力の大きい無線機は搭載しないこと。
+</div>
+<div>（車両への搭載は10Wまでとすること）
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>液体パッキンの使用を指定している箇所には必ず指定液体パッキン:Honda純正液体パッキン1216E（No.08C70-K0324M）を使用すること。
+</div>
+<div>使用方法は液体パッキンの取扱説明書に従って塗布すること。
+</div>
+</td>
+</tr>
+</table>
+<a name="i02901">
+</a>
+<br>
+<div class="topic_title">塗布前
+</div>
+<br>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>塗布面、ボルトおよびボルト穴から古い液体パッキン、油および汚れを除去すること。
+</div>
+<a name="i03687">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<div>
+<font style="font-weight:normal;">
+塗布面に傷をつけないこと。
+</font>
+</div>
+</img>
+</div>
+</td>
+</tr>
+</table>
+<a name="i02902">
+</a>
+<br>
+<div class="topic_title">塗布時
+</div>
+<br>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>塗布面に液体パッキンを塗布量の指示に従い、切れ目なく均一に塗布すること。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>塗布位置は塗布面中央、ボルト周囲は、オイルなどが漏れないよう内側に塗布すること。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>液体パッキンは雌ネジ加工のない面の一方に行うこと。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>Oリングの溝には液体パッキンを塗布しないこと。
+</div>
+</td>
+</tr>
+</table>
+<a name="i02903">
+</a>
+<br>
+<div class="topic_title">塗布後
+</div>
+<br>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>塗布後5分以上放置した場合はそのまま取付けない。一度はがし、塗布し直すこと。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>オイルの注入は、取付後30分以上経過後に行うこと。
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+<span style="display:block" id="imgId1">
+<div>
+<script src="../js/2875_3.0_jpn_9513619_3.0.js">
+</script>
+</div>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

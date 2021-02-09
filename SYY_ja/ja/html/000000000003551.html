@@ -1,0 +1,615 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX0VK794000HNNN1NNNFAXT00(2449_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">DTC 1
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i00001">
+</a>
+<div>DTC01:
+</div>
+<div>前後スライド リミット スイッチ異常
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+システムはフェイル セーフ モードに移行しているため、
+<a name="i00002">
+</a>
+<a title="単独操作モード（P）" href="javascript:CtsProc('0','000000000002469','i00029')">故障診断の前に単独操作モード（P）を実行すること
+</a>
+。
+</font>
+</div>
+
+<a name="i00003">
+</a>
+<a name="i00004">
+</a>
+<ol>
+<li value="1">
+<div>リミット スイッチの点検
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>前後スライド リミット スイッチの損傷を目視点検する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00005">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 正常か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00068">
+</a>
+<a title="リミット スイッチのON/OFF点検" href="javascript:parent.Jmp('i00011')">2
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i00050">
+</a>
+<a title="シート リフタ リミット スイッチの交換" href="javascript:CtsProc('0','000000000002518','')">前後スライド リミット スイッチを交換する
+</a>
+</div>
+</td>
+</tr>
+</table>
+<a name="i00010">
+</a>
+<a name="i00011">
+</a>
+<ol>
+<li value="2">
+<div>リミット スイッチのON/OFF点検
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-1
+</td>
+<td>
+<div>
+<a name="i00052">
+</a>
+<a title="シート リフタ リミット スイッチの交換" href="javascript:CtsProc('0','000000000002518','')">前後スライド リミット スイッチを取外す
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-2
+</td>
+<td>
+<div>
+<a name="i00053">
+</a>
+<a title="シート リフタ リミット スイッチの点検" href="javascript:CtsProc('0','000000000002519','')">前後スライド リミット スイッチ端子間の導通を点検する
+</a>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00012">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 正常か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00067">
+</a>
+<a title="リミット スイッチとボディ アース間の断線点検" href="javascript:parent.Jmp('i00035')">3
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i00054">
+</a>
+<a title="シート リフタ リミット スイッチの交換" href="javascript:CtsProc('0','000000000002518','')">前後スライド リミット スイッチを交換する
+</a>
+</div>
+</td>
+</tr>
+</table>
+<a name="i00034">
+</a>
+<a name="i00035">
+</a>
+<ol>
+<li value="3">
+<div>リミット スイッチとボディ アース間の断線点検
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>前後スライド リミット スイッチ2PカプラのNo.2端子とボディ アース間の導通を点検する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00037">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 導通があるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00066">
+</a>
+<a title="リミット スイッチとリフタ コントロール ユニット間の短絡点検" href="javascript:parent.Jmp('i00043')">4
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>前後スライド リミット スイッチとボディ アース間（G601）のコードの断線
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i00036">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000012200','1');">
+<img width="143" src="../tn/2449_3.0_jpn_9507128_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/2449_3.0_jpn_9507128_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i00001">
+</a>
+
+<a name="i00042">
+</a>
+<a name="i00043">
+</a>
+<ol>
+<li value="4">
+<div>リミット スイッチとリフタ コントロール ユニット間の短絡点検
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-1
+</td>
+<td>
+<div>リフタ コントロール ユニット カプラB（20P）の接続を外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-2
+</td>
+<td>
+<div>リフタ コントロール ユニット カプラB（20P）のNo.18端子とボディ アース間の導通を点検する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00045">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 導通があるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>前後スライド リミット スイッチとリフタ コントロール ユニット間のコードの短絡
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00065">
+</a>
+<a title="リミット スイッチとリフタ コントロール ユニット間の断線点検" href="javascript:parent.Jmp('i00057')">5
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i00044">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000012201','1');">
+<img width="143" src="../tn/2449_3.0_jpn_9507129_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/2449_3.0_jpn_9507129_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i00001">
+</a>
+
+<a name="i00056">
+</a>
+<a name="i00057">
+</a>
+<ol>
+<li value="5">
+<div>リミット スイッチとリフタ コントロール ユニット間の断線点検
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>前後スライド リミット スイッチ2PカプラのNo.1端子とリフタ コントロール ユニット カプラB（20P）のNo.18端子間の導通を点検する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00059">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 導通があるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i00064">
+</a>
+<a title="シート リフタ コントロール ユニットの脱着" href="javascript:CtsProc('0','000000000002514','')">リフタ コントロール ユニットを交換する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>前後スライド リミット スイッチとリフタ コントロール ユニット間のコードの断線
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i00058">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000012202','1');">
+<img width="143" src="../tn/2449_3.0_jpn_9507130_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/2449_3.0_jpn_9507130_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

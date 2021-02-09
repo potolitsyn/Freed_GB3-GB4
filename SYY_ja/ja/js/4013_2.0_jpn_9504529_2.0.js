@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:544.32px;\" coordsize=\"950.00,544.32\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:544.32px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/4013_2.0_jpn_9504529_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:544.32px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:647.714098px;top:431.027266px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">OFFスイッチ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:249.770557px;top:69.534822px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ディスプレイ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:263.965842px;top:497.117015px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リヤ デフロスタ/<br>ミラー ヒータ スイッチ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:467.095317px;top:61.253592px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ファン スピード切換えスイッチ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:800.821409px;top:116.078539px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">温度調節スイッチ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:795.172118px;top:327.664703px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">AUTOスイッチ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:609.321979px;top:471.414638px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">内気循環/外気導入<br>スイッチ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:494.635610px;top:496.083681px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">デフロスタ <br>スイッチ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:43.816436px;top:506.562567px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">A/Cスイッチ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:6.447530px;top:229.483367px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">MODEスイッチ</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

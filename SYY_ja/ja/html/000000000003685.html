@@ -1,0 +1,686 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00RL1100000000NNNYDXT12(1914_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   _prSetPrtFontSize();
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("印刷設定をA4横向きにしてください。");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      var orgWid;
+
+      orgWid = parent.document.body.offsetWidth + 8;
+      parent.resizeBy(paper_wid-orgWid,0);
+
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      _prSetDispFontSize();
+      parent.resizeBy(orgWid-paper_wid,0);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">センタ ピラー アウタ パネルの取付け
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<a name="i03613">
+</a>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+イラスト中のマーク
+</font>
+</div>
+<div>
+<font style="font-weight:normal;">
+<img src="../img/symbol/jpn_623574_1.0.png">
+</img>
+:2枚合わせスポット溶接
+</font>
+</div>
+<div>
+<font style="font-weight:normal;">
+<img src="../img/symbol/jpn_623573_1.0.png">
+</img>
+:3枚合わせスポット溶接
+</font>
+</div>
+<div>
+<font style="font-weight:normal;">
+<img src="../img/symbol/jpn_623572_1.0.png">
+</img>
+:4枚合わせスポット溶接
+</font>
+</div>
+<div>
+<font style="font-weight:normal;">
+<img src="../img/symbol/jpn_623567_1.0.png">
+</img>
+:MIGプラグ溶接
+</font>
+</div>
+<div>
+<font style="font-weight:normal;">
+<img src="../img/symbol/jpn_623568_1.0.png">
+</img>
+:MIG溶接 L=MIG溶接の長さ（単位:mm）
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+イラスト中の（ ）内数字は溶接点数を示す。
+</font>
+</div>
+</td>
+</tr>
+</table>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>サイド シル スチフナをセットし、ボディ寸法図で位置を確認する。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421214004968">
+</a>
+<a title="アッパ ボディ実測寸法 - フロア" href="javascript:CtsProc('0','000000000003715','')">フロア
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421214416796">
+</a>
+<a title="アンダ ボディ実測寸法 - 2WD車エンジン ルームとフロント フロア" href="javascript:CtsProc('0','000000000003713','')">2WD車エンジン ルームとフロント フロア
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421214510000">
+</a>
+<a title="アンダ ボディ実測寸法 - 4WD車エンジン ルームとフロント フロア" href="javascript:CtsProc('0','000000000003706','')">4WD車エンジン ルームとフロント フロア
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421214559531">
+</a>
+<a title="アンダ ボディ実測寸法 - 2WD車フロント フロアとリヤ フロア" href="javascript:CtsProc('0','000000000003702','')">2WD車フロント フロアとリヤ フロア
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421214653375">
+</a>
+<a title="アンダ ボディ実測寸法 - 4WD車フロント フロアとリヤ フロア" href="javascript:CtsProc('0','000000000003700','')">4WD車フロント フロアとリヤ フロア
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421214748734">
+</a>
+<a title="修正チャート - 2WD車平面図" href="javascript:CtsProc('0','000000000003704','')">2WD車平面図
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421214839078">
+</a>
+<a title="修正チャート - 2WD車側面図" href="javascript:CtsProc('0','000000000003708','')">2WD車側面図
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421214929328">
+</a>
+<a title="修正チャート - 4WD車平面図/側面図" href="javascript:CtsProc('0','000000000003707','')">4WD車平面図/側面図
+</a>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03641">
+</a>
+<ol>
+<li value="2">
+<div>サイド シル スチフナを仮止め溶接する。
+</div>
+</li>
+</ol>
+<a name="i03642">
+</a>
+<ol>
+<li value="3">
+<div>
+<a name="ref_20080421215950562">
+</a>
+<a title="フロント ピラー インナ ロア（A）の内側にフロント ピラー インナ セパレータ..." href="javascript:CtsProc('0','000000000003681','i00010')">サイド シル スチフナにフロント ピラー インナ セパレータを取付け、シーラを塗布してフロント ピラー ロア スチフナをクランプする。
+</a>
+</div>
+</li>
+</ol>
+<a name="i00030">
+</a>
+<ol>
+<li value="4">
+<div>サイド シル スチフナ（A）にセンタ ピラー インナ セパレータ（B）を取付ける。
+</div>
+<a name="i03622">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<div>セパレータの周囲にシーラ（C）を塗布してサイド シル スチフナとのすき間を埋める。また、センタ ピラー スチフナ （D）の内側にもシーラを盛り付けて、セパレータとのすき間がないようにすること。
+</div>
+</img>
+</div>
+</li>
+</ol>
+<span style="display:none" id="imgId1">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03623">
+</a>
+<div>
+<script src="../js/1914_3.0_jpn_9507391_3.0.js">
+</script>
+</div>
+<a name="i00060">
+</a>
+<ol>
+<li value="5">
+<div>フロント サイド アウタ パネル補修部品をボディに合わせ、粗切りしてクランプする。
+</div>
+</li>
+</ol>
+<a name="i00070">
+</a>
+<ol>
+<li value="6">
+<div>ボディ寸法図で位置を確認する。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421221620203">
+</a>
+<a title="アッパ ボディ実測寸法 - ホイールハウス ロア メンバ位置" href="javascript:CtsProc('0','000000000003712','')">ホイールハウス ロア メンバ位置
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421221641421">
+</a>
+<a title="アッパ ボディ実測寸法 - ドア ヒンジ位置" href="javascript:CtsProc('0','000000000003714','')">ドア ヒンジ位置
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421221706687">
+</a>
+<a title="アッパ ボディ実測寸法 - フロント ウインド、ドア/テールゲート オープニング..." href="javascript:CtsProc('0','000000000003716','')">フロント ウインド、ドア/テールゲート オープニング
+</a>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00080">
+</a>
+<ol>
+<li value="7">
+<div>
+<a name="i03643">
+</a>
+<a title="アッパ ボディ実測寸法 - 組付け部品の合わせ建付け" href="javascript:CtsProc('0','000000000003717','')">フロント フェンダ、フロント ドアおよびリヤ ドアの建付けを確認する。
+</a>
+必要に応じて、ボンネット、フロント ガラス、ヘッドライト、フロント グリルおよびバンパの建付けを点検する。
+</div>
+</li>
+</ol>
+<a name="i00090">
+</a>
+<ol>
+<li value="8">
+<div>アウタ パネルを突き合せ状態にする。
+</div>
+</li>
+</ol>
+<a name="i00100">
+</a>
+<ol>
+<li value="9">
+<div>室内側からサイド シル スチフナ（A）をインナ ロア ピラー（B）、インサイド シル（C）、センタ インナ ピラー（D）およびドア レール ロア サポート（E）と溶接する。
+</div>
+</li>
+</ol>
+<span style="display:none" id="imgId2">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03631">
+</a>
+<div>
+<script src="../js/1914_3.0_jpn_9507392_3.0.js">
+</script>
+</div>
+<a name="i03644">
+</a>
+<ol>
+<li value="10">
+<div>
+<a name="ref_20080421222518109">
+</a>
+<a title="アウタ パネルを外し、フロント ピラー ロア スチフナ（A）を溶接する。" href="javascript:CtsProc('0','000000000003681','i00060')">フロント ピラー ロア スチフナを溶接する。
+</a>
+</div>
+</li>
+</ol>
+<a name="i00110">
+</a>
+<ol>
+<li value="11">
+<div>センタ ピラー スチフナ（A）をルーフ サイド アウタ（B）およびサイド シル スチフナ（C）と溶接する。
+</div>
+</li>
+</ol>
+<span style="display:none" id="imgId3">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03632">
+</a>
+<div>
+<script src="../js/1914_3.0_jpn_9507393_3.0.js">
+</script>
+</div>
+<a name="i00120">
+</a>
+<ol>
+<li value="12">
+<div>ボディ側アウタ パネル（A）のカット位置にパッチ（B）を当てて溶接する。
+</div>
+<div>
+<a name="ref_20080421225729843">
+</a>
+<a title="ボディ側アウタ パネル（A）のカット位置にパッチ（B）を当てて溶接する。" href="javascript:CtsProc('0','000000000003681','i00070')">フロント ピラー部
+</a>
+</div>
+</li>
+</ol>
+<span style="display:none" id="imgId4">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03633">
+</a>
+<div>
+<div class="figure_title">[ルーフ サイド部]
+</div>
+<script src="../js/1914_3.0_jpn_9507394_3.0.js">
+</script>
+</div>
+<span style="display:none" id="imgId5">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03645">
+</a>
+<div>
+<div class="figure_title">[センタ ピラー上部]
+</div>
+<script src="../js/1914_3.0_jpn_9507395_3.0.js">
+</script>
+</div>
+<span style="display:none" id="imgId6">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03634">
+</a>
+<div>
+<div class="figure_title">[サイド シル後部]
+</div>
+<script src="../js/1914_3.0_jpn_9507396_3.0.js">
+</script>
+</div>
+<a name="i00130">
+</a>
+<ol>
+<li value="13">
+<div>センタ ピラー スチフナ（A）にセンタ ピラー アウタ セパレータ（B）を取付ける。
+</div>
+<a name="i03635">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<div>セパレータの周囲にシーラ（C）を塗布してセンタ ピラー スチフナとのすき間を埋める。また、アウタ パネル（D）の内側にもシーラを盛り付けて、セパレータとのすき間がないようにすること。
+</div>
+</img>
+</div>
+</li>
+</ol>
+<span style="display:none" id="imgId7">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03636">
+</a>
+<div>
+<script src="../js/1914_3.0_jpn_9507397_3.0.js">
+</script>
+</div>
+<a name="i00140">
+</a>
+<ol>
+<li value="14">
+<div>アウタ パネルをクランプし、再度位置を確認する。
+</div>
+</li>
+</ol>
+<a name="i00150">
+</a>
+<ol>
+<li value="15">
+<div>フロント サイド アウタ パネル（A）を本溶接する。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421225823796">
+</a>
+<a title="アウタ パネル（A）を本溶接する。" href="javascript:CtsProc('0','000000000003681','i00100')">フロント ピラー部
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080421225854859">
+</a>
+<a title="サイド シル アウタ パネル（A）を本溶接する。" href="javascript:CtsProc('0','000000000003683','i00080')">サイド シル部
+</a>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<span style="display:none" id="imgId8">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03638">
+</a>
+<div>
+<script src="../js/1914_3.0_jpn_9507398_3.0.js">
+</script>
+</div>
+<span style="display:none" id="imgId9">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03639">
+</a>
+<div>
+<script src="../js/1914_3.0_jpn_9507399_3.0.js">
+</script>
+</div>
+</div></div>
+</body>
+</html>

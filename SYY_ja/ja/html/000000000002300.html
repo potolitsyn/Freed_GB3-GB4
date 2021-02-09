@@ -1,0 +1,476 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00J34356500000NNNMAXT00(1440_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">パワー ミラーの点検
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03602">
+</a>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+点検を行う前にヒューズ ボックスのNo.10（7.5A）ヒューズの溶断、接続状態を点検する。
+</font>
+</div>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>
+<a name="i03610">
+</a>
+<a title="インストルメント ドライバ ロア カバーの脱着" href="javascript:CtsProc('0','000000000002085','')">ドライバ ロア カバー（A）を取外し
+</a>
+、パワー ミラー スイッチから13Pカプラ（B）の接続を外す。
+</div>
+</li>
+</ol>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>左右のミラー アクチュエータが作動しない場合は、ステップ
+<a name="i03605">
+</a>
+<a title="イグニッション スイッチON（II）で、No.2端子とアース間にバッテリ電圧があ..." href="javascript:parent.Jmp('i00030')">3
+</a>
+へ進む。
+</div>
+<div>R.パワー ミラー アクチュエータが作動しない場合は、ステップ
+<a name="i03606">
+</a>
+<a title="No.2とNo.11端子間、No.5（またはNo.13）端子とアース間を短絡する..." href="javascript:parent.Jmp('i00050')">5
+</a>
+へ進む。
+</div>
+<div>L.パワー ミラー アクチュエータが作動しない場合は、ステップ
+<a name="i03607">
+</a>
+<a title="No.2とNo.10端子間、No.5（またはNo.12）端子とアース間を短絡する..." href="javascript:parent.Jmp('i00060')">6
+</a>
+へ進む。
+</div>
+<div>格納アクチュエータが作動しない場合は、ステップ
+<a name="i03608">
+</a>
+<a title="No.2とNo.7端子間、No.8端子とアース間を短絡する。" href="javascript:parent.Jmp('i00070')">7
+</a>
+へ進む。
+</div>
+</li>
+</ol>
+<a name="i02901">
+</a>
+<div class="procedure_topic_title">左右のミラー アクチュエータが作動しない場合
+</div>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+<font style="font-weight:normal;">
+）
+</font>
+で、No.2端子とアース間にバッテリ電圧があることを確認する。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>バッテリ電圧がない場合は、次の項目を点検する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30">
+</td>
+<td>
+<table class="list2_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>茶コードの断線および端子の接続状態
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>バッテリ電圧がある場合は、ステップ
+<a name="i03609">
+</a>
+<a title="No.6端子とアース間に導通があることを確認する。" href="javascript:parent.Jmp('i00040')">4
+</a>
+へ進む。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>No.6端子とアース間に導通があることを確認する。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>導通がない場合は、次の項目を点検する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30">
+</td>
+<td>
+<table class="list2_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>コードの断線（黒）および端子の接続状態
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>アース不良（G501）
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>導通がある場合は、スイッチを点検する。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i02902">
+</a>
+<div class="procedure_topic_title">R.パワー ミラー アクチュエータが作動しない場合
+</div>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>No.2とNo.11端子間、No.5（またはNo.13）端子とアース間を短絡する。
+</div>
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+<font style="font-weight:normal;">
+）
+</font>
+でR.パワー ミラーがDOWN（またはLEFT）の向きになることを確認する。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>DOWN（またはLEFT）の向きにならない場合は、緑（または、青）コードの断線および端子の接続状態を点検する。正常ならば、R.パワー ミラー アクチュエータを点検する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>DOWN、LEFT共に作動しない場合は、若葉コードの断線および端子の接続状態を点検する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>DOWN、LEFT共に作動する場合は、スイッチの点検をする。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i02903">
+</a>
+<div class="procedure_topic_title">L.パワー ミラー アクチュエータが作動しない場合
+</div>
+<a name="i00060">
+</a>
+<ol>
+<li value="6">
+<div>No.2とNo.10端子間、No.5（またはNo.12）端子とアース間を短絡する。
+</div>
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+<font style="font-weight:normal;">
+）
+</font>
+でL.パワー ミラーがDOWN（またはLEFT）の向きになることを確認する。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>DOWN（またはLEFT）の向きにならない場合は、緑（または、桃）コードの断線および端子の接続状態を点検する。正常ならば、L.パワー ミラー アクチュエータを点検する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>DOWN、LEFT共に作動しない場合は、白コードの断線および端子の接続状態を点検する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>DOWN、LEFT共に作動する場合は、スイッチの点検をする。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i02904">
+</a>
+<div class="procedure_topic_title">格納アクチュエータが作動しない場合
+</div>
+<a name="i00070">
+</a>
+<ol>
+<li value="7">
+<div>No.2とNo.7端子間、No.8端子とアース間を短絡する。
+</div>
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+<font style="font-weight:normal;">
+）にしたとき、左右のドア ミラーが
+</font>
+格納することを確認する。
+</div>
+</li>
+</ol>
+<a name="i00080">
+</a>
+<ol>
+<li value="8">
+<div>No.2とNo.8端子間、No.7端子とアース間を短絡する。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+<font style="font-weight:normal;">
+）にしたとき、左右のドア ミラーが
+</font>
+復帰することを確認する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>格納および復帰しない場合は、格納ミラーアクチュエータの点検を行う。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>格納および復帰する場合は、スイッチを交換する。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03604">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006855','1');">
+<img width="143" src="../tn/1440_3.0_jpn_9509194_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/1440_3.0_jpn_9509194_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

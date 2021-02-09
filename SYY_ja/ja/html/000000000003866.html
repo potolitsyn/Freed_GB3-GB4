@@ -1,0 +1,303 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX34E15100000000NNNCAXT00(1712_2.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   _prSetPrtFontSize();
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("印刷設定をA4横向きにしてください。");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      var orgWid;
+
+      orgWid = parent.document.body.offsetWidth + 8;
+      parent.resizeBy(paper_wid-orgWid,0);
+
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      _prSetDispFontSize();
+      parent.resizeBy(orgWid-paper_wid,0);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="system_desc_sub_title">
+<font style="font-weight:bold;">
+SP0A型CVTの構造
+</font>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<a name="i02801">
+</a>
+<a name="i02801">
+</a>
+<div>SP0A型CVTは、トルク コンバータ方式前進無段、後退1段の前輪駆動（2WD）で、トランスミッションは、エンジンの左側に配置している。また、変速制御およびロック アップ制御などをPGM-FI ECUでコントロールする電子制御CVTである。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>トルク コンバータは、エンジン クランクシャフトに直結したドライブ プレートに接続されており、スタータ リング ギヤ付きで、フライホイール マスにもなっている。また、ロック アップ クラッチを内蔵し、ロック アップ時にはエンジン動力をダイレクトにインプット シャフトに伝達する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>トルク コンバータにかみ合うインプット シャフトは、ドライブ プーリ シャフト内を貫通し、L.サイド カバー側でプラネタリ サン ギヤをスプラインかん合で取付けている。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ドライブ プーリ シャフトのL.サイド カバー側にフォワード（前進）クラッチをスプラインかん合で取付け、インプット シャフトにスプラインかん合しているプラネタリ サン ギヤと一体のフォワード クラッチ ハブはフォワード クラッチ ディスクとかみ合っている。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>後退のためのリバース ブレーキ機構は、インタミディエイト プレートのプラネタリ リング ギヤ外周に取付けてあるリバース ブレーキと、フォワード クラッチ ガイドとリバース ブレーキにかみ合うプラネタリ ギヤ装置で構成される。プラネタリ ギヤ装置は、インプット シャフトにスプラインかん合しているサン ギヤ、サン ギヤにかみ合うピニオン ギヤ/ピニオン ギヤ キャリア、ピニオン ギヤ キャリアはフォワード クラッチ ガイドにかん合し、さらに、ピニオン ギヤにかみ合うリング ギヤで構成される。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ドライブ プーリ シャフトとドリブン プーリ シャフトをインタミディエイト プレートに取付け、金属ベルトで連結している。ドライブ プーリ シャフト、ドリブン プーリ シャフト、金属ベルト、インタミディエイト プレートは一体で構成され非分解部品である。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>オイル ポンプはトロコイド式を採用し、トルク コンバータ ケースに取付けてある。トルク コンバータ ケースにベアリングを介して取付けてあるオイル ポンプ ドライブ スプロケットとオイル ポンプAssy.側のオイル ポンプ ドリブン スプロケットをオイル ポンプ ドライブ チェーンで連結し、エンジン回転中はトルク コンバータのポンプにスプラインかん合してしているオイル ポンプ ドライブ スプロケットで、オイル ポンプを常時駆動している。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>デファレンシャルAssy.は、トルク コンバータ ケースとトランスミッション ケースでカバーして取付けてある。ドリブン プーリ シャフトにスプラインかん合で取付いているセカンダリ ドライブ ギヤが、ファイナル ドライブ シャフトのセカンダリ ドリブン ギヤとファイナル ドライブ ギヤを介してデファレンシャルのファイナル ドリブン ギヤを駆動する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>トルク コンバータ ケースに、油圧制御バルブなどを内蔵したバルブ ボディ、オイル ポンプAssy.を取付け、トランスミッション ケースでカバーしている。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>トランスミッションの外側には、プレッシャ コントロールSOL.V.、シフト コントロールSOL.V.、シフト ポジション センサ、およびスピード センサなどの電子制御用部品を取付けている。
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="imgId1">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03606">
+</a>
+<div>
+<div class="figure_title">SP0A型CVTの断面図
+</div>
+<script src="../js/1712_2.0_jpn_9507826_2.0.js">
+</script>
+</div>
+</div></div>
+</body>
+</html>

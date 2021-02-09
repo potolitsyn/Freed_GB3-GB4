@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group100\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475.00px; height:173.71px;\" coordsize=\"475.00,173.71\">");
+write("<v:rect id=\"rect100\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:475.00px;height:173.71px;\">");
+write("<img id=\"img100\" name=\"PrtImgId\" src=\"../img/4846_2.0_jpn_9503817_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475.00px;height:173.71px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p100_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:28.529411px;top:93.559468px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">OFF</font></nobr>");
+write("</p>");
+write("<p id=\"p100_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:36.703835px;top:57.847595px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ON</font></nobr>");
+write("</p>");
+write("<p id=\"p100_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:95.970442px;top:29.085602px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.2pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.15[S]</font></nobr>");
+write("</p>");
+write("<p id=\"p100_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:153.898487px;top:29.085602px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.2pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.15[S]</font></nobr>");
+write("</p>");
+write("<p id=\"p100_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:124.934465px;top:129.111949px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.2pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.15[S]</font></nobr>");
+write("</p>");
+write("<p id=\"p100_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:200.754278px;top:151.872239px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.2pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">1.5[S]</font></nobr>");
+write("</p>");
+write("<p id=\"p100_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:327.684669px;top:29.085602px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.2pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.15[S]</font></nobr>");
+write("</p>");
+write("<p id=\"p100_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:385.612714px;top:29.085602px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.2pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.15[S]</font></nobr>");
+write("</p>");
+write("<p id=\"p100_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:356.648691px;top:129.111949px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.2pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.15[S]</font></nobr>");
+write("</p>");
+write("<p id=\"p100_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:294.257411px;top:7.847704px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.2pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">条件が外れるまで断続的に吹鳴</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

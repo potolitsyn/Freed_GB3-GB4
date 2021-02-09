@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:655.57px;\" coordsize=\"950.00,655.57\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:655.57px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/5026_2.0_jpn_9503324_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:655.57px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:574.585599px;top:52.542379px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">カウル トップ<br><font style=\"font-weight:normal;\"><a title=\"カウル トップの脱着 [09-10]\" href=\"javascript:CtsProc('0','000000000001607','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:675.045057px;top:101.782966px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">フロント アッパ グリル<br><font style=\"font-weight:normal;\"><a title=\"フロント アッパ グリルの脱着 [12]\" href=\"javascript:CtsProc('0','000000000001609','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:729.270928px;top:508.725107px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">フロント ロア グリル<br>(タイプ別装備）<br><font style=\"font-weight:normal;\"><a title=\"フロント ロア グリルの脱着 [12 SPIKEを除く ]\" href=\"javascript:CtsProc('0','000000000001610','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:521.759082px;top:570.994496px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">フロント スプラッシュ シールド<br><font style=\"font-weight:normal;\"><a title=\"フロント スプラッシュ シールドの脱着\" href=\"javascript:CtsProc('0','000000000001570','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:215.230479px;top:535.864249px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">フロント バンパ ガーニッシュ<br>(タイプ別装備)<br><font style=\"font-weight:normal;\"><a title=\"フロント バンパ ガーニッシュの脱着 [12]\" href=\"javascript:CtsProc('0','000000000001605','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:9.019014px;top:471.105696px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">フロント インナ フェンダ<br><font style=\"font-weight:normal;\"><a title=\"フロント インナ フェンダの脱着\" href=\"javascript:CtsProc('0','000000000001566','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:5.507986px;top:396.205206px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">サイドシル ガーニッシュ<br>(タイプ別装備)<br><font style=\"font-weight:normal;\"><a title=\"サイド シル ガーニッシュの脱着\" href=\"javascript:CtsProc('0','000000000001619','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:51.939231px;top:1.014519px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">フロント ピラー コーナ ガーニッシュ<br><font style=\"font-weight:normal;\"><a title=\"フロント ピラー コーナ ガーニッシュの脱着\" href=\"javascript:CtsProc('0','000000000001602','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:544.818154px;top:12.658739px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ルーフ モール<br><font style=\"font-weight:normal;\"><a title=\"ルーフ モールの脱着\" href=\"javascript:CtsProc('0','000000000001618','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("</v:group>");
+}

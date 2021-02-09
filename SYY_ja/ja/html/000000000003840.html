@@ -1,0 +1,602 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX1CE16366819626NNNCAXT00(1726_2.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   _prSetPrtFontSize();
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("印刷設定をA4横向きにしてください。");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      var orgWid;
+
+      orgWid = parent.document.body.offsetWidth + 8;
+      parent.resizeBy(paper_wid-orgWid,0);
+
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      _prSetDispFontSize();
+      parent.resizeBy(orgWid-paper_wid,0);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="system_desc_sub_title">
+<font style="font-weight:bold;">
+油圧回路作動
+</font>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<a name="i02802">
+</a>
+<a name="i02802">
+</a>
+<a name="i02901">
+</a>
+<br>
+<div class="topic_title">通常作動時
+</div>
+<br>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>
+<font style="font-weight:normal;">
+前進発進·加速時:4WD走行
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00011">
+</a>
+<div>1-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>前進発進·加速時や滑りやすい路面などで、前輪の回転数が後輪の回転数を上回った場合、フロント オイル ポンプの回転数がリヤ オイル ポンプの回転数を上回ることにより油圧が発生する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00012">
+</a>
+<div>1-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>フロント オイル ポンプによってオイル ストレーナより吸い上げられたオイルは、チェック バルブBを通り吸
+<nobr>入·
+</nobr>
+ 吐出される。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00013">
+</a>
+<div>1-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>フロント オイル ポンプより吐出されたオイルは、リヤ オイル ポンプに吸入されるが、リヤ オイル ポンプの吸入量を上回った余剰なオイルはチェック バルブEを通り、ピストン室に圧送され、クラッチ ピストンを押付けクラッチAssy.を接続することにより、駆動力を後輪に伝達する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00014">
+</a>
+<div>1-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ピストン室のオイルは2つのオリフィスにより調圧される。オリフィスを通過したオイルは、クラッチAssy.内部やハイポイド ピニオン ギヤ シャフトなどの潤滑と冷却を行う。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<span style="display:none" id="imgId1">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03624">
+</a>
+<div>
+<script src="../js/1726_2.0_jpn_9507818_2.0.js">
+</script>
+</div>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>
+<font style="font-weight:normal;">
+前進定速走行時:2WD走行
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00021">
+</a>
+<div>2-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>前進定速走行時は、前輪と後輪の回転数は同じであるため、フロント オイル ポンプとリヤ オイル ポンプに回転差は発生しない。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00022">
+</a>
+<div>2-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>フロント オイル ポンプより吐出されたオイルは、リヤ オイル ポンプに吸入され、リヤ オイル ポンプより吐出されたオイルは、再びフロント オイル ポンプに吸入される。オイルは、2つのオイル ポンプ間を循環するだけで、ピストン室に油圧は発生しないため、クラッチAssy.は接続されず後輪の駆動は行わない。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<span style="display:none" id="imgId2">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03625">
+</a>
+<div>
+<script src="../js/1726_2.0_jpn_9507819_2.0.js">
+</script>
+</div>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>
+<font style="font-weight:normal;">
+前進減速時:2WD走行
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00031">
+</a>
+<div>3-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>前進減速時は、ブレーキ特性により後輪の回転数が前輪の回転数を上回るため、リヤ オイル ポンプの回転数がフロント オイル ポンプの回転数を上回る。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00032">
+</a>
+<div>3-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>リヤ オイル ポンプによってオイル ストレーナより吸い上げられたオイルは、チェック バルブAを通り吸入·吐出される。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00033">
+</a>
+<div>3-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>リヤ オイル ポンプより吐出されたオイルは、再びリヤ オイル ポンプに吸入され循環する。よってピストン室には、油圧は発生しないため、クラッチAssy.は接続されず、後輪の駆動は行わない。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<span style="display:none" id="imgId3">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03626">
+</a>
+<div>
+<script src="../js/1726_2.0_jpn_9507820_2.0.js">
+</script>
+</div>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>
+<font style="font-weight:normal;">
+後退発進·加速時:4WD走行
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00041">
+</a>
+<div>4-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>後退発進·加速時や滑りやすい路面などで、前輪の回転数が後輪の回転数を上回った場合、フロント オイル ポンプの回転数がリヤ オイル ポンプの回転数を上回ることにより、油圧が発生する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00042">
+</a>
+<div>4-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>後退時オイル ポンプは逆回転するが、フロント オイル ポンプによってオイル ストレーナより吸い上げられたオイルは、チェック バルブAとリヤ オイル ポンプを通りフロント オイル ポンプに吸入·吐出される。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00043">
+</a>
+<div>4-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>フロント オイル ポンプより吐出され、リヤ オイル ポンプの吸入量を上回ったオイルは、チェック バルブFを通り、ピストン室を介して2つのオリフィスで調圧される。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00044">
+</a>
+<div>4-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>油圧によってクラッチ ピストンを押付け、クラッチAssy.内部が接続されることによりプロペラ シャフトを介してトランスミッションからの駆動力を後輪に伝達する。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<span style="display:none" id="imgId4">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03627">
+</a>
+<div>
+<script src="../js/1726_2.0_jpn_9507821_2.0.js">
+</script>
+</div>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>
+<font style="font-weight:normal;">
+後退定速走行時:2WD走行
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00051">
+</a>
+<div>5-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>後退定速走行時は、前輪と後輪の回転数は同じであるため、フロント オイル ポンプとリヤ オイル ポンプに回転差は発生しない。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00052">
+</a>
+<div>5-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>後退時オイル ポンプは逆回転するが、フロント オイル ポンプより吐出されたオイルはリヤ オイル ポンプに吸入され、リヤ オイル ポンプより吐出されたオイルは再び、フロント オイル ポンプに吸入され循環する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00053">
+</a>
+<div>5-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>フロント オイル ポンプとリヤ オイル ポンプとの容量の差で生じた余剰オイルは、少量ながらもチェック バルブEを通りピストン室に達するが、油圧が低いためクラッチ ピストンは動かず後輪の駆動は行わない。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<span style="display:none" id="imgId5">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03628">
+</a>
+<div>
+<script src="../js/1726_2.0_jpn_9507822_2.0.js">
+</script>
+</div>
+<a name="i00060">
+</a>
+<ol>
+<li value="6">
+<div>
+<font style="font-weight:normal;">
+後退減速時:4WD走行
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00061">
+</a>
+<div>6-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>後退減速時はブレーキ特性により後輪の回転数が前輪の回転数を上回るため、リヤ オイル ポンプの回転数がフロント オイル ポンプの回転数を上回る。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00062">
+</a>
+<div>6-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>後退時オイル ポンプは逆回転するが、リヤ オイル ポンプによりオイル ストレーナから吸い上げられたオイルは、チェック バルブBとCを通りリヤ オイル ポンプに吸入される。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00063">
+</a>
+<div>6-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>リヤ オイル ポンプから吐出され、フロント オイル ポンプの吸入量を上回った余剰オイルはチェック バルブEを通り、ピストン室を介して2つのオリフィスで油圧を調整される。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00064">
+</a>
+<div>6-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>油圧によってクラッチ ピストンを押付け、クラッチAssy.内部が接続されることによりプロペラ シャフトを介してトランスミッションからの駆動力を後輪に伝達する。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<span style="display:none" id="imgId6">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03629">
+</a>
+<div>
+<script src="../js/1726_2.0_jpn_9507823_2.0.js">
+</script>
+</div>
+</div></div>
+</body>
+</html>

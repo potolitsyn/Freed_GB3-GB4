@@ -1,0 +1,349 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00H46400000000NNNCAXT01(1855_2.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   _prSetPrtFontSize();
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("印刷設定をA4横向きにしてください。");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      var orgWid;
+
+      orgWid = parent.document.body.offsetWidth + 8;
+      parent.resizeBy(paper_wid-orgWid,0);
+
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      _prSetDispFontSize();
+      parent.resizeBy(orgWid-paper_wid,0);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="system_desc_sub_title">
+<font style="font-weight:bold;">
+SRSエアバッグ システム
+</font>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<a name="i02801">
+</a>
+<a name="i02801">
+</a>
+<div>車両の前方向衝突時、車体の衝撃吸収構造に加えシート ベルト プリテンショナによる身体拘束装置と併用して、前席乗員の頭や胸への衝撃を緩和する機能を持っている。
+</div>
+<a name="i02901">
+</a>
+<br>
+<div class="topic_title">シート ベルト プリテンショナ
+</div>
+<br>
+<div>衝突時にシート ベルトを瞬間的に引き込み、乗員をシートにしっかりと固定することでシート ベルトの効果をいっそう高める機能がある。このシート ベルト プリテンショナは、シート ベルトのみで乗員の拘束性を確保できる低速衝突時には単独で作動し、低中速から高速衝突時においてはSRSエアバッグと連動することで、より一層の乗員拘束性と保護性能を確保する。
+</div>
+<span style="display:none" id="imgId1">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03613">
+</a>
+<div>
+<script src="../js/1855_2.0_jpn_9507500_2.0.js">
+</script>
+</div>
+<a name="i02902">
+</a>
+<br>
+<div class="topic_title">SRSエアバッグ作動プロセス
+</div>
+<br>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>衝突により発生した衝撃力は、車体構造部材を伝わり、SRSユニット内のGセンサ、フロント インパクト センサおよびセーフィング駆動回路に各々入力される。
+</div>
+</li>
+</ol>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>フロント インパクト センサは、衝撃を電気信号に変換し、その信号をSRSユニット内の衝突判定回路およびセーフィング駆動回路へ送る。同時にSRSユニット内のGセンサは、入力された衝撃を電気信号に変換して波形処理し、衝突判定回路へ送る。
+</div>
+</li>
+</ol>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>衝突判定回路では、フロント インパクト センサおよびGセンサの出力が設定されたしきい値以上になると、作動信号が出力される。このとき、SRSユニット内のセーフィング駆動回路の出力が設定されたしきい値以上であれば、点火回路に電流が流れ、SRSエアバッグおよびシート ベルト プリテンショナが作動（展開）する。
+</div>
+</li>
+</ol>
+<span style="display:none" id="imgId2">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03614">
+</a>
+<div>
+<script src="../js/1855_2.0_jpn_9507501_2.0.js">
+</script>
+</div>
+<a name="i02903">
+</a>
+<br>
+<div class="topic_title">SRSエアバッグが作動する条件
+</div>
+<br>
+<div>固定壁の場合
+</div>
+<div>きわめて厚いコンクリートの固定された壁に真正面から衝突をした場合、約20－30km/h以上の速度で作動するようになっている。
+</div>
+<span style="display:none" id="imgId3">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03615">
+</a>
+<div>
+<script src="../js/1855_2.0_jpn_9507502_2.0.js">
+</script>
+</div>
+<div>車どうしの場合
+</div>
+<div>同じ車どうしが双方とも約20－30km/h以上で真正面から衝突した場合に作動する。また相手（同じ車）が止まっていて真正面から衝突した場合、約2倍の速度で作動する。ただし、衝突する物体および条件（角度など）により作動条件は異なる。
+</div>
+<span style="display:none" id="imgId4">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03616">
+</a>
+<div>
+<script src="../js/1855_2.0_jpn_9507503_2.0.js">
+</script>
+</div>
+<a name="i02904">
+</a>
+<br>
+<div class="topic_title">SRSエアバッグが作動しない場合
+</div>
+<br>
+<div>SRSエアバッグはイグニッション スイッチがON（
+<font style="font-weight:normal;">
+II
+</font>
+）の状態で前方左右30°以内の方向から衝撃を受けた場合に作動するようになっている。そのため、図のようなケースではSRSエアバッグが展開しても乗員保護の効果が無いので作動しない。ただし、衝突状況によりSRSエアバッグが作動することもある。
+</div>
+<span style="display:none" id="imgId5">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03617">
+</a>
+<div>
+<script src="../js/1855_2.0_jpn_9507504_2.0.js">
+</script>
+</div>
+<a name="i02905">
+</a>
+<br>
+<div class="topic_title">SRSエアバッグが作動しないことがある場合
+</div>
+<br>
+<div>乗員の受ける衝撃の大きさによってSRSエアバッグが作動するようになっているので、車両の損傷状況の大小とSRSエアバッグの作動は必ずしも一致しない。
+</div>
+<span style="display:none" id="imgId6">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03618">
+</a>
+<div>
+<script src="../js/1855_2.0_jpn_9507505_2.0.js">
+</script>
+</div>
+</div></div>
+</body>
+</html>

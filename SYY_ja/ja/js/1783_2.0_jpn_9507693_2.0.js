@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:417.36px;\" coordsize=\"950.00,417.36\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:417.36px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/1783_2.0_jpn_9507693_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:417.36px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:270.649377px;top:17.009215px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">高性能脱臭部<br>(活性炭層)</font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:371.084156px;top:57.531833px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">補強部<br>(抗アレルゲン層)</font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:451.370337px;top:111.341164px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">B</font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:447.451985px;top:135.283119px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">C</font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:190.348314px;top:55.045601px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">除塵部<br>(帯電層)</font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:70.010941px;top:85.797744px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">A</font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:118.390563px;top:233.693347px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">AIR</font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:273.685177px;top:389.676357px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">A/Cフィルタ</font></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:559.153936px;top:89.297199px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">A:アレルゲン等を含む粒子→フィルタで捕集<br>B:臭いの元になるガス→活性炭層で処理<br>C:細かな、まれに抜け出す粒子→アレルフリーで分解</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

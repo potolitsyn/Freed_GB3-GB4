@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group102\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475.00px; height:150.20px;\" coordsize=\"475.00,150.20\">");
+write("<v:rect id=\"rect102\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:475.00px;height:150.20px;\">");
+write("<img id=\"img102\" name=\"PrtImgId\" src=\"../img/2451_3.0_jpn_9507120_3.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475.00px;height:150.20px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p102_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:70.168345px;top:38.006675px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.4pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.5s</font></nobr>");
+write("</p>");
+write("<p id=\"p102_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:131.336496px;top:114.642173px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.4pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">1サイクル</font></nobr>");
+write("</p>");
+write("<p id=\"p102_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:69.280264px;top:14.076154px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.4pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">上位</font></nobr>");
+write("</p>");
+write("<p id=\"p102_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:35.754575px;top:38.006675px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.4pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">1s</font></nobr>");
+write("</p>");
+write("<p id=\"p102_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:115.532631px;top:38.006675px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.4pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">1s</font></nobr>");
+write("</p>");
+write("<p id=\"p102_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:149.946401px;top:38.006675px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.4pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">0.5s</font></nobr>");
+write("</p>");
+write("<p id=\"p102_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:206.176622px;top:38.006675px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.4pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">2s</font></nobr>");
+write("</p>");
+write("<p id=\"p102_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:149.946401px;top:14.076154px;font-weight:normal;font-size:8.2pt;color:black;\" prt_font_size=\"9.4pt\" disp_font_size=\"8.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">下位</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

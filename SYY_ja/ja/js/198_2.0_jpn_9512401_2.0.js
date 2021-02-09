@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group6\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:545.34px;\" coordsize=\"950.00,545.34\">");
+write("<v:rect id=\"rect6\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:545.34px;\">");
+write("<img id=\"img6\" name=\"PrtImgId\" src=\"../img/198_2.0_jpn_9512401_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:545.34px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p6_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:710.225172px;top:449.841248px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">アクセル ペダル、<br>アクセル ペダル <br> ポジション センサ<br><font style=\"font-weight:normal;\"><a title=\"アクセル ペダル ポジション センサの点検\" href=\"javascript:CtsProc('0','000000000001773','')\">点検</a><br><a title=\"アクセル ペダル、アクセル ペダル ポジション センサの脱着\" href=\"javascript:CtsProc('0','000000000001772','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p6_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:524.707240px;top:491.660386px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ブレーキ スイッチ<br><font style=\"font-weight:normal;\">ブレーキ スイッチ信号<br><a title=\"ブレーキ スイッチ信号故障診断\" href=\"javascript:CtsProc('0','000000000001871','')\">故障診断</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p6_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:168.792367px;top:447.668636px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">データ リンク カプラ<br><font style=\"font-weight:normal;\"><a title=\"データ リンク回路故障診断\" href=\"javascript:CtsProc('0','000000000001836','')\">データ リンク回路<br> 故障診断</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p6_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:735.923623px;top:171.076159px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">DBWリレー</font></nobr>");
+write("</p>");
+write("<p id=\"p6_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:700.819770px;top:30.177160px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">LAFセンサ リレー</font></nobr>");
+write("</p>");
+write("<p id=\"p6_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:729.933106px;top:109.338980px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">PGM-FIメイン リレー1</font></nobr>");
+write("</p>");
+write("<p id=\"p6_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:734.592397px;top:209.104161px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">PGM-FIメイン リレー2</font></nobr>");
+write("</p>");
+write("<p id=\"p6_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:798.766177px;top:305.982247px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ELD<br>(エレクトリカル <br>ロード ディテクタ)<br><font style=\"font-weight:normal;\"><a title=\"ELDの脱着\" href=\"javascript:CtsProc('0','000000000001838','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p6_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:715.607956px;top:69.109202px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">イグニッション コイル リレー</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

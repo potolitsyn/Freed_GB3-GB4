@@ -1,0 +1,858 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00J46635300000NNNFRXT01(1255_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">Hondaスマート キー システム症状別故障診断
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i01601">
+</a>
+<div class="procedure_sub_title">点検前の確認事項
+</div>
+<div>Hondaスマート キー システムの点検を行う前に、次の項目を確認し、該当している場合は次の対処をする。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i02901">
+</a>
+<div class="procedure_sub_title">システムに関する点検
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>Hondaスマート キー システムのDTCが発生している場合、該当しているDTC故障診断を行う。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>他システムでDTCが発生している場合、他システムのDTCの故障診断を行う。
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i02902">
+</a>
+<div class="procedure_sub_title">携帯、保管方法に関する点検
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>別のHondaスマート キーと一緒に収められていないか確認する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>携帯電話や無線機などの通信機器や、ノート パソコンなどと一緒に携帯されていないか確認する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>インストルメント パネル上やカーゴ エリア内、グローブ ボックスなどの各種小物入れにHondaスマート キーが置かれていないか確認する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>Hondaスマート キーが金属に触れていたり、覆われているか確認する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>Hondaスマート キーが硬貨などの金属類と一緒に財布などに収められていないか確認する。
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i02903">
+</a>
+<div class="procedure_sub_title">使用環境に関する点検
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>付近に強い電波を発する設備がある場合、場所を移動する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>付近で他の車両がキーレスエントリを使用している場合、場所を移動する。
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i02904">
+</a>
+<div class="procedure_sub_title">車両に関する点検
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>バッテリが充分に充電されているか確認する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>車両に純正品以外の装備品が装着されている場合、装備品の作動を停止させる。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>S-netラインに電装品が接続されている場合、接続されている電装品を取外す。
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i02905">
+</a>
+<div class="procedure_sub_title">Hondaスマート キーに関する点検
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>Hondaスマート キーの電池残量が無い場合、電池を交換する。
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+電池残量確認方法:HDSの‘‘スマート インフォメーション’’の‘‘スマート キー バッテリ電圧’’で確認できる。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>車種に対応しないHondaスマート キーが使用されていないか確認する。
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i01602">
+</a>
+<div class="procedure_sub_title">電源系統
+</div>
+<div>Hondaスマート キー システムの電源系統（常時電源、IG1電源、アース）が断線、短絡しているときの動作を表に示す。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03613">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006884','1');">
+<img width="143" src="../tn/1255_3.0_jpn_9508802_3.0_tn.png">
+</a>
+</span>
+</div>
+<a name="i03614">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006884','2');">
+<img width="143" src="../tn/1255_3.0_jpn_9508803_3.0_tn.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i01602">
+</a>
+<div class="procedure_sub_title">電源系統
+</div>
+<div>Hondaスマート キー システムの電源系統（常時電源、IG1電源、アース）が断線、短絡しているときの動作を表に示す。
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/1255_3.0_jpn_9508802_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+<span style="display:none" id="imgId2">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/1255_3.0_jpn_9508803_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i01603">
+</a>
+<div class="procedure_sub_title">スマート警告灯
+</div>
+<div>Hondaスマート キー システムの状態がスマート警告灯で確認することが可能である。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i02906">
+</a>
+<div class="procedure_sub_title">点灯パターン1（バルブ チェック）
+</div>
+<div>乗員がスマート警告灯の不点灯がないことを確認するために、2秒間、イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にしたときスマート警告灯が点灯する。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i02907">
+</a>
+<div class="procedure_sub_title">点灯パターン2（イグニッション スイッチOFF時故障検知）
+</div>
+<div>イグニッション スイッチをOFFにしたとき、Hondaスマート キー システムのDTCを検知した場合に、3秒間スマート警告灯が点灯する。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i02908">
+</a>
+<div class="procedure_sub_title">点灯パターン3（イグニッション スイッチON（II）時故障検知）
+</div>
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にしたとき、Hondaスマート キー システムのDTCを検知した場合に、スマート警告灯が点灯する。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i02909">
+</a>
+<div class="procedure_sub_title">点灯パターン4（現在故障保管時）
+</div>
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にしたとき、Hondaスマート キー システムのDTCを保管している場合に、スマート警告灯が点灯する。
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+B-CANバス オフ時は、警告灯は点灯しない。
+</font>
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03615">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006889','1');">
+<img width="143" src="../tn/1255_3.0_jpn_9508804_3.0_tn.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i02909">
+</a>
+<div class="procedure_sub_title">点灯パターン4（現在故障保管時）
+</div>
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にしたとき、Hondaスマート キー システムのDTCを保管している場合に、スマート警告灯が点灯する。
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+B-CANバス オフ時は、警告灯は点灯しない。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/1255_3.0_jpn_9508804_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03612">
+</a>
+<a name="i01604">
+</a>
+<div class="procedure_sub_title">症状別故障診断の進め方
+</div>
+<div>不具合現象をもとに、優先順位の高いものから作業、点検を実施する。
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+DTCが表示されている場合は、該当するDTC故障診断を行う。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+HDSにて、‘‘Hondaスマート キー システム’’の‘‘セルフ チェック’’を行い、故障がある場合は先に該当部位の点検を行う。
+</font>
+</div>
+</td>
+</tr>
+</table>
+<a name="i03616">
+</a>
+<div>
+<table width="100%" class="Viewer" frame="border">
+<col width="9.2%">
+<col width="90.8%">
+<thead valign="top">
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>優先順位
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>不具合現象
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="i03617">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - Hondaスマート キーま..." href="javascript:CtsProc('0','000000000002723','')">Hondaスマート キーまたはキーレス操作でドア/テールゲートが開錠、施錠できない
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="i03618">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - Hondaスマート キーま..." href="javascript:CtsProc('0','000000000002723','')">ノブ式イグニッション操作ができない
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="i03619">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - Hondaスマート キーま..." href="javascript:CtsProc('0','000000000002724','')">Hondaスマート キーまたはキーレス操作が一部できない（Hondaスマート キーでのノブ式イグニッション操作は可能）
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="i03620">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - 内蔵イモビライザ キーでエ..." href="javascript:CtsProc('0','000000000002727','')">内蔵イモビライザ キーでエンジン始動できない（Hondaスマート キーでのエンジン始動は可能）
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="i03621">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - スマート警告灯が点灯または..." href="javascript:CtsProc('0','000000000002725','')">スマート警告灯が点灯または消灯しない
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="i03622">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - イモビライザ インジケータ..." href="javascript:CtsProc('0','000000000002726','')">イモビライザ インジケータが点灯または消灯しない
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="i03623">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - アンサ バック ブザーが吹..." href="javascript:CtsProc('0','000000000002728','')">アンサ バック ブザーが吹鳴しない
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="i03624">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - アンサ バック ブザーが吹..." href="javascript:CtsProc('0','000000000002728','')">ハザード ライトによるアンサ バックをしない
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="center">
+<div>7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" valign="top" align="left">
+<div>
+<a name="i03625">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - キー抜忘れ警報が鳴らない" href="javascript:CtsProc('0','000000000002729','')">キー抜忘れ警報が鳴らない
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

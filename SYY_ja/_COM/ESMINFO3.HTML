@@ -1,0 +1,66 @@
+﻿<!DOCTYPE HTML PUBLIC"-//W3C//DTD HTML 4.01 Frameset//EN""http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="ja">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link href="./ESMINFO.CSS" rel="stylesheet">
+<script src="./JIKOHINFO.JS"></script>
+<title>Honda ESM Information List.</title>
+<script>
+<!--
+var Info=new Array;
+function FSI(date,text){
+   var data=new Array;
+   data.Date=date;
+   data.Text=text;
+   return(data);
+}
+function InsertInfo(){
+   var i;
+   with(document){
+      if(Info.length==0){
+         write("<p>現在インフォメーションはありません。</p>");
+         return;
+      }
+      write("<table border=\"1\" cellpadding=\"2\" "+"style=\"margin-left:1em;margin-top:0.4em;font-size:small;\">");
+      write("<thead>");
+      write("<tr><th valign=\"top\">発行日</th><th valign=\"top\">内容</th></tr>");
+      write("</thead><tbody>");
+      for(i=0;i<Info.length;++i){
+         write("<tr><td valign=\"top\">&nbsp;"+Info[i].Date+"&nbsp;</td><td valign=\"top\">&nbsp;"+Info[i].Text+"&nbsp;</td></tr>");
+      }
+      
+      write("</tbody></table>");
+   }
+}
+if(typeof(SetInfo)=="function"){
+   SetInfo();
+}
+//-->
+</script>
+</head>
+<body id="NEWS">
+<br>
+<table cellspacing="0" cellpadding="0" width="100%">
+<br>
+<tr>
+     <td>
+     <p align="center"><img src="./JPG/FRONT_PAGE_1.JPG"></p>
+     </td>
+</tr>
+</table>
+<script></script>
+</body>
+</html>
+<br>
+<table cellspacing="0" cellpadding="0" width="100%">
+<br>
+<tr>
+     <td>
+     <p align="center"><img src="./JPG/FRONT_PAGE_2.JPG"></p>
+     </td>
+</tr>
+</table>
+<script></script>

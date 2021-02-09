@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:873.13px;\" coordsize=\"950.00,873.13\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:873.13px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/2766_2.0_jpn_9510696_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:873.13px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:179.197478px;top:8.609102px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">テールゲート ハンドル<br><font style=\"font-weight:normal;\"><a title=\"テールゲート ハンドルの脱着\" href=\"javascript:CtsProc('0','000000000001623','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:607.928591px;top:721.398502px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ボンネット ロック<br><font style=\"font-weight:normal;\"><a title=\"ボンネット ロックの脱着 [11 助手席リフトアップ車、車椅子仕様車を除く ]\" href=\"javascript:CtsProc('0','000000000001578','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:410.789032px;top:775.244668px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ボンネット オープナ ケーブル<br><font style=\"font-weight:normal;\"><a title=\"ボンネット オープナ ケーブルの脱着 [11 助手席リフトアップ車、車椅子仕様車を除く ]\" href=\"javascript:CtsProc('0','000000000001581','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:6.430642px;top:582.389884px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">テールゲート ロック<br><font style=\"font-weight:normal;\"><a title=\"テールゲート ロックの脱着 [車椅子仕様車を除く]\" href=\"javascript:CtsProc('0','000000000001625','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:242.656344px;top:834.246187px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ボンネット オープナ<br><font style=\"font-weight:normal;\"><a title=\"ボンネット オープナの脱着\" href=\"javascript:CtsProc('0','000000000001579','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:597.704502px;top:182.750949px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スライド ドア ハーフ ストッパ<br><font style=\"font-weight:normal;\"><a title=\"スライド ドア ハーフ ストッパ/スライド ドア ハーフ ストッパ レシーバの脱着\" href=\"javascript:CtsProc('0','000000000001574','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:333.673911px;top:60.249372px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スライド ドア ハーフ ストッパ レシーバ<br><font style=\"font-weight:normal;\"><a title=\"スライド ドア ハーフ ストッパ/スライド ドア ハーフ ストッパ レシーバの脱着\" href=\"javascript:CtsProc('0','000000000001574','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:502.414830px;top:116.995424px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スライド ドア ハーフ ストッパ ケーブル<br><font style=\"font-weight:normal;\"><a title=\"スライド ドア ハーフ ストッパ/スライド ドア ハーフ ストッパ レシーバの脱着\" href=\"javascript:CtsProc('0','000000000001574','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("</v:group>");
+}

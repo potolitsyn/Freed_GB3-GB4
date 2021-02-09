@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475.00px; height:144.50px;\" coordsize=\"475.00,144.50\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:475.00px;height:144.50px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/2445_3.0_jpn_9507167_3.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475.00px;height:144.50px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:240.288094px;top:111.657768px;font-weight:normal;font-size:12.7pt;color:black;\" prt_font_size=\"13.8pt\" disp_font_size=\"12.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi2\" style=\"height:17.0px;\" src=\"../img/symbol/SymbolGaiji00060.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:371.742820px;top:112.396835px;font-weight:normal;font-size:12.7pt;color:black;\" prt_font_size=\"13.8pt\" disp_font_size=\"12.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi2\" style=\"height:17.0px;\" src=\"../img/symbol/SymbolGaiji00060.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:142.897615px;top:18.357836px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">端子</font></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:48.539668px;top:48.701556px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ポジション</font></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:40.725873px;top:110.599533px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"9.8pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スイッチ シャフトを離す</font></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:41.430764px;top:79.771598px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"9.8pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スイッチ シャフトを押す</font></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:246.120695px;top:32.554257px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">1</font></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:378.931211px;top:32.184725px;font-weight:normal;font-size:11.2pt;color:black;\" prt_font_size=\"12.3pt\" disp_font_size=\"11.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\">2</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

@@ -1,0 +1,445 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX1E0000000K0061NNNBAXT00(2875_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 2;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	var para_val = window.location.hash;
+	if(para_val.charAt(0) == '#') {
+		para_val = para_val.substring(1,para_val.length);
+	}
+	var   imgName;
+	imgName = "imgId" + dispNum;
+	document.all(imgName).style.display = "none";
+	if(para_val.length == 0) {
+		dispNum = 1;
+	}
+	else{
+		dispNum = parseInt(para_val);
+		if(isNaN(dispNum) == true) {
+			dispNum = 1;
+		}
+		if(dispNum <= 0) {
+			dispNum = 1;
+		}
+	}
+	imgName = "imgId" + dispNum;
+	document.all(imgName).style.display = "block";
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function NextFunc()
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace("ZOOM000000000001984.html#000?"+strPara);
+	}
+	else{
+		window.location.replace("ZOOM000000000001984.html");
+	}
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+function imgChange()
+{
+var   imgName;
+      imgName = "imgId" + dispNum;
+      document.all(imgName).style.display = "none";
+      dispNum++;
+     if(dispNum > totalImg) {
+         dispNum = 1;
+      }
+      imgName = "imgId" + dispNum;
+      document.all(imgName).style.display = "block";
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV_DISABLE.PNG" onClick="BackFunc()" disabled>
+<input type="image" src="../img/GL_NEXT.PNG" onClick="NextFunc()">
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">作業上の注意
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03674">
+</a>
+<a name="i03751">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226722_1.0.png">
+<div>エアバッグ システム関連部品の作業を行う場合は、SRSエアバッグ システムの「作業上の注意」および「構成図」を併せて参照すること。
+</div>
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="i03760">
+</a>
+<a title="SRSエアバッグ システム作業上の注意" href="javascript:CtsProc('2','000000000002657','')">作業上の注意
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="i03761">
+</a>
+<a title="SRSエアバッグ システム構成図" href="javascript:CtsProc('2','000000000002661','')">構成図
+</a>
+</div>
+</td>
+</tr>
+</table>
+<a name="i01601">
+</a>
+<div class="servinfosub_title">全般的な注意事項
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>この車は全車に運転席/助手席用エアバッグおよびシート ベルト プリテンショナを装備し、仕様により、サイド エアバッグおよびサイド カーテン エアバッグを装備している車両もある。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>SRSエアバッグは運転席/助手席に装着され、運転席用はステアリング ホイールに、助手席用はグローブ ボックス上部に「SRS AIRBAG」と表示されている。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>サイド エアバッグ（装備車）は運転席/助手席に装着され、シート バック トリム カバーの外側表面に「SIDE AIRBAG」と表示されている。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>サイド カーテン エアバッグ（装備車）は左右ルーフに装着され、フロント ピラー ガーニッシュ、クォータ ピラー ガーニッシュまたはリヤ ピラー ガーニッシュの外側表面に「SIDE CURTAIN AIRBAG」と表示されている。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>SRSエアバッグ システムは、SRSユニット、ケーブル リール、OPDSユニット、OPDSセンサ、運転席/助手席用エアバッグ、運転席/助手席用サイド エアバッグ、右/左側サイド カーテン エアバッグ、運転席/助手席用シート ベルト プリテンショナ、右/左側フロント インパクト センサ、右側/左側サイド インパクト センサ1、2などから構成されている。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>SRSエアバッグ システムでは黄色のカプラが使用され、他のシステムのワイヤ ハーネス/カプラと識別している。
+</div>
+</td>
+</tr>
+</table>
+<div>SRSエアバッグ システム関連の整備/点検を正しい手順、方法で作業を行わなかった場合、エアバッグの誤作動によりけがをしたり、エアバッグ システムが正常に機能しなくなることがある。次の事項をよく読み、指示に従って作業を進めること。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>次の作業でSRSエアバッグ システムの部品を取扱う（取外し、点検など）場合は、SRSエアバッグ システムの「作業上の注意」に従うこと。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30">
+</td>
+<td>
+<table class="list2_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>エアバッグ システムの点検、修理。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>インストルメント パネルの脱着、ステアリング コラムの脱着作業などでエアバッグ システムの部品の接続を外す必要がある場合。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">-
+</td>
+<td>
+<div>エアバッグ システムの部品を保管する場合。
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）時、またはイグニッション スイッチOFF後3分以内はSRSユニット、フロント インパクト センサおよびサイド インパクト センサ1、2に衝撃を与えないこと。エアバッグ、サイド エアバッグ、サイド カーテン エアバッグまたはシート ベルト プリテンショナなどが暴発する原因となる。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="i03749">
+</a>
+<a title="取付け" href="javascript:CtsProc('2','000000000000086','i02702')">ステアリング ギヤボックス、コラム ジョイントなど、ステアリング系の調整、交換を行う場合は、ケーブル リールのセンタリングを行うこと。
+</a>
+</div>
+<a name="i03678">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<div>
+<font style="font-weight:normal;">
+ステアリング ホイールに装着された運転席用エアバッグとSRSユニット間の電気回路は、ケーブル リールを介して接続されている。
+</font>
+</div>
+</img>
+</div>
+<a name="i03754">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226722_1.0.png">
+<div>センタリングを行わないとケーブル リールが断線しエアバッグ システムやホーンなどが機能しなくなり大変危険である。
+</div>
+</img>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>SRSエアバッグ システム以外の修理作業を行う場合、エアバッグ システムのワイヤ ハーネスをかみ込んだり、当システムの部品と干渉したりしないように取付けること。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="i03747">
+</a>
+<a title="廃棄処理時注意を必要とする部品" href="javascript:CtsProc('2','000000000000220','')">運転席/助手席用エアバッグ、シート ベルト プリテンショナ、サイド エアバッグおよびサイド カーテン エアバッグを廃棄する場合は、必ずこれらを作動（展開）させてから廃棄すること。
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+<input onClick="imgChange()" type="image" src="../img/GL_NEXT.PNG" align="right">
+<br clear="right">
+<span style="display:block" id="imgId1">
+<div>
+<script src="../js/2875_3.0_jpn_9513615_3.0.js">
+</script>
+</div>
+</span>
+<span style="display:none" id="imgId2">
+<div>
+<script src="../js/2875_3.0_jpn_9513616_3.0.js">
+</script>
+</div>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

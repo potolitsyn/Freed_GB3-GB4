@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group12\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:1092.14px;\" coordsize=\"950.00,1092.14\">");
+write("<v:rect id=\"rect12\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:1092.14px;\">");
+write("<img id=\"img12\" name=\"PrtImgId\" src=\"../img/2260_2.0_jpn_9506897_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:1092.14px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p12_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:344.249893px;top:164.910764px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ヒューズ ホルダ</font></nobr>");
+write("</p>");
+write("<p id=\"p12_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:735.449644px;top:271.518718px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">L.パワー スライド ドア<br>コントロール ユニット</font></nobr>");
+write("</p>");
+write("<p id=\"p12_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:40.017157px;top:84.670677px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">No.60(PSD MAIN)<br>(60A)ヒューズ<br>(ヒューズ ボックス)</font></nobr>");
+write("</p>");
+write("<p id=\"p12_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:63.967104px;top:126.124305px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">3</font></nobr>");
+write("</p>");
+write("<p id=\"p12_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:121.916287px;top:214.769727px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">赤</font></nobr>");
+write("</p>");
+write("<p id=\"p12_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:555.457976px;top:271.820625px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">青</font></nobr>");
+write("</p>");
+write("<p id=\"p12_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:351.506753px;top:200.697377px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">No.1(未使用)</font></nobr>");
+write("</p>");
+write("<p id=\"p12_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:357.272267px;top:257.740583px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">No.2(40A)</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

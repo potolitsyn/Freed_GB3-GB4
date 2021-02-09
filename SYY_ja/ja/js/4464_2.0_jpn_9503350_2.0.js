@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group10\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:764.35px;\" coordsize=\"950.00,764.35\">");
+write("<v:rect id=\"rect10\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:764.35px;\">");
+write("<img id=\"img10\" name=\"PrtImgId\" src=\"../img/4464_2.0_jpn_9503350_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:764.35px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p10_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:357.393525px;top:205.371080px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">右前輪の空転により<br>左前輪の駆動力が失われる</font></nobr>");
+write("</p>");
+write("<p id=\"p10_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:658.289025px;top:208.989538px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">右前輪のブレーキにより<br>駆動力を確保</font></nobr>");
+write("</p>");
+write("<p id=\"p10_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:101.757992px;top:252.324880px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">駆動力</font></nobr>");
+write("</p>");
+write("<p id=\"p10_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:278.748588px;top:122.864495px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">右前輪が低μ路を走行し空転が<br>発生。デファレンシャルの働きに<br>より左前輪の駆動力が失われる</font></nobr>");
+write("</p>");
+write("<p id=\"p10_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:579.557934px;top:123.582443px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">空転が発生している右前輪にブレー<br>キをかけ、グリップを確保すること<br>で左前輪の駆動力を確保する</font></nobr>");
+write("</p>");
+write("<p id=\"p10_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:823.864116px;top:256.575132px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">空転を抑えること<br>でグリップを確保</font></nobr>");
+write("</p>");
+write("<p id=\"p10_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:807.968562px;top:491.731823px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">空転を抑えるために<br>ブレーキをかける</font></nobr>");
+write("</p>");
+write("<p id=\"p10_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:484.744620px;top:364.209897px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">片輪が低μ路を<br>走行し空転する</font></nobr>");
+write("</p>");
+write("<p id=\"p10_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:83.493183px;top:123.582443px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">通常直進時</font></nobr>");
+write("</p>");
+write("<p id=\"p10_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:489.899546px;top:654.433200px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">低μ路</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

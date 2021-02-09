@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:274.12px;\" coordsize=\"950.00,274.12\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:274.12px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/4729_2.0_jpn_9502852_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:274.12px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:341.085967px;top:95.080204px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">コンパンダ</font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:181.214805px;top:26.555659px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">AVNユニットまたはオーディオ ユニット</font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:225.447125px;top:95.080204px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">音源入力</font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:516.804098px;top:95.080204px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">音量調節</font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:620.385170px;top:125.397594px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">増幅回路</font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:729.481827px;top:142.800852px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スピーカ</font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:341.441624px;top:171.045014px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">パルス交換</font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:202.377416px;top:171.045014px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.7pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">車速信号入力</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

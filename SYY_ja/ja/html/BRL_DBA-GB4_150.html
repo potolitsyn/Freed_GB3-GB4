@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+                      "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="ja">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<script src="../js/SieListFunc.js"></script>
+<script>
+<!--
+var tDT     = new Array;
+var cdInfo  = new Array;
+var trSel   = null;
+function SieTitleList()
+{
+  var i=0;
+  var j;
+  tDT[i++]=SieTitleItem("SYYXX00R000000K5326NNNYCXT00","000000000000225","webicon_072","溶接マーク","","","","");
+  tDT[i++]=SieTitleItem("SYYXX0XR000000K5326NNNYCXT00","000000000000226","webicon_072","溶接マーク","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX0XR000000K5327NNNYCXT00","000000000000227","webicon_072","寸法測定点/シーラ塗布位置","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX00R000000K5327NNNYCXT00","000000000000228","webicon_072","寸法測定点/シーラ塗布位置","","","","");
+  tDT[i++]=SieTitleItem("SYYXX1ER000000K5341NNNYCXT00","000000000000229","webicon_072","単位","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX00R000000K5341NNNYCXT00","000000000000230","webicon_072","単位","","","","");
+  tDT[i++]=SieTitleItem("SYYXX0XR000000K5341NNNYCXT00","000000000000231","webicon_072","単位","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX0TRJ1100000000NNNYCXT00","000000000003635","webicon_072","号機識別","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERJ1100000000NNNYCXT01","000000000003636","webicon_072","SRSエアバッグ システム装備車の作業上の注意","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERJ1100000000NNNYCXT02","000000000003637","webicon_072","号機識別","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRJ1100000000NNNYCXT02","000000000003638","webicon_072","ジャッキ アップ ポイント","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERJ1100000000NNNYCXT03","000000000003639","webicon_072","外観図/ホイール アライメント","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX00RJ1100000000NNNYCXT03","000000000003640","webicon_072","ジャッキ アップ ポイント","","","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRJ1100000000NNNYCXT03","000000000003641","webicon_072","外観図/ホイール アライメント","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX00RJ1100000000NNNYCXT04","000000000003642","webicon_072","リフト ポイント（サポート ポイント）","","","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRJ1100000000NNNYCXT04","000000000003643","webicon_072","ボディ構造概要","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERJ1100000000NNNYCXT04","000000000003644","webicon_072","ボディ構造概要","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERJ1100000000NNNYCXT05","000000000003645","webicon_072","高張力鋼板の使用","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRJ1100000000NNNYCXT05","000000000003646","webicon_072","ボディ補修部品の構成","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERJ1100000000NNNYCXT06","000000000003647","webicon_072","組付け部品の構成","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERJ1100000000NNNYCXT07","000000000003648","webicon_072","ボディ補修部品の構成","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX00RJ1100000000NNNYCXT10","000000000003649","webicon_072","高張力鋼板使用部位の修理上の注意","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RJ1100000000NNNYCXT11","000000000003650","webicon_072","SRSエアバッグ システム装備車の作業上の注意","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RJ1100000000NNNYCXT12","000000000003651","webicon_072","号機識別","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RJ1100000000NNNYCXT13","000000000003652","webicon_072","外観図/ホイール アライメント","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RJ1100000000NNNYCXT14","000000000003653","webicon_072","ボディ構造概要","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RJ1100000000NNNYCXT15","000000000003654","webicon_072","高張力鋼板の使用","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RJ1100000000NNNYCXT16","000000000003655","webicon_072","組付け部品の構成","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RJ1100000000NNNYCXT17","000000000003656","webicon_072","ボディ補修部品の構成","","","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRK1100000000NNNYCXT01","000000000003657","webicon_072","外装色","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX00RK1100000000NNNYCXT01","000000000003658","webicon_072","塗装上の注意","","","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERK1100000000NNNYCXT01","000000000003659","webicon_072","塗装色","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX00RK1100000000NNNYCXT02","000000000003660","webicon_072","量産車の塗装","","","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERK1100000000NNNYCXT02","000000000003661","webicon_072","外装色","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRK1100000000NNNYCXT02","000000000003662","webicon_072","外装樹脂部品の材質","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERK1100000000NNNYCXT03","000000000003663","webicon_072","外装樹脂部品の材質","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX00RK1100000000NNNYCXT05","000000000003664","webicon_072","樹脂部品の材質と特徴","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RK1100000000NNNYCXT07","000000000003665","webicon_072","塗装色","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RK1100000000NNNYCXT08","000000000003666","webicon_072","外装色","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RK1100000000NNNYCXT09","000000000003667","webicon_072","外装樹脂部品の材質","","","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERL1100000000NNNYDXT01","000000000003668","webicon_072","フロント バルクヘッドの取外し","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRL1100000000NNNYDXT01","000000000003669","webicon_072","テールゲート エクステンションの取付け","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRL1100000000NNNYDXT02","000000000003670","webicon_072","テールゲート エクステンションの取外し","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERL1100000000NNNYDXT02","000000000003671","webicon_072","フロント バルクヘッドの取付け","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRL1100000000NNNYDXT03","000000000003672","webicon_072","リヤ パネル/ロア フロア パネルの取外し","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERL1100000000NNNYDXT03","000000000003673","webicon_072","リヤ サイド アウタ パネルの取外し","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT03","000000000003674","webicon_072","フロント ホイールハウス/ダンパ ハウジングの取外し","","","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRL1100000000NNNYDXT04","000000000003675","webicon_072","リヤ パネル/ロア フロア パネルの取付け","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERL1100000000NNNYDXT04","000000000003676","webicon_072","リヤ サイド アウタ パネルの取付け","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT04","000000000003677","webicon_072","フロント ホイールハウス/ダンパ ハウジングの取付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT05","000000000003678","webicon_072","フロント サイド フレーム/アウトリガの取外し","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT06","000000000003679","webicon_072","フロント サイド フレーム/アウトリガの取付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT07","000000000003680","webicon_072","フロント ピラー アウタ パネルの取外し","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT08","000000000003681","webicon_072","フロント ピラー アウタ パネルの取付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT09","000000000003682","webicon_072","サイド シル アウタ パネルの取外し","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT10","000000000003683","webicon_072","サイド シル アウタ パネルの取付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT11","000000000003684","webicon_072","センタ ピラー アウタ パネルの取外し","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT12","000000000003685","webicon_072","センタ ピラー アウタ パネルの取付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT13","000000000003686","webicon_072","ルーフ パネルの取外し","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT14","000000000003687","webicon_072","ルーフ パネルの取付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT17","000000000003688","webicon_072","リヤ フロア/リヤ フレームの取外し","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT18","000000000003689","webicon_072","リヤ フロア/リヤ フレームの取付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT19","000000000003690","webicon_072","インシュレータ貼付け位置と大きさ","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT20","000000000003691","webicon_072","サイド シル エクステンションの取外し","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT21","000000000003692","webicon_072","サイド シル エクステンションの取付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT22","000000000003693","webicon_072","リヤ パネル/リヤ フロア エンド クロス メンバの取外し","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT23","000000000003694","webicon_072","リヤ パネル/リヤ フロア エンド クロス メンバの取付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT24","000000000003695","webicon_072","フロント バルクヘッドの取外し","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT25","000000000003696","webicon_072","フロント バルクヘッドの取付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT26","000000000003697","webicon_072","リヤ サイド アウタ パネルの取外し","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RL1100000000NNNYDXT27","000000000003698","webicon_072","リヤ サイド アウタ パネルの取付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRM1100000000NNNYDXT01","000000000003699","webicon_072","修正チャート - 平面図/側面図","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX0CRM1100000000NNNYDXT01","000000000003700","webicon_072","アンダ ボディ実測寸法 - 4WD車フロント フロアとリヤ フロア","","DBA-GB4","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERM1100000000NNNYDXT01","000000000003701","webicon_072","アッパ ボディ実測寸法 - フロント フェンダとバルクヘッド位置（非分解）","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERM1100000000NNNYDXT02","000000000003703","webicon_072","アッパ ボディ実測寸法 - エンジン ルーム","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRM1100000000NNNYDXT02","000000000003705","webicon_072","アッパ ボディ実測寸法 - ロア フロア パネル位置","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX0CRM1100000000NNNYDXT02","000000000003706","webicon_072","アンダ ボディ実測寸法 - 4WD車エンジン ルームとフロント フロア","","DBA-GB4","","");
+  tDT[i++]=SieTitleItem("SYYXX0CRM1100000000NNNYDXT03","000000000003707","webicon_072","修正チャート - 4WD車平面図/側面図","","DBA-GB4","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERM1100000000NNNYDXT03","000000000003709","webicon_072","アッパ ボディ実測寸法 - エンジン/トランスミッション マウント位置","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRM1100000000NNNYDXT03","000000000003710","webicon_072","アッパ ボディ実測寸法 - テールゲート オープニング","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRM1100000000NNNYDXT04","000000000003711","webicon_072","アンダ ボディ実測寸法 - ロア フロア メンバ位置","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERM1100000000NNNYDXT04","000000000003712","webicon_072","アッパ ボディ実測寸法 - ホイールハウス ロア メンバ位置","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERM1100000000NNNYDXT05","000000000003714","webicon_072","アッパ ボディ実測寸法 - ドア ヒンジ位置","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERM1100000000NNNYDXT06","000000000003715","webicon_072","アッパ ボディ実測寸法 - フロア","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT07","000000000003716","webicon_072","アッパ ボディ実測寸法 - フロント ウインド、ドア/テールゲート オープニング","","","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERM1100000000NNNYDXT07","000000000003717","webicon_072","アッパ ボディ実測寸法 - 組付け部品の合わせ建付け","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERM1100000000NNNYDXT08","000000000003718","webicon_072","アッパ ボディ実測寸法 - リヤ ピラー ガター/リヤ パネル位置","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT09","000000000003719","webicon_072","アンダ ボディ実測寸法 - サブ フレーム位置（非分解）","","","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERM1100000000NNNYDXT09","000000000003720","webicon_072","アッパ ボディ実測寸法 - スライド ドア レール ロア サポート位置","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT17","000000000003721","webicon_072","アンダ ボディ実測寸法 - サイド シル エクステンション位置","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT20","000000000003722","webicon_072","アッパ ボディ実測寸法 - フロント フェンダとバルクヘッド位置（非分解）","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT21","000000000003723","webicon_072","アッパ ボディ実測寸法 - エンジン ルーム","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT22","000000000003724","webicon_072","アッパ ボディ実測寸法 - エンジン/トランスミッション マウント位置","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT23","000000000003725","webicon_072","アッパ ボディ実測寸法 - ホイールハウス ロア メンバ位置","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT24","000000000003726","webicon_072","アッパ ボディ実測寸法 - ドア ヒンジ位置","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT25","000000000003727","webicon_072","アッパ ボディ実測寸法 - フロア","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT26","000000000003728","webicon_072","アッパ ボディ実測寸法 - スライド ドア レール ロア サポート位置","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT27","000000000003729","webicon_072","アッパ ボディ実測寸法 - リヤ ピラー ガター/リヤ パネル位置","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RM1100000000NNNYDXT28","000000000003730","webicon_072","アッパ ボディ実測寸法 - 組付け部品の合わせ建付け","","","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERN1100000000NNNYDXT01","000000000003731","webicon_072","シーリング個所 - エンジン ルーム/フロント ホイールハウス、ダンパ ハウジング","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRN1100000000NNNYDXT01","000000000003732","webicon_072","アンダコート/内面防錆 - アンダコート塗布個所","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX00RN1100000000NNNYDXT01","000000000003733","webicon_072","シーリング個所 - 作業上の注意","","","","");
+  tDT[i++]=SieTitleItem("SYYXX1ERN1100000000NNNYDXT02","000000000003734","webicon_072","アンダコート/内面防錆 - 内面防錆個所","","SPIKE","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRN1100000000NNNYDXT02","000000000003735","webicon_072","アンダコート/内面防錆 - 内面防錆個所","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX00RN1100000000NNNYDXT03","000000000003736","webicon_072","シーリング個所 - ダッシュボード アッパ、ダッシュボード ロア","","","","");
+  tDT[i++]=SieTitleItem("SYYXX0XRN1100000000NNNYDXT03","000000000003737","webicon_072","シーリング個所 - ロア フロア パネル、ロア フロア メンバ","","車椅子仕様車","","");
+  tDT[i++]=SieTitleItem("SYYXX00RN1100000000NNNYDXT04","000000000003738","webicon_072","シーリング個所 - フロント フロア","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RN1100000000NNNYDXT05","000000000003739","webicon_072","シーリング個所 - リヤ フロア","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RN1100000000NNNYDXT06","000000000003740","webicon_072","シーリング個所 - リヤ ホイールハウス","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RN1100000000NNNYDXT07","000000000003741","webicon_072","アンダコート/内面防錆 - 作業上の注意","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RN1100000000NNNYDXT08","000000000003742","webicon_072","アンダコート/内面防錆 - アンダコート塗布個所","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RN1100000000NNNYDXT10","000000000003743","webicon_072","シーリング個所 - リヤ ピラー ガター、リヤ パネル","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RN1100000000NNNYDXT11","000000000003744","webicon_072","シーリング個所 - ルーフ パネル、サイド アウタ パネル","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RN1100000000NNNYDXT12","000000000003745","webicon_072","シーリング個所 - エンジン ルーム/フロント ホイールハウス、ダンパ ハウジング","","","","");
+  tDT[i++]=SieTitleItem("SYYXX00RN1100000000NNNYDXT13","000000000003746","webicon_072","アンダコート/内面防錆 - 内面防錆個所","","","","");
+}
+function Fsl(strKey, strSct, strSc, strSys, strComp, strSitq, strKeywords)
+{
+  CreateConditionInfo(strKey.toUpperCase(), strSct, strSc, strSys, strComp, strSitq);
+  var displayCount = SetDisplayFlag(strKeywords);
+  with(document)
+  {
+    write("<html lang=\"ja\">\n");
+    write("<head>\n");
+    write("<meta name=\"author\" content=\"HONDA MOTOR Co.,Ltd.\">\n");
+    write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n");
+    write("<meta http-equiv=\"Content-Style-Type\" content=\"text/css\">\n");
+    write("<meta http-equiv=\"Content-Script-Type\" content=\"text/javascript\">\n");
+    write("<link href=\"../css/ViewerStyle.css\" rel=\"stylesheet\">\n");
+    write("<script>\n");
+    write("<!--\n");
+    write("function Chh(height)\n");
+    write("{\n");
+    write("   document.body.bottomMargin = 0;\n");
+    write("   setTimeout('ChhDelay('+height+')',10);\n");
+    write("}\n");
+    write("function ChhDelay(height)\n");
+    write("{\n");
+    write("   var  dataObj = document.getElementById(\"scroll\");\n");
+    write("   dataObj.style.height = height-dataObj.offsetTop;\n");
+    write("   dataObj.style.width = idTitle.clientWidth;\n");
+    write("}\n");
+    write("//-->\n");
+    write("<\/script>\n");
+    write("<\/head>\n");
+    write("<body class=\"MainBody\">\n");
+    write("<table class=\"SubTitle\" cellspacing=0 cellpadding=0 width=\"100%\">\n");
+    write("<tr>\n");
+    write("<td class=\"SubTitle-L\" nowrap></td>\n");
+    write("<td class=\"SubTitle\" nowrap><b>ボディ整備編　検索一覧</b></td>\n");
+    write("<td class=\"SubTitleComment\" nowrap></td>\n");
+    write("<td class=\"SubTitle-R\" nowrap>\n");
+    write("<table width=\"100%\" height=\"100%\" cellspacing=\"0\" cellpadding=\"0\"><tr><td valign=\"middle\">\n");
+    write("<a href=\"#\" onClick=\"javascript:parent.Cts('000000000000171','000?DBA-GB4,150');\"><img src=\"../img/ABBREVIATION.PNG\" alt=\"略 語 \" border=\"0\"></a>\n");
+    write("</td></tr></table>\n");
+    write("</td>\n");
+    write("</tr>\n");
+    write("</table>\n");
+  }
+  document.write("<div class=\"TableLayout\" style=\"overflow:auto;width:100%;display:block\">");
+  document.write("<table id=\"idTitle\" cellspacing=\"1\" width=\"100%\"><tr class=\"TableColumnTitle\" style=\"color:#FFFFFF;background-color:#999999;\">" +
+              "<td width=\"30\"></td>" +
+              "<td align=\"center\" style=\"font-size:medium\">タイトル</td>");
+  document.write("<td width=\"15\"></td></tr></table></div>");
+  document.write("<div class=\"TableLayout\" id=\"scroll\" style=\"overflow:auto;width:100%;height:5;display:block\">");
+  document.write("<table border=\"0\" cellpadding=\"0\" cellspacing=\"1\" width=\"100%\" style=\"table-layout:fixed\">");
+  if(displayCount == 0) {
+    document.write("<tr><td>該当するデータはありません。</td></tr>");
+  }
+  else {
+    for (i=0; i < tDT.length; ++i) {
+      if (tDT[i].Display == true) {
+        strEventClick = "javascript:parent.Cts('" + tDT[i].contentsNum + "','000?DBA-GB4,150')";
+          strText = tDT[i].Title;
+          if (tDT[i].ScSys.length != 0) {
+             strText += "(" + tDT[i].ScSys + ")";
+          }
+          if (tDT[i].Dgc.length != 0) {
+            strText += "(" + tDT[i].Dgc + ")";
+          }
+          document.write("<tr class=\"TableData\" style=\"padding-bottom:3px;\"><td width=\"30\">\n");
+          document.write("<span onClick=\"" + strEventClick + "\">" + 
+              "<img src=\"../img/" + tDT[i].Symbol + ".png\"" + "\" style=\"cursor:hand;\"></span></td>\n");
+          document.write("<td valign=\"top\">" +
+              "<a href=\"" + strEventClick + "\" style=\"font-size:small;\">" + strText + "</a></td></tr>\n");
+      }
+    }
+  }
+  with(document)
+  {
+    write("</table></div>");
+    write("</body>\n");
+    write("</html>\n");
+  }
+}
+function CreateList()
+{
+  var nNest = 1;
+  var strEventClick, strText, strIMG;
+  var i, j, k, n;
+  if (typeof(SieTitleList) != "function") {
+    return;
+  }
+  tDT.length = 0;
+  SieTitleList();
+}
+//-->
+</script>
+</head>
+<body id="TreeBody" topmargin="10" onLoad="javascript:parent.Old(this)">
+  <div><script>CreateList();</script></div>
+</body>
+</html>

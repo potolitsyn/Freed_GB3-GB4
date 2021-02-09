@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group9\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:409.01px;\" coordsize=\"950.00,409.01\">");
+write("<v:rect id=\"rect9\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:409.01px;\">");
+write("<img id=\"img9\" name=\"PrtImgId\" src=\"../img/4464_2.0_jpn_9503349_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:409.01px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p9_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:292.661699px;top:60.059919px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リヤ外輪車輪速度</font></nobr>");
+write("</p>");
+write("<p id=\"p9_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:670.648890px;top:60.161571px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リヤ外輪車輪速度</font></nobr>");
+write("</p>");
+write("<p id=\"p9_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:186.467298px;top:187.488192px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リヤ内輪車輪速度</font></nobr>");
+write("</p>");
+write("<p id=\"p9_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:558.632840px;top:187.836713px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リヤ内輪車輪速度</font></nobr>");
+write("</p>");
+write("<p id=\"p9_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:292.502401px;top:219.784542px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リヤ内輪/外輪液圧</font></nobr>");
+write("</p>");
+write("<p id=\"p9_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:732.529249px;top:273.108374px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リヤ内輪液圧</font></nobr>");
+write("</p>");
+write("<p id=\"p9_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:655.645835px;top:219.566716px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リヤ外輪液圧</font></nobr>");
+write("</p>");
+write("<p id=\"p9_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:213.446729px;top:327.535857px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リヤ独立EBD制御無</font></nobr>");
+write("</p>");
+write("<p id=\"p9_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:621.121431px;top:328.247422px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リヤ独立EBD制御有</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

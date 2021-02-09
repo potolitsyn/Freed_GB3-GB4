@@ -1,0 +1,1136 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX2JJ46183800000NNNFQXT09(5100_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">車いす電動ウインチ システム症状別故障診断 - 引込み作動ができない（少し引込んで停止する）
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i00001">
+</a>
+<div>
+<font style="font-weight:bold;">
+引込み作動ができない（少し引込んで停止する）
+</font>
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+点検時はホイール チェア ドライブ コントロール ユニットの作動条件を満たすため、シフト ポジションをPポジションに入れ、テールゲートを開けて作業すること
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+テールゲートを開けた状態で30分経過するとホイール チェア ドライブ コントロール ユニットがスリープ状態へ移行してしまうため、点検前に一旦閉じてから開けること
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+フェイル セーフで動作停止する場合は3回以上同じ動作を繰返し行い、
+<a name="i00188">
+</a>
+<a title="車いす電動ウインチ システム故障診断DTCの確認" href="javascript:CtsProc('0','000000000003619','')">DTCを確認すること
+</a>
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+バッテリの電圧が11V以上であることを確認する
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+点検中はSCSコネクタが外されていること
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+点検中はベルトフリー スイッチがOFFであること
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+必要に応じて
+<a name="i00135">
+</a>
+<a title="車いす電動ウインチ トランスミッタの点検" href="javascript:CtsProc('0','000000000002610','')">トランスミッタの点検
+</a>
+、
+<a name="i00136">
+</a>
+<a title="キーレス トランスミッタの登録" href="javascript:CtsProc('0','000000000002826','')">トランスミッタの登録
+</a>
+を行う
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+車いす電動ウインチ システムは長時間や連続操作などを行った場合、モータ保護のために機能を停止することがあるので、停止した場合は時間をおいて操作を再開すること
+</font>
+</div>
+</td>
+</tr>
+</table>
+<a name="i00002">
+</a>
+
+<a name="i00003">
+</a>
+<a name="i00004">
+</a>
+<ol>
+<li value="1">
+<div>ブザーの確認1
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00005">
+</a>
+<div>1-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>テールゲートを閉めてから再度開ける
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00006">
+</a>
+<div>1-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>主電源スイッチをONにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00214">
+</a>
+<div>1-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>引込み操作を行う
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00007">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 作動受付ブザーは吹鳴するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00010">
+</a>
+<a title="ブザーの確認2" href="javascript:parent.Jmp('i00015')">2
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00187">
+</a>
+<a title="ホイール チェア ドライブ コントロール ユニットとリモコン レシーバ ユニット..." href="javascript:parent.Jmp('i00060')">7
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i00014">
+</a>
+<a name="i00015">
+</a>
+<ol>
+<li value="2">
+<div>ブザーの確認2
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00017">
+</a>
+<div>2-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>操作中のブザーを確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00018">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 警告ブザーは吹鳴するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>フェイル セーフで停止する場合は3回以上同じ操作を行い、
+<a name="i00138">
+</a>
+<a title="車いす電動ウインチ システム故障診断DTCの確認" href="javascript:CtsProc('0','000000000003619','')">DTCを確認する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00024">
+</a>
+<a title="作動音の確認" href="javascript:parent.Jmp('i00026')">3
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i00025">
+</a>
+<a name="i00026">
+</a>
+<ol>
+<li value="3">
+<div>作動音の確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00027">
+</a>
+<div>3-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ホイール チェア ドライブ モータの作動音を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00029">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 作動音はするか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00140">
+</a>
+<a title="再現テスト" href="javascript:parent.Jmp('i00035')">4
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i00139">
+</a>
+<a title="ホイール チェア ドライブ モータの点検、交換" href="javascript:CtsProc('0','000000000002615','')">ホイール チェア ドライブ モータの点検を行う
+</a>
+</div>
+</td>
+</tr>
+</table>
+<a name="i00034">
+</a>
+<a name="i00035">
+</a>
+<ol>
+<li value="4">
+<div>再現テスト
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00036">
+</a>
+<div>4-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>トランスミッタで“入”操作を行う
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00038">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ ウインチベルトは引込むか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00223">
+</a>
+<a title="ブザーの確認3" href="javascript:parent.Jmp('i00160')">5
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i00203">
+</a>
+<a title="ホイール チェア ドライブ モータの点検、交換" href="javascript:CtsProc('0','000000000002615','')">ホイール チェア ドライブ モータの点検を行い
+</a>
+、異常が無ければ
+<a name="i00205">
+</a>
+<a title="ホイール チェア ドライブ コントロール ユニットの脱着" href="javascript:CtsProc('0','000000000002573','')">ホイール チェア ドライブ コントロール ユニットを交換する
+</a>
+</div>
+</td>
+</tr>
+</table>
+<a name="i00159">
+</a>
+<a name="i00160">
+</a>
+<ol>
+<li value="5">
+<div>ブザーの確認3
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00161">
+</a>
+<div>5-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>操作中のブザーの吹鳴を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00162">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 警報ブザーは吹鳴するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>再度確認を行い、それでもブザーが吹鳴する場合は
+<a name="i00222">
+</a>
+<a title="ホイール チェア ドライブ モータの点検、交換" href="javascript:CtsProc('0','000000000002615','')">ホイール チェア ドライブ モータを交換する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00202">
+</a>
+<a title="ウインチベルトの状態確認" href="javascript:parent.Jmp('i00151')">6
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i00150">
+</a>
+<a name="i00151">
+</a>
+<ol>
+<li value="6">
+<div>ウインチベルトの状態確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00152">
+</a>
+<div>6-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ウインチベルトの車体への引っ掛かり、ウインチベルト出口付近でのかみ込み、ねじれ等が無いか確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00153">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ ウインチベルトは正常か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>フェイル セーフで停止する場合は3回以上同じ操作を行い、
+<a name="i00168">
+</a>
+<a title="車いす電動ウインチ システム故障診断DTCの確認" href="javascript:CtsProc('0','000000000003619','')">DTCを確認する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ウインチベルトを正常に戻し、ステップ
+<a name="i00171">
+</a>
+<a title="ブザーの確認1" href="javascript:parent.Jmp('i00004')">1
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i00059">
+</a>
+<a name="i00060">
+</a>
+<ol>
+<li value="7">
+<div>ホイール チェア ドライブ コントロール ユニットとリモコン レシーバ ユニット間（KLSW、KMEMライン）の断線点検
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00061">
+</a>
+<div>7-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ホイール チェア ドライブ コントロール ユニット カプラB（36P）とリモコン レシーバ ユニット5Pカプラの接続を外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00173">
+</a>
+<div>7-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ホイール チェア ドライブ コントロール ユニット カプラB（36P）のNo.27、No.30端子とリモコン レシーバ ユニット5PカプラのNo.2、No.3端子間の導通を点検する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00063">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 導通があるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00174">
+</a>
+<a title="リモコン レシーバ ユニットの電源回路（＋B BACK UPライン）の点検" href="javascript:parent.Jmp('i00070')">8
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ホイール チェア ドライブ コントロール ユニットとリモコン レシーバ ユニット間の断線
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i00062">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006032','1');">
+<img width="143" src="../tn/5100_3.0_jpn_9503900_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/5100_3.0_jpn_9503900_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i00001">
+</a>
+<a name="i00002">
+</a>
+
+<a name="i00069">
+</a>
+<a name="i00070">
+</a>
+<ol>
+<li value="8">
+<div>リモコン レシーバ ユニットの電源回路（＋B BACK UPライン）の点検
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00071">
+</a>
+<div>8-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>リモコン レシーバ ユニット5PカプラのNo.5端子とボディ アース間の電圧を測定する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00074">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ バッテリ電圧か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00077">
+</a>
+<a title="リモコン レシーバ ユニットとボディ アース間の断線点検" href="javascript:parent.Jmp('i00081')">9
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>リモコン レシーバ ユニットとヒューズ ボックス間の断線またはヒューズ ボックスNo.1（10A）ヒューズの溶断
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i00073">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006033','1');">
+<img width="143" src="../tn/5100_3.0_jpn_9503901_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/5100_3.0_jpn_9503901_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i00001">
+</a>
+<a name="i00002">
+</a>
+
+<a name="i00080">
+</a>
+<a name="i00081">
+</a>
+<ol>
+<li value="9">
+<div>リモコン レシーバ ユニットとボディ アース間の断線点検
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00082">
+</a>
+<div>9-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>リモコン レシーバ ユニット5PカプラのNo.1端子とボディ アース間の導通を点検する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00084">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 導通があるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i00183">
+</a>
+<a title="トランスミッタの単体点検" href="javascript:parent.Jmp('i00176')">10
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>リモコン レシーバ ユニットとボディ アース間の断線またはアース不良（G602）
+</div>
+</td>
+</tr>
+</table>
+<a name="i00175">
+</a>
+<a name="i00176">
+</a>
+<ol>
+<li value="10">
+<div>トランスミッタの単体点検
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00182">
+</a>
+<div>10-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>
+<a name="i00217">
+</a>
+<a title="車いす電動ウインチ トランスミッタの点検" href="javascript:CtsProc('0','000000000002610','')">トランスミッタの点検を行う
+</a>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00177">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 正常か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i00218">
+</a>
+<a title="車いす電動ウインチ リモコン レシーバ ユニットの交換" href="javascript:CtsProc('0','000000000002609','')">リモコン レシーバ ユニットを交換し
+</a>
+、それでも症状が改善されない場合は
+<a name="i00220">
+</a>
+<a title="ホイール チェア ドライブ コントロール ユニットの脱着" href="javascript:CtsProc('0','000000000002573','')">ホイール チェア ドライブ コントロール ユニットを交換する
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>トランスミッタを交換する
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i00200">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006034','1');">
+<img width="143" src="../tn/5100_3.0_jpn_9503902_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/5100_3.0_jpn_9503902_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

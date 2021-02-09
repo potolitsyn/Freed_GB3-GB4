@@ -1,0 +1,1712 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00J46635300000NNNFQXT01(1256_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 1;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function NextFunc()
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace("ZOOM000000000005748.html#000?"+strPara);
+	}
+	else{
+		window.location.replace("ZOOM000000000005748.html");
+	}
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV_DISABLE.PNG" onClick="BackFunc()" disabled>
+<input type="image" src="../img/GL_NEXT.PNG" onClick="NextFunc()">
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">Hondaスマート キー システム症状別故障診断 - Hondaスマート キーまたはキーレス操作でドア/テールゲートが開錠/施錠できない、ノブ式イグニッション操作ができない
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03608">
+</a>
+
+<div class="test_procedure_title">Hondaスマート キーまたはキーレス操作でドア/テールゲートが開錠/施錠できない、ノブ式イグニッション操作ができない
+</div>
+<a name="i03609">
+</a>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>再現テスト1
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00011">
+</a>
+<div>1-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>キーを抜いてすべてのドアを閉める
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00012">
+</a>
+<div>1-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>Hondaスマート キーのロック、アンロック ボタンを10回以上押す
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03610">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ ドア ロック アクチュエータは作動するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03613">
+</a>
+<a title="再現テスト2" href="#i00020">2
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03616">
+</a>
+<a title="Hondaスマート キーのLED確認" href="javascript:JumpFunc('ZOOM000000000005749.html#i00200')">21
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03617">
+</a>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>再現テスト2
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00021">
+</a>
+<div>2-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>Hondaスマート キーを保持し、ドア ハンドル、テールゲート ロック ボタンに触れてロック、ドア ハンドル、テールゲート ハンドルに触れてアンロックすることを確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03618">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ ロック、アンロックするか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03621">
+</a>
+<a title="ノブ式イグニッションの作動点検" href="#i00030">3
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03624">
+</a>
+<a title="再現テスト5" href="#i00070">7
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03625">
+</a>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>ノブ式イグニッションの作動点検
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00031">
+</a>
+<div>3-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>Hondaスマート キーを保持し、ノブ式イグニッションを押す
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03626">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ Hondaスマート キーのLEDは点灯するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03629">
+</a>
+<a title="再現テスト3" href="#i00040">4
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03632">
+</a>
+<a title="ノブ式イグニッション回路の点検" href="#i00140">15
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03633">
+</a>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>再現テスト3
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00041">
+</a>
+<div>4-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>Hondaスマート キーを保持し、ハンドルを左右に振りながらイグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03634">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）になるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03637">
+</a>
+<a title="イモビライザ インジケータの確認" href="#i00050">5
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03640">
+</a>
+<a title="IGNCONTラインの点検1" href="#i00150">16
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03641">
+</a>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>イモビライザ インジケータの確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00051">
+</a>
+<div>5-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にしたときのイモビライザ インジケータ ライトの確認をする
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03643">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 2秒間点灯の後、点滅しているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03646">
+</a>
+<a title="再現テスト4" href="#i00060">6
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03649">
+</a>
+<a title="エンジン始動の確認" href="javascript:JumpFunc('ZOOM000000000005749.html#i00190')">20
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03650">
+</a>
+<a name="i00060">
+</a>
+<ol>
+<li value="6">
+<div>再現テスト4
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00061">
+</a>
+<div>6-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSにて‘‘Hondaスマート キー システム’’を選択し、テスト モード メニューが表示されることを確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03651">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ テスト モード メニューが表示されるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>‘‘Hondaスマート キー’’の‘‘スマート インフォメーション’’から‘‘システム チェック1’’および‘‘システム チェック2’’を選択し、結果にもとづき対処する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>イグニッション スイッチ不良またはIG1ラインの断線、短絡
+</div>
+</td>
+</tr>
+</table>
+<a name="i03656">
+</a>
+<a name="i00070">
+</a>
+<ol>
+<li value="7">
+<div>再現テスト5
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00071">
+</a>
+<div>7-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>Hondaスマート キーを保持し、ノブ式イグニッションを押す
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03657">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ Hondaスマート キーのLEDは点灯するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03660">
+</a>
+<a title="再現テスト6" href="#i00080">8
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03663">
+</a>
+<a title="ノブ式イグニッション回路の点検" href="#i00120">12
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03664">
+</a>
+<a name="i00080">
+</a>
+<ol>
+<li value="8">
+<div>再現テスト6
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00081">
+</a>
+<div>8-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>Hondaスマート キーを保持し、ハンドルを左右に振りながらイグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03665">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）になるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03668">
+</a>
+<a title="ドア ロック ノブ スイッチの点検" href="#i00090">9
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03671">
+</a>
+<a title="カスタマイズの設定確認" href="#i00130">13
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03672">
+</a>
+<a name="i00090">
+</a>
+<ol>
+<li value="9">
+<div>ドア ロック ノブ スイッチの点検
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00091">
+</a>
+<div>9-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ドアをロックする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00092">
+</a>
+<div>9-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSで‘‘ボディ エレクトリカル’’を選択し、‘‘ドア ロック’’の‘‘データ リスト’’で‘‘ドライバ ドア ノブ スイッチ ロック’’および‘‘ドライバ ドア ノブ スイッチ アンロック’’を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03673">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ ‘‘ドライバ ドア ノブ スイッチ ロック’’は
+<nobr>ON
+</nobr>
+、‘‘ドライバ ドア ノブ スイッチ アンロック’’はOFFになるか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03676">
+</a>
+<a title="タッチ センサ点検" href="#i00100">10
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i03679">
+</a>
+<a title="ドア ロック ノブ スイッチの点検" href="javascript:CtsProc('2','000000000002819','')">ドライバ ドア ロック ノブ スイッチの点検をする
+</a>
+</div>
+</td>
+</tr>
+</table>
+<a name="i03680">
+</a>
+<a name="i00100">
+</a>
+<ol>
+<li value="10">
+<div>タッチ センサ点検
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00101">
+</a>
+<div>10-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSにて‘‘Hondaスマート キー’’を選択し、‘‘ヒストリー クリア’’を実施する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00102">
+</a>
+<div>10-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSにて‘‘Hondaスマート キー’’を選択し、‘‘ヒストリー データ’’を選択する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00103">
+</a>
+<div>10-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ドア ハンドルに触れロック、アンロック操作をし、‘‘ドライバ ドア スイッチ ノブ ロック’’および‘‘ドライバ ドア スイッチ ノブ アンロック’’のデータを確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03681">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ データは‘‘OK’’か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03684">
+</a>
+<a title="車外LFアンテナの点検" href="#i00110">11
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ドライバ ドア アウタ ハンドル タッチ センサ回路の点検をする
+</div>
+</td>
+</tr>
+</table>
+<a name="i03687">
+</a>
+<a name="i00110">
+</a>
+<ol>
+<li value="11">
+<div>車外LFアンテナの点検
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00111">
+</a>
+<div>11-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>
+<a name="i03688">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - 車外LFアンテナの点検" href="javascript:CtsProc('2','000000000002731','')">車外LFアンテナの点検を実施する
+</a>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03689">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 車外LFアンテナは正常か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>スマートECU不良
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>車外LFアンテナ不良
+</div>
+</td>
+</tr>
+</table>
+<a name="i03694">
+</a>
+<a name="i00120">
+</a>
+<ol>
+<li value="12">
+<div>ノブ式イグニッション回路の点検
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00121">
+</a>
+<div>12-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>内蔵イモビライザ キーでイグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00122">
+</a>
+<div>12-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSの‘‘Hondaスマート キー’’で‘‘ヒストリー クリア’’を実施する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00123">
+</a>
+<div>12-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにしてキーを抜く
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00124">
+</a>
+<div>12-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ノブ式イグニッションを押す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00125">
+</a>
+<div>12-5
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>再度、内蔵イモビライザ キーでイグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、HDSの‘‘Hondaスマート キー’’で‘‘ヒストリー データ’’の‘‘ノブ式イグニッション プッシュ スイッチ’’を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03695">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 表示は‘‘OK’’か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i03698">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - 車外LFアンテナの点検" href="javascript:CtsProc('2','000000000002731','')">車外LFアンテナの点検
+</a>
+および
+<a name="i03699">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - 車内LFアンテナの点検" href="javascript:CtsProc('2','000000000002732','')">車内LFアンテナの点検
+</a>
+を実施し、異常がなければHondaスマート キーを交換する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ノブ式イグニッションのOFF故障、スイッチ回路の断線またはアース回路の断線
+</div>
+</td>
+</tr>
+</table>
+<a name="i03702">
+</a>
+<a name="i00130">
+</a>
+<ol>
+<li value="13">
+<div>カスタマイズの設定確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00131">
+</a>
+<div>13-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>内蔵イモビライザ キーでイグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00132">
+</a>
+<div>13-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSにて‘‘Hondaスマート キー’’のカスタマイズで‘‘Hondaスマート機能’’を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03703">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ カスタマイズは‘‘有効’’か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03851">
+</a>
+<a title="スマート キー システム モード スイッチの設定確認" href="#i03844">14
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>カスタマイズを‘‘有効’’に設定する
+</div>
+</td>
+</tr>
+</table>
+<a name="i03843">
+</a>
+<a name="i03844">
+</a>
+<ol>
+<li value="14">
+<div>スマート キー システム モード スイッチの設定確認
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i03850">
+</a>
+<div>14-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSにて“Hondaスマート キー システム”のデータ リストで“スマート キー システム モード スイッチ”を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03845">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 表示は‘‘ON’’か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i03852">
+</a>
+<a title="Hondaスマート キーの登録、削除" href="javascript:CtsProc('2','000000000002736','')">Hondaスマート キーを再登録し
+</a>
+、症状が改善されない場合はスマートキーを交換する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>スマート キー システム モード スイッチをONにし、症状が改善されない場合はスイッチ回路の断線またはアース回路の断線を点検する。異常がなければスマート キー システム モード スイッチを交換する。
+</div>
+</td>
+</tr>
+</table>
+<a name="i03709">
+</a>
+<a name="i00140">
+</a>
+<ol>
+<li value="15">
+<div>ノブ式イグニッション回路の点検
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00141">
+</a>
+<div>15-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>内蔵イモビライザ キーでイグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00142">
+</a>
+<div>15-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSの‘‘Hondaスマート キー システム’’で‘‘ヒストリー クリア’’を実施する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00143">
+</a>
+<div>15-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにしてキーを抜く
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00144">
+</a>
+<div>15-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ノブ式イグニッションを押す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00145">
+</a>
+<div>15-5
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>再度、内蔵イモビライザ キーでイグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、HDSの‘‘Hondaスマート キー’’で‘‘ヒストリー データ’’の‘‘ノブ式イグニッション プッシュ スイッチ’’を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03710">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 表示は‘‘OK’’か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="i03713">
+</a>
+<a title="Hondaスマート キー システム症状別故障診断 - 車内LFアンテナの点検" href="javascript:CtsProc('2','000000000002732','')">車内LFアンテナの点検
+</a>
+を実施し、異常がなければHondaスマート キーを交換する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ノブ式イグニッションのOFF故障、スイッチ回路の断線またはアース回路の断線
+</div>
+</td>
+</tr>
+</table>
+<a name="i03716">
+</a>
+<a name="i00150">
+</a>
+<ol>
+<li value="16">
+<div>IGNCONTラインの点検1
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00151">
+</a>
+<div>16-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>内蔵イモビライザ キーでイグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00152">
+</a>
+<div>16-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSにて‘‘Hondaスマート キー’’の‘‘スマート インフォメーション’’を選択し、‘‘システム チェック1’’および‘‘システム チェック2’’を確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03717">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ ‘‘N-1’’を表示するか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03720">
+</a>
+<a title="IGNCONTラインの点検2" href="#i00160">17
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>‘‘システム チェック1’’および‘‘システム チェック2’’の結果にもとづき対処する
+</div>
+</td>
+</tr>
+</table>
+<a name="i03723">
+</a>
+<a name="i00160">
+</a>
+<ol>
+<li value="17">
+<div>IGNCONTラインの点検2
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00161">
+</a>
+<div>17-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ノブ式イグニッションから10Pカプラの接続を外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00162">
+</a>
+<div>17-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>内蔵イモビライザ キーでイグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00163">
+</a>
+<div>17-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSの‘‘Hondaスマート キー システム’’の‘‘ファンクション テスト’’から‘‘キー ノブ パワー ライン駆動’’を行う
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00164">
+</a>
+<div>17-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ノブ式イグニッションECU 10PカプラのNo.4端子とボディ アース間の電圧を測定する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03725">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 5Vか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03728">
+</a>
+<a title="IGNTRXラインの点検1" href="javascript:JumpFunc('ZOOM000000000005748.html#i00170')">18
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>IGNCONTラインの断線、短絡
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+<span style="display:block" id="imgId1">
+<div>
+<script src="../js/1256_3.0_jpn_9508805_3.0.js">
+</script>
+</div>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

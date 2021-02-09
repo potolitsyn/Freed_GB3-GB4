@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:335.04px;\" coordsize=\"950.00,335.04\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:335.04px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/3946_2.0_jpn_9504749_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:335.04px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:358.769494px;top:17.239178px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ドライブ プーリComp.</font></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:424.421863px;top:265.706599px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">インプット シャフト</font></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:634.973319px;top:192.510311px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">サン ギヤ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:716.858833px;top:184.110732px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ピニオン ギヤ/<br>キャリア</font></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:634.733434px;top:56.197204px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リング ギヤ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:221.387286px;top:32.518404px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">インタミディエイト<br>プレート</font></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:74.169223px;top:48.757583px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リバース ブレーキ</font></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:177.085923px;top:302.984711px;font-weight:normal;font-size:9.0pt;color:black;\" prt_font_size=\"10.2pt\" disp_font_size=\"9.0pt\">");
+write("<nobr><font style=\"font-weight:normal;\">サン ギヤ</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

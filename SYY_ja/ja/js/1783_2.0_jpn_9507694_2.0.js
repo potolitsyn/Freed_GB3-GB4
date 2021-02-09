@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:434.87px;\" coordsize=\"950.00,434.87\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:434.87px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/1783_2.0_jpn_9507694_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:434.87px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:155.172249px;top:132.315994px;font-weight:normal;font-size:9.7pt;color:black;\" prt_font_size=\"10.9pt\" disp_font_size=\"9.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\">IgE抗体<br>(Immunity Globin)</font></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:312.388875px;top:225.803079px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">アレルゲン</font></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:171.888042px;top:230.521469px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">肥満細胞</font></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:426.660735px;top:16.994527px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">抗アレルゲン剤なし</font></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:460.646449px;top:143.671177px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">IgE抗体と<br>アレルゲンが結合</font></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:667.119469px;top:143.431265px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">化学伝達物質の放出<br>→アレルギー症状発生</font></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:426.740731px;top:215.486602px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">抗アレルゲン剤あり</font></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:557.965451px;top:339.604132px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">抗アレルゲン剤</font></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:455.288689px;top:366.874789px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">抗アレルゲン剤が<br>アレルゲンと先に付着</font></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:687.830791px;top:367.754503px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">IgE抗体はアレルゲン<br>と結合せず、化学伝達<br>物質は放出されない</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

@@ -1,0 +1,733 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX00K79100000000NNNBBXT00(1524_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">SRSエアバッグ システム故障診断の進め方
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03606">
+</a>
+<a name="i01601">
+</a>
+<div class="servinfosub_title">確認手順
+</div>
+<a name="i03607">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+<a name="i03620">
+</a>
+<a title="SRSエアバッグ システム作業上の注意" href="javascript:CtsProc('0','000000000002657','')">作業上の注意を守りながら進めること。
+</a>
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+バッテリは充分に充電されたものを使用すること。バッテリが充電不足の場合、故障診断が正しく出ない場合がある。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+断線に関する故障診断を進める場合、カプラのコンタクト不良による故障が考えられるため、カプラを外す時に接続状態を確認し、外した後端子を目視で点検すること。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</img>
+</div>
+<div>
+<font style="font-weight:normal;">
+故障診断フロー
+</font>
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03609">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000012416','1');">
+<img width="143" src="../tn/1524_3.0_jpn_9508029_3.0_tn.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03606">
+</a>
+<a name="i01601">
+</a>
+<div class="servinfosub_title">確認手順
+</div>
+<a name="i03607">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+<a name="i03620">
+</a>
+<a title="SRSエアバッグ システム作業上の注意" href="javascript:CtsProc('2','000000000002657','')">作業上の注意を守りながら進めること。
+</a>
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+バッテリは充分に充電されたものを使用すること。バッテリが充電不足の場合、故障診断が正しく出ない場合がある。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+断線に関する故障診断を進める場合、カプラのコンタクト不良による故障が考えられるため、カプラを外す時に接続状態を確認し、外した後端子を目視で点検すること。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</img>
+</div>
+<div>
+<font style="font-weight:normal;">
+故障診断フロー
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/1524_3.0_jpn_9508029_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03606">
+</a>
+<a name="i01602">
+</a>
+<div class="servinfosub_title">DTCの確認
+</div>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>イグニッション スイッチをOFFにし、10秒以上経過後、データ リンク カプラ(16P)（A）にHDS（Hondaダイアグノスティック システム）を接続する。
+</div>
+</li>
+</ol>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする。
+</div>
+</li>
+</ol>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>HDSが車両およびSRSユニットと通信することを確認する。通信しない場合は、
+<a name="i03611">
+</a>
+<a title="PGM-FIシステム データ リンク回路故障診断" href="javascript:CtsProc('0','000000000001836','')">データ リンク回路を点検する。
+</a>
+</div>
+</li>
+</ol>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>HDSのDTCメニューの中のトラブル コードを選択し、DTCを確認する。
+</div>
+</li>
+</ol>
+<a name="i03619">
+</a>
+<ol>
+<li value="5">
+<div>イグニッション　スイッチをOFFにし、データ　リンク　カプラ(16P)からHDSを取外す。
+</div>
+</li>
+</ol>
+<a name="i00060">
+</a>
+<ol>
+<li value="6">
+<div>故障診断へ進む。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03610">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000012417','1');">
+<img width="143" src="../tn/1524_3.0_jpn_9508030_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/1524_3.0_jpn_9508030_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03606">
+</a>
+<a name="i01603">
+</a>
+<div class="servinfosub_title">DTCのクリア
+</div>
+<a name="i00210">
+</a>
+<ol>
+<li value="1">
+<div>イグニッション スイッチをOFFにする。
+</div>
+</li>
+</ol>
+<a name="i00220">
+</a>
+<ol>
+<li value="2">
+<div>データ リンク カプラ(16P)（A）にHDSを接続する。
+</div>
+</li>
+</ol>
+<a name="i00230">
+</a>
+<ol>
+<li value="3">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする。
+</div>
+</li>
+</ol>
+<a name="i00240">
+</a>
+<ol>
+<li value="4">
+<div>HDSが車両およびSRSユニットと通信することを確認する。通信しない場合は、
+<a name="i03613">
+</a>
+<a title="PGM-FIシステム データ リンク回路故障診断" href="javascript:CtsProc('0','000000000001836','')">データ リンク回路を点検する。
+</a>
+</div>
+</li>
+</ol>
+<a name="i00250">
+</a>
+<ol>
+<li value="5">
+<div>HDSのテスト モード メニューの中のクリアを選択し、DTCをクリアする。
+</div>
+</li>
+</ol>
+<a name="i00260">
+</a>
+<ol>
+<li value="6">
+<div>イグニッション　スイッチをOFFにし、データ　リンク　カプラ(16P)からHDSを取外す。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03612">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000012418','1');">
+<img width="143" src="../tn/1524_3.0_jpn_9508031_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/1524_3.0_jpn_9508031_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03606">
+</a>
+<a name="i01604">
+</a>
+<div class="servinfosub_title">一過性故障の点検
+</div>
+<div>過去に何らかの故障が発生したが現在故障がない場合に、一過性の故障としてメモリされるためSRS警告灯が点灯する。DTCを点検し、一過性の故障と判断した場合には、次の手順により点検を行う。
+</div>
+<a name="i02901">
+</a>
+<br>
+<div class="topic_title">点検手順
+</div>
+<br>
+<a name="i00410">
+</a>
+<ol>
+<li value="1">
+<div>予め初期のDTCを確認し記録した後、DTCをクリアしておく。
+</div>
+</li>
+</ol>
+<a name="i00420">
+</a>
+<ol>
+<li value="2">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）またはエンジン回転状態にする。SRS警告灯が6秒間点灯後消灯状態となる。
+</div>
+</li>
+</ol>
+<a name="i00430">
+</a>
+<ol>
+<li value="3">
+<div>ステップ
+<a name="i03615">
+</a>
+<a title="イグニッション スイッチをON（II）またはエンジン回転状態にする。SRS警告灯..." href="javascript:parent.Jmp('i00420')">2
+</a>
+の状態で、ワイヤ ハーネス、カプラ部に振動（手で動かす）を加えたり、走行テスト（急加速、急減速、旋回）などの外的要因を加える。システムの異常が再現された場合、SRS警告灯は消灯状態から点灯状態に変化する。
+</div>
+</li>
+</ol>
+<a name="i00440">
+</a>
+<ol>
+<li value="4">
+<div>SRS警告灯が点灯状態に変化した場合。
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00441">
+</a>
+<div>4-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>点灯状態となった時の外的要因の内容を記録する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00442">
+</a>
+<div>4-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>DTCを確認、記録した後DTCをクリアする。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00443">
+</a>
+<div>4-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>外的要因の内容とDTCの確認より故障原因を特定する（1回で特定出来ない場合、
+<a name="i03616">
+</a>
+<a title="イグニッション スイッチをON（II）またはエンジン回転状態にする。SRS警告灯..." href="javascript:parent.Jmp('i00420')">2
+</a>
+、3、4を数回繰り返す）。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00450">
+</a>
+<ol>
+<li value="5">
+<div>SRS警告灯が点灯に変化しなかった場合には現在システムは正常と判断し作業を終了する。但し車両の経歴より同一事象の一過性の故障が繰り返されている場合、推定される故障部品をすべて交換する。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03614">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000012419','1');">
+<img width="143" src="../tn/1524_3.0_jpn_9508032_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/1524_3.0_jpn_9508032_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03606">
+</a>
+<a name="i01605">
+</a>
+<div class="servinfosub_title">OPDS（乗員姿勢検知）ユニットの初期化
+</div>
+<div>助手席のシート バック トリム カバー/パッド、またはOPDSユニットを交換した場合、OPDSシステムのマッチングを図るため、次の手順でOPDSユニットの初期化を行う。
+</div>
+<a name="i02902">
+</a>
+<br>
+<div class="topic_title">条件
+</div>
+<br>
+<div>助手席用シートは乾燥した状態でシート バックを通常の姿勢位置にセットし、シートに人や物を乗せていない状態で行う。
+</div>
+<a name="i02903">
+</a>
+<br>
+<div class="topic_title">手順
+</div>
+<br>
+<a name="i00610">
+</a>
+<ol>
+<li value="1">
+<div>イグニッション スイッチをOFFにしてから10秒以上経過していることを確認し、データ リンク カプラ(16P)（A）にHDSを接続する。
+</div>
+</li>
+</ol>
+<a name="i00620">
+</a>
+<ol>
+<li value="2">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする。
+</div>
+</li>
+</ol>
+<a name="i00630">
+</a>
+<ol>
+<li value="3">
+<div>HDSのアジャストメント メニューの中のOPDSユニット初期化を選び実行する。
+</div>
+</li>
+</ol>
+<a name="i00640">
+</a>
+<ol>
+<li value="4">
+<div>イグニッション スイッチをOFFにし、データ リンク カプラ(16P)からHDSを取外す。
+</div>
+</li>
+</ol>
+<a name="i00650">
+</a>
+<ol>
+<li value="5">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、SRS警告灯が6秒間点灯し、その後消灯するか確認する。
+</div>
+<a name="i03618">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<div>
+<font style="font-weight:normal;">
+OPDSユニットの初期化を行う前に、シート バックに取付けられたシート カバーなどのアクセサリ類は取外すこと。
+</font>
+</div>
+</img>
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03617">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000012420','1');">
+<img width="143" src="../tn/1524_3.0_jpn_9508033_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/1524_3.0_jpn_9508033_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

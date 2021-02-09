@@ -1,0 +1,838 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX2PK721000P0301NNNFAXT02(234_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+var   totalImg = 1;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+   _prSetPrtFontSize();
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		img_hei = graphTd.offsetHeight + 70;
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+   _prSetDispFontSize();
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function BackFunc()
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace("ZOOM000000000003350.html#000?"+strPara);
+	}
+	else{
+		window.location.replace("ZOOM000000000003350.html");
+	}
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	if((strPara != null) && (strPara != "")){
+		window.location.replace(strJump+"?"+strPara);
+	}
+	else{
+		window.location.replace(strJump);
+	}
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV.PNG" onClick="BackFunc()">
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">DTC P0301 (71), P0302 (72), P0303 (73), P0304 (74)
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03621">
+</a>
+
+<a name="i03758">
+</a>
+<a name="i00170">
+</a>
+<ol>
+<li value="17">
+<div>
+<font style="font-weight:normal;">
+フューエル インジェクタの点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00171">
+</a>
+<div>17-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをOFFにする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00172">
+</a>
+<div>17-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>フューエル インジェクタ2Pカプラを外す
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00173">
+</a>
+<div>17-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>フューエル インジェクタ2PカプラのNo.1端子とNo.2端子間の抵抗を測定する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03760">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 10－13Ωか（室温時）
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03763">
+</a>
+<a title="OBDステータスの確認" href="#i00190">19
+</a>
+へ進む
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>
+<a name="ref_20080329175818031">
+</a>
+<a title="フューエル インジェクタの脱着" href="javascript:CtsProc('2','000000000001791','')">フューエル インジェクタを交換後、ステップ18へ進む
+</a>
+</div>
+</td>
+</tr>
+</table>
+<a name="i03768">
+</a>
+<a name="i00180">
+</a>
+<ol>
+<li value="18">
+<div>
+<font style="font-weight:normal;">
+修理後の点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00181">
+</a>
+<div>18-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>すべてのカプラを再接続する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00182">
+</a>
+<div>18-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00183">
+</a>
+<div>18-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSでPGM-FI ECUをリセットする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00184">
+</a>
+<div>18-4
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>HDSでクランク パターン学習値をクリアする
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00185">
+</a>
+<div>18-5
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>
+<a name="ref_20080329175839796">
+</a>
+<a title="アイドリングの学習" href="javascript:CtsProc('2','000000000001853','')">アイドリングの学習を行う
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00186">
+</a>
+<div>18-6
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>
+<a name="ref_20080329180023468">
+</a>
+<a title="フューエル、エミッション コントロール故障診断DTCのクリア コマンド" href="javascript:CtsProc('2','000000000003056','')">クランク パターンの学習を行う
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00187">
+</a>
+<div>18-7
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>以下の記録したフリーズ データの条件下でテスト走行を行う
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>エンジン回転数
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>車速
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>スロットル開度
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>エンジン負荷
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>アクセル ペダル開度
+</div>
+</td>
+</tr>
+</table>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+フリーズ データの条件が高速道路における条件下である場合は、テスト走行は行わない
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00188">
+</a>
+<div>18-8
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>DTCメニュー内のテンポラリDTCまたはDTCをHDSで確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03771">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ テンポラリDTCまたはDTCは表示されているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<a name="ref_20080329180202328">
+</a>
+<a title="&quot;DTC P0301 (71), P0302 (72), P0303 (73), ...&quot;" href="javascript:CtsProc('2','000000000003097','')">DTC P0301（71-1）、P0302（72-1）、P0303（73-1）またはP0304（74-1）が表示された場合は、複数シリンダ故障診断を行う
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>DTC P0301（71-1）、P0302（72-1）、P0303（73-1）またはP0304（74-1）以外のテンポラリDTCまたはDTCが表示された場合は、表示されたDTCの故障診断を行う
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>ステップ
+<a name="i03777">
+</a>
+<a title="OBDステータスの確認" href="#i00190">19
+</a>
+へ進む
+</div>
+</td>
+</tr>
+</table>
+<a name="i03778">
+</a>
+<a name="i00190">
+</a>
+<ol>
+<li value="19">
+<div>
+<font style="font-weight:normal;">
+OBDステータスの確認
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00191">
+</a>
+<div>19-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>DTCメニュー内、DTC P0301（71-1）、P0302（72-1）、P0303（73-1）またはP0304（74-1）のOBDステータスをHDSで確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03779">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ 正常判定か
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<div>故障診断完了
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>故障判定の場合は、ステップ
+<a name="i03784">
+</a>
+<a title="OBDステータスの確認（アイドリング時）" href="javascript:JumpFunc('ZOOM000000000003347.html#i00010')">1
+</a>
+に戻り再診断を行う
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>実行中の場合は、結果が表示されるまでテスト走行を続ける
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>条件外または未完了の場合は、結果が表示されるまでテスト走行を続ける
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<a name="i03785">
+</a>
+<a name="i00200">
+</a>
+<ol>
+<li value="20">
+<div>
+<font style="font-weight:normal;">
+ECUのアップデートまたは交換と修理後の点検
+</font>
+</div>
+<table class="Viewer">
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00201">
+</a>
+<div>20-1
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>ECUのプログラムが最新でない場合は、
+<a name="i03796">
+</a>
+<a title="ECUのアップデート" href="javascript:CtsProc('2','000000000001842','')">最新のプログラムにアップデートする
+</a>
+</div>
+<div>既にプログラムが最新であった場合は、新品ECUで診断する
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00202">
+</a>
+<div>20-2
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>以下の記録したフリーズ データの条件下でテスト走行を行う
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>エンジン回転数
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>車速
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>スロットル開度
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>エンジン負荷
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>アクセル ペダル開度
+</div>
+</td>
+</tr>
+</table>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+フリーズ データの条件が高速道路における条件下である場合は、テスト走行は行わない
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top" align="right">
+<a name="i00203">
+</a>
+<div>20-3
+</div>
+</td>
+<td class="ViewerTD" valign="top" align="left">
+<div>DTCメニュー内のテンポラリDTCまたはDTCをHDSで確認する
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i03787">
+</a>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD" valign="top">
+<i>
+<div>◆ テンポラリDTCまたはDTCは表示されているか
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>YES
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>DTC P0301（71-1）、P0302（72-1）、P0303（73-1）またはP0304（74-1）が表示された場合は、ECUとイグニッション コイル、フューエル インジェクタ間カプラの接続不良を点検し、ステップ
+<a name="i03790">
+</a>
+<a title="OBDステータスの確認（アイドリング時）" href="javascript:JumpFunc('ZOOM000000000003347.html#i00010')">1
+</a>
+に戻り再診断を行う
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>DTC P0301（71-1）、P0302（72-1）、P0303（73-1）またはP0304（74-1）以外のテンポラリDTCまたはDTCが表示された場合は、表示されたDTCの故障診断を行う
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD" valign="top">
+<nobr>
+<b>NO
+</b>
+</nobr>
+</td>
+<td width="10" class="ViewerTD" valign="top" align="center">-
+</td>
+<td class="ViewerTD" valign="top">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ECUのプログラムを最新にアップデートした場合は、故障診断完了
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>新品ECUで診断した場合は、
+<a name="i03797">
+</a>
+<a title="ECUの脱着" href="javascript:CtsProc('2','000000000001840','')">元のECUを新品ECUに交換する
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+<span style="display:block" id="imgId1">
+<div>
+<script src="../js/234_3.0_jpn_9512492_3.0.js">
+</script>
+</div>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

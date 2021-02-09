@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:1092.14px;\" coordsize=\"950.00,1092.14\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:1092.14px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/4773_2.0_jpn_9503812_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:1092.14px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:248.980917px;top:961.797010px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ベルト巻取速度切替スイッチ<br><font style=\"font-weight:normal;\"><a title=\"ベルト巻取速度切替スイッチの点検、交換\" href=\"javascript:CtsProc('0','000000000002612','')\">点検、交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:18.910997px;top:896.097852px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">主電源スイッチ<br><font style=\"font-weight:normal;\"><a title=\"主電源スイッチの点検、交換\" href=\"javascript:CtsProc('0','000000000002608','')\">点検、交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:374.905764px;top:763.392401px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ベルトフリー スイッチ<br><font style=\"font-weight:normal;\"><a title=\"ベルトフリー スイッチの点検、交換\" href=\"javascript:CtsProc('0','000000000002605','')\">点検、交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:645.602040px;top:835.264146px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ホイール チェア ドライブ モータ<br><font style=\"font-weight:normal;\"><a title=\"ホイール チェア ドライブ モータの点検、交換\" href=\"javascript:CtsProc('0','000000000002615','')\">点検、交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:507.666290px;top:11.923924px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ホイール チェア テンション モータ<br><font style=\"font-weight:normal;\"><a title=\"ホイール チェア テンション モータの点検、交換\" href=\"javascript:CtsProc('0','000000000002616','')\">点検、交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:719.875785px;top:65.163791px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">リモコン レシーバ ユニット<br><font style=\"font-weight:normal;\"><a title=\"リモコン レシーバ ユニットの交換\" href=\"javascript:CtsProc('0','000000000002609','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:766.840527px;top:714.354044px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ホイール チェア ドライブ <br>コントロール ユニット<br><font style=\"font-weight:normal;\"><a title=\"ホイール チェア ドライブ コントロール ユニットの脱着\" href=\"javascript:CtsProc('0','000000000002573','')\">脱着</a><br><a title=\"ホイール チェア ドライブ コントロール ユニットの入力点検\" href=\"javascript:CtsProc('0','000000000002613','')\">入力点検</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:336.951307px;top:890.526962px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ブザー<br><font style=\"font-weight:normal;\"><a title=\"ブザーの交換\" href=\"javascript:CtsProc('0','000000000002607','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("</v:group>");
+}

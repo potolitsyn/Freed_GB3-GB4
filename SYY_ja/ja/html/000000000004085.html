@@ -1,0 +1,495 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX27D52100000000NNNCAXT00(4464_2.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script src="../js/GraphicPrintFunc.js"></script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   _prSetPrtFontSize();
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("印刷設定をA4横向きにしてください。");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      var orgWid;
+
+      orgWid = parent.document.body.offsetWidth + 8;
+      parent.resizeBy(paper_wid-orgWid,0);
+
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      _prSetDispFontSize();
+      parent.resizeBy(orgWid-paper_wid,0);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="system_desc_sub_title">機能
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<a name="i03648">
+</a>
+<a name="i03648">
+</a>
+<a name="i03626">
+</a>
+<br>
+<div class="topic_title">ABS制御
+</div>
+<br>
+<div>
+<font style="font-weight:normal;">
+概要
+</font>
+</div>
+<div>ブレーキをかけた時タイヤと路面の間に制動力が発生し、旋回運動時にはタイヤにコーナリング フォース
+<sup>*
+</sup>
+と呼ばれる力が発生する。この制動力とコーナリング フォースは、ブレーキのかけ方によって図のように変化する。コーナリング フォースは、ブレーキをほとんどかけない時に最大となり、タイヤがロックするとほぼゼロになる。また、制動力は、適度なブレーキをかけた時に最大となり、タイヤがロックした時には低下する。ABSは車輪のスリップ率を目標スリップ率に近づくようにブレーキ圧を制御し、タイヤのグリップ力を確保して車両の操舵性と方向性を確保するシステムである。
+</div>
+<div>
+<sup>*
+</sup>
+コーナリング フォース:自動車が旋回運動時、各車輪（車両重心）がその旋回運動円の中心に向いて働く力のこと。
+</div>
+<span style="display:none" id="imgId1">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03627">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503341_2.0.js">
+</script>
+</div>
+<div>
+<font style="font-weight:normal;">
+制御
+</font>
+</div>
+<div>車輪速度が推定車体速度より急激に下がるとインレット バルブが閉じ、アウトレット バルブは、一瞬開きブレーキ圧を減圧する。この時ポンプ モータは、作動を始める。車輪速度がある程度回復するとインレット バルブを閉じたままブレーキ圧を保持する。さらに車輪速度が回復してくるとインレットバルブが一瞬開きブレーキ圧を増圧する。この作動をすばやく繰返しABS制御を行う。
+</div>
+<span style="display:none" id="imgId2">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03671">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503342_2.0.js">
+</script>
+</div>
+<a name="i03661">
+</a>
+<br>
+<div class="topic_title">スプリット制御
+</div>
+<br>
+<div>駆動輪の片側が低μ路、逆側が高μ路を走行中にブレーキをかけた際、高μ路側の制動力が大きくなり、車体を高μ路側に流そうとするモーメントが発生する。このモーメントを抑制するため駆動輪の制動力を左右の液圧差により制御し、車体の安定性を確保する。
+</div>
+<span style="display:none" id="imgId3">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03662">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503343_2.0.js">
+</script>
+</div>
+<span style="display:none" id="imgId4">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03663">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503344_2.0.js">
+</script>
+</div>
+<a name="i03628">
+</a>
+<br>
+<div class="topic_title">EBD制御
+</div>
+<br>
+<div>
+<font style="font-weight:normal;">
+概要
+</font>
+</div>
+<div>EBDは、ブレーキ時にブレーキ力を有効に路面に伝えるため、積載状態や減速による荷重移動に併せて前後ブレーキ力の配分を適切にコントロールし、後輪ブレーキ圧を制御して車両状態に応じた最適な後輪ブレーキ力を確保する制御である。
+</div>
+<span style="display:none" id="imgId5">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03629">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503345_2.0.js">
+</script>
+</div>
+<span style="display:none" id="imgId6">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03644">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503346_2.0.js">
+</script>
+</div>
+<a name="i03664">
+</a>
+<br>
+<div class="topic_title">制御
+</div>
+<br>
+<div>ある一定値以上の減速度で制動している場合、後輪の車輪速度が推定車体速度に対して低下するとインレット バルブは、閉じブレーキ圧を保持する。車輪速度が回復してくるとインレット バルブが一瞬開きブレーキ圧を増圧する。減圧が必要な場合は、アウトレット バルブが一瞬開きポンプ モータを作動させブレーキ圧を減圧する。この作動をすばやく繰返しEBD制御を行う。
+</div>
+<span style="display:none" id="imgId7">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03665">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503347_2.0.js">
+</script>
+</div>
+<a name="i03666">
+</a>
+<br>
+<div class="topic_title">リヤ独立EBD制御
+</div>
+<br>
+<div>車両が旋回中にブレーキ操作を行うと旋回方向に巻込もうとするモーメントが発生し、車両の挙動に乱れが生じる。このモーメントに対し、後輪のブレーキ圧を、内輪は低く、外輪は高くなるように独立して制御を行い、車両の巻込みを抑制するモーメントを発生させ、車両安定性の向上を図っている。
+</div>
+<span style="display:none" id="imgId8">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03667">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503348_2.0.js">
+</script>
+</div>
+<span style="display:none" id="imgId9">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03668">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503349_2.0.js">
+</script>
+</div>
+<a name="i02903">
+</a>
+<br>
+<div class="topic_title">エンジンTCS制御
+</div>
+<br>
+<div>エンジンTCS制御は、発進加速時やコーナリング中などに駆動輪のスリップを検出するとPGM-FI ECUへトルク ダウン信号を出力し、駆動輪のスリップを防止しタイヤのグリップ力の確保を行う。
+</div>
+<a name="i02904">
+</a>
+<br>
+<div class="topic_title">ブレーキTCS制御
+</div>
+<br>
+<div>ブレーキTCS制御は、駆動輪の片側が低μ路などを走行している際にスリップを検出すると、VSAコントロール ユニットからモジュレータ ユニットへブレーキ信号を出力し、駆動輪のスリップを抑制し、タイヤのグリップ力を確保する。
+</div>
+<span style="display:none" id="imgId10">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03669">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503350_2.0.js">
+</script>
+</div>
+<a name="i03633">
+</a>
+<br>
+<div class="topic_title">VSA制御
+</div>
+<br>
+<div>
+<font style="font-weight:normal;">
+オーバ ステア抑制制御
+</font>
+</div>
+<div>車両がオーバ ステア状態に陥るとVSAモジュレータ コントロール ユニットは、外側前後輪へ最適に配分したブレーキ加圧信号を出力し、オーバ ステアを抑制するモーメントを発生させて車両を安定化させる。
+</div>
+<span style="display:none" id="imgId11">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03634">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503351_2.0.js">
+</script>
+</div>
+<div>
+<font style="font-weight:normal;">
+アンダ ステア抑制制御
+</font>
+</div>
+<div>車両がアンダ ステア状態に陥るとVSAモジュレータ コントロール ユニットは、内側後輪へ最適に配分したブレーキ加圧信号を出力しアンダ ステアを抑制するモーメントを発生させる。
+</div>
+<div>また、加速中の場合は、PGM-FI ECUへトルク ダウン信号を出力し、駆動輪のコーナリング フォースを増加させ、旋回性を確保しライン トレース性を向上させる。
+</div>
+<span style="display:none" id="imgId12">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03635">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503352_2.0.js">
+</script>
+</div>
+<a name="i02906">
+</a>
+<br>
+<div class="topic_title">ブレーキ アシスト制御
+</div>
+<br>
+<div>ブレーキ操作をマスタ圧センサにより常時モニタし、踏込み速度と踏込み量が所定値以上になった場合、緊急ブレーキと判断する。緊急ブレーキと判断された場合、VSAモジュレータ コントロール ユニットによって、通常ブレーキに対し、より制動力を高めて、制動距離を短縮させる。
+</div>
+<span style="display:none" id="imgId13">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03636">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503353_2.0.js">
+</script>
+</div>
+<span style="display:none" id="imgId14">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03637">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503354_2.0.js">
+</script>
+</div>
+<a name="i03638">
+</a>
+<br>
+<div class="topic_title">ヒル スタート アシスト制御 
+</div>
+<br>
+<div>
+<font style="font-weight:normal;">
+概要
+</font>
+</div>
+<div>急な坂道発進時に、ブレーキ ペダルからアクセル ペダル踏換え時に発生する降坂をブレーキ圧制御にて一時的に抑制し、ドライバの発進操作を補助する。ゆるい坂道ではヒル スタート アシスト制御は行なわれず、クリープ エイド制御が行なわれる。
+</div>
+<div>
+<font style="font-weight:normal;">
+作動
+</font>
+</div>
+<div>すべてのホイール センサ信号から車両が停止したことを判断した後、ヨーレート/Gセンサからの前後G信号から傾斜角を演算し、傾斜角に応じた目標液圧を計算する。プレッシャ センサ信号からドライバがブレーキ解除したことをVSAモジュレータ コントロール ユニットが認識すると液圧を一定時間保持する。
+</div>
+<div>ドライバがブレーキ解除したことをプレッシャ　センサ信号の変化によりVSAモジュレータ　コントロール　ユニットが認識するとブレーキ液圧を目標液圧で保持する。ペダル踏換え後、エンジン トルクが必要エンジン トルクに達するとブレーキ液圧を開放する。ブレーキ解除後、アクセル操作が一定時間行われないとブレーキ液圧は自動的に開放される。
+</div>
+<span style="display:none" id="imgId15">
+<div style="page-break-after:always;">
+</div>
+</span>
+<a name="i03670">
+</a>
+<div>
+<script src="../js/4464_2.0_jpn_9503355_2.0.js">
+</script>
+</div>
+</div></div>
+</body>
+</html>

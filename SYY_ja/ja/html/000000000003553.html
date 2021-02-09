@@ -1,0 +1,918 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX2PK80100000000NNNBBXT00(827_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">ビークル スタビリティ アシスト（VSA）システム故障診断の進め方
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03604">
+</a>
+<a name="i01601">
+</a>
+<div class="servinfosub_title">警告灯
+</div>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>システムが正常のときにイグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にすると、ABS警告灯（A）、ブレーキ警告灯（B）、VSA警告灯（C）およびVSA作動表示灯（D）はバルブ切れチェックのため、約2秒間点灯し、その後消灯する。
+</div>
+</li>
+</ol>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>システムに異常が発生するとCPUにより故障箇所、故障内容が診断され、DTCを記憶する。このとき同時にABS、VSA、ブレーキ警告灯またはVSA作動表示灯を点灯させる。
+</div>
+</li>
+</ol>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>一時的または継続して故障が検出された場合、ABSまたはVSA警告灯の点灯パターンは故障内容により異なり次の3種類がある。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<b>
+DTC:61、62
+</b>
+</div>
+<div>起動ごとに故障検出時に点灯し、正常に復帰した時点で消灯する。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<b>
+DTC:11、13、15、17、25-27、31-38、54、64、66、68、81、83、86-88、91、113、114、121-124、131-134、137、138、158
+</b>
+</div>
+<div>起動ごとに故障検出時に点灯し、正常に復帰したか否かに関わらずイグニッション スイッチをOFFにするまで点灯し続ける。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<b>
+DTC:12、14、16、18、51、52、53
+</b>
+</div>
+<div>故障検出時に点灯し、イグニッション スイッチをOFFにするまで点灯し続け、次回起動時後に再走行し、正常に復帰したときのみ消灯する。
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>システムが正常でも次の項目のような状況下では故障と判断し、ABS、VSA、ブレーキ警告灯またはVSA作動表示灯が点灯することもある。故障診断を行うにあたってこれらのことも想定して問診を行い、システムが正常と判断できる場合はDTCをクリアする。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>4輪ジャッキ アップ状態でホイールを駆動
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>駆動輪の片輪スタック
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>車両スピン
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>長時間のABS、TCS、VSA制御状態
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>外乱信号（ノイズ）
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>タイヤ サイズまたは空気圧が不適正
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>サスペンション アライメント調整不良
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>過積載状態でのブレーキ酷使
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>車体横方向への衝撃および牽引
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>バッテリ電圧の低下
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>不良HDSの使用
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>次の項目に該当する場合、システムが正常であってもエンジンTCSは作動しない。このとき、ABSおよびVSA警告灯は点灯しない。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>エンジン回転数400rpm以下
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00060">
+</a>
+<ol>
+<li value="6">
+<div>PGM-FIシステムが異常の場合、VSAが正常であってもVSAは作動しない。このとき、PGM-FI警告灯、VSA警告灯およびVSA作動表示灯が点灯する。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03605">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000009023','1');">
+<img width="143" src="../tn/827_3.0_jpn_9510734_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/827_3.0_jpn_9510734_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03604">
+</a>
+<a name="i01602">
+</a>
+<div class="servinfosub_title">DTC
+</div>
+<a name="i00110">
+</a>
+<ol>
+<li value="1">
+<div>システムに異常が発生するとCPUが故障箇所、故障内容を診断し、EEPROM（不揮発メモリ）内にDTCを記憶する。
+</div>
+</li>
+</ol>
+<a name="i00120">
+</a>
+<ol>
+<li value="2">
+<div>DTCのクリアは、指定した作業手順にしたがった場合のみ可能であり、次の条件下ではクリアされない。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>イグニッション スイッチをOFFまたはバッテリ端子を外した場合
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>システムが正常に復帰した場合
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00130">
+</a>
+<ol>
+<li value="3">
+<div>DTCは最大10個まで記憶し、最新のDTCが記憶され古いDTCは消去される。ただし、同じDTCは上書きされる。したがって、同じ異常を複数回検出したとしてもDTCは1個として算出される。
+</div>
+</li>
+</ol>
+<a name="i00140">
+</a>
+<ol>
+<li value="4">
+<div>DTCは故障発生順に表示する。
+</div>
+</li>
+</ol>
+<a name="i00150">
+</a>
+<ol>
+<li value="5">
+<div>DTCの確認は指定した手順で行うこと。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03604">
+</a>
+<a name="i01603">
+</a>
+<div class="servinfosub_title">自己診断
+</div>
+<a name="i00210">
+</a>
+<ol>
+<li value="1">
+<div>自己診断は次の2種類がある。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>初期診断
+</div>
+<div>イグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）後からABSまたはVSA警告灯が消灯するまで
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>常時診断
+</div>
+<div>初期診断終了直後からイグニッション スイッチをOFFにするまで
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+<a name="i00220">
+</a>
+<ol>
+<li value="2">
+<div>自己診断において異常を検出すると次の制御を行う。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ABS、VSA、ブレーキ警告灯またはVSA作動表示灯の点灯
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>DTCの記憶
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ABS、TCS、VSAまたはEBD制御の停止
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03604">
+</a>
+<a name="i01604">
+</a>
+<div class="servinfosub_title">キック バック
+</div>
+<a name="i00310">
+</a>
+<ol>
+<li value="1">
+<div>ABS制御中は、ポンプ モータが作動する。ポンプ モータが作動すると、リザーバ内のブレーキ フルードをマスタ シリンダへ圧送するのでキック バックが発生する。したがって、キック バックが発生しても、通常ブレーキと同様にブレーキ ペダルを踏み続ける必要がある。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03604">
+</a>
+<a name="i01605">
+</a>
+<div class="servinfosub_title">ポンプ モータ
+</div>
+<a name="i00410">
+</a>
+<ol>
+<li value="1">
+<div>ポンプ モータは、ABSおよびVSA制御中に作動する。
+</div>
+</li>
+</ol>
+<a name="i00420">
+</a>
+<ol>
+<li value="2">
+<div>VSAモジュレータ コントロール ユニットは、ポンプ モータの作動チェックをイグニッション スイッチON（
+<font style="font-weight:normal;">
+II
+</font>
+）後、最初の加速時に行っている。このとき、かすかな作動音が聞こえることがあるが、異常ではない。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03604">
+</a>
+<a name="i01606">
+</a>
+<div class="servinfosub_title">ブレーキ フルードの交換/エア抜き
+</div>
+<a name="i00510">
+</a>
+<ol>
+<li value="1">
+<div>ブレーキ フルードの交換およびエア抜きは、ABS/VSA非装備車と同様に行う。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03604">
+</a>
+<a name="i01607">
+</a>
+<div class="servinfosub_title">故障診断
+</div>
+<a name="i00610">
+</a>
+<ol>
+<li value="1">
+<div>DTC別故障診断は、故障が発生し、ABS、VSA、ブレーキ警告灯またはVSA作動表示灯が点灯した場合を前提として記載している。したがって、ABS、VSA、ブレーキ警告灯またはVSA作動表示灯が点灯しないときに故障診断を行うと、間違った判定となることがある。
+</div>
+</li>
+</ol>
+<a name="i00620">
+</a>
+<ol>
+<li value="2">
+<div>症状を確認するときは問診を行い、可能な限り警告灯が点灯したときと同じ条件で行うこと。警告灯が点灯するタイミングは、初期診断時、各制御時、各制御終了時、発進時など広範囲におよんでいる。したがって、条件が合わないと症状を確認することができない。
+</div>
+</li>
+</ol>
+<a name="i00630">
+</a>
+<ol>
+<li value="3">
+<div>テスト走行を行ってもシステムの異常が再現せず、ABS、VSA、ブレーキ警告灯またはVSA作動表示灯が点灯しない場合、カプラの接触不良などによる一過性の故障が考えられるため、故障診断を行う場合はカプラの接続状態を確認し、カプラを外した後、端子を目視で点検する。
+</div>
+</li>
+</ol>
+<a name="i00640">
+</a>
+<ol>
+<li value="4">
+<div>修理完了後、DTCをクリアし、その後テスト走行を行い、ABS、VSA、ブレーキ警告灯またはVSA作動表示灯が点灯しないことを確認する。
+</div>
+</li>
+</ol>
+<a name="i00650">
+</a>
+<ol>
+<li value="5">
+<div>カプラ イラストは、メス端子カプラを一重枠、オス端子カプラを二重枠で表示している。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03604">
+</a>
+<a name="i01608">
+</a>
+<div class="servinfosub_title">DTCの確認
+</div>
+<a name="i03606">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+HDS（Hondaダイアグノスティック システム）の接続および取外しは、必ずイグニッション スイッチOFFの状態で行うこと。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+作業中、ブレーキ ペダルを操作しないこと。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</img>
+</div>
+<a name="i00710">
+</a>
+<ol>
+<li value="1">
+<div>イグニッション スイッチOFFの状態で運転席側にあるデータ リンク カプラ（A）にHDSを接続する。
+</div>
+</li>
+</ol>
+<a name="i00720">
+</a>
+<ol>
+<li value="2">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする。
+</div>
+</li>
+</ol>
+<a name="i00730">
+</a>
+<ol>
+<li value="3">
+<div>HDSが車両およびVSAモジュレータ コントロール ユニットと通信することを確認する。通信しない場合は、
+<a name="i03615">
+</a>
+<a title="PGM-FIシステム データ リンク回路故障診断" href="javascript:CtsProc('0','000000000001836','')">データ リンク回路を点検する。
+</a>
+</div>
+</li>
+</ol>
+<a name="i00740">
+</a>
+<ol>
+<li value="4">
+<div>HDSに表示されるDTC（ダイアグノスティック トラブル コード）を確認する。
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+不良HDS（内部回路故障、接続カプラの汚れ、カプラ端子の折れなど）の使用により、システムが正常でもDTCを検知する場合がある。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+HDSの使用に関しては、HDSの取扱い説明書を参照する。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+HDSはスナップ ショットなど色々なVSAモジュレータ コントロール ユニットのデータを表示することが出来るので、故障診断を行う際には作業目的に応じて必要なモードを選択し役立てること。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03607">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000009030','1');">
+<img width="143" src="../tn/827_3.0_jpn_9510735_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/827_3.0_jpn_9510735_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03604">
+</a>
+<a name="i01609">
+</a>
+<div class="servinfosub_title">DTCのクリア
+</div>
+<a name="i03609">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<div>
+<font style="font-weight:normal;">
+HDSの接続および取外しは、必ずイグニッション スイッチOFFの状態で行うこと。
+</font>
+</div>
+</img>
+</div>
+<a name="i00810">
+</a>
+<ol>
+<li value="1">
+<div>イグニッション スイッチOFFの状態で運転席側にあるデータ リンク カプラ（A）にHDSを接続する。
+</div>
+</li>
+</ol>
+<a name="i00820">
+</a>
+<ol>
+<li value="2">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする。
+</div>
+</li>
+</ol>
+<a name="i00830">
+</a>
+<ol>
+<li value="3">
+<div>HDSが車両およびVSAモジュレータ コントロール ユニットと通信することを確認する。通信しない場合は、
+<a name="i03616">
+</a>
+<a title="PGM-FIシステム データ リンク回路故障診断" href="javascript:CtsProc('0','000000000001836','')">データ リンク回路を点検する。
+</a>
+</div>
+</li>
+</ol>
+<a name="i00840">
+</a>
+<ol>
+<li value="4">
+<div>HDSを使用してDTCをクリアする。
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+HDSの使用に関しては、HDSの取扱い説明書を参照する。
+</font>
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03610">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000009031','1');">
+<img width="143" src="../tn/827_3.0_jpn_9510736_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/827_3.0_jpn_9510736_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

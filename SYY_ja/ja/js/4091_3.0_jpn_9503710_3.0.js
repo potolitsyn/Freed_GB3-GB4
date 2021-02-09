@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475.00px; height:202.91px;\" coordsize=\"475.00,202.91\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:475.00px;height:202.91px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/4091_3.0_jpn_9503710_3.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475.00px;height:202.91px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:251.029073px;top:123.740001px;font-weight:normal;font-size:20.2pt;color:black;\" prt_font_size=\"21.5pt\" disp_font_size=\"20.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:27.0px;\" src=\"../img/symbol/SymbolGaiji00077.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:319.271372px;top:94.185947px;font-weight:normal;font-size:18.7pt;color:black;\" prt_font_size=\"20.0pt\" disp_font_size=\"18.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:25.0px;\" src=\"../img/symbol/SymbolGaiji00078.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:319.317008px;top:154.289585px;font-weight:normal;font-size:18.7pt;color:black;\" prt_font_size=\"20.0pt\" disp_font_size=\"18.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:25.0px;\" src=\"../img/symbol/SymbolGaiji00078.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:319.317008px;top:124.908763px;font-weight:normal;font-size:18.7pt;color:black;\" prt_font_size=\"20.0pt\" disp_font_size=\"18.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:25.0px;\" src=\"../img/symbol/SymbolGaiji00078.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:385.049281px;top:123.936832px;font-weight:normal;font-size:20.2pt;color:black;\" prt_font_size=\"21.5pt\" disp_font_size=\"20.2pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><img id=\"gi1\" style=\"height:27.0px;\" src=\"../img/symbol/SymbolGaiji00077.png\"></img></font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:61.149364px;top:59.385874px;font-weight:normal;font-size:12.7pt;color:black;\" prt_font_size=\"13.8pt\" disp_font_size=\"12.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ポジション</font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:93.992682px;top:125.877417px;font-weight:normal;font-size:12.7pt;color:black;\" prt_font_size=\"13.8pt\" disp_font_size=\"12.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\">照明(ON)</font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:262.255737px;top:41.313629px;font-weight:normal;font-size:12.7pt;color:black;\" prt_font_size=\"13.8pt\" disp_font_size=\"12.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\">1</font></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:394.785141px;top:41.465723px;font-weight:normal;font-size:12.7pt;color:black;\" prt_font_size=\"13.8pt\" disp_font_size=\"12.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\">5</font></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:162.417528px;top:24.109211px;font-weight:normal;font-size:12.7pt;color:black;\" prt_font_size=\"13.8pt\" disp_font_size=\"12.7pt\">");
+write("<nobr><font style=\"font-weight:normal;\">端子</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

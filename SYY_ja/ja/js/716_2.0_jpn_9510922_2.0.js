@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:1092.14px;\" coordsize=\"950.00,1092.14\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:1092.14px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/716_2.0_jpn_9510922_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:1092.14px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:561.282993px;top:31.001435px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ダンパ<br><font style=\"font-weight:normal;\"><a title=\"フロント ダンパの脱着\" href=\"javascript:CtsProc('0','000000000001673','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:60.360541px;top:485.496333px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スタビライザ<br><font style=\"font-weight:normal;\"><a title=\"スタビライザの脱着\" href=\"javascript:CtsProc('0','000000000001678','')\">脱着 (2WD車)</a><br><a title=\"スタビライザの脱着\" href=\"javascript:CtsProc('0','000000000001679','')\">脱着 (4WD車)</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:54.408557px;top:664.028729px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">スタビライザ リンク<br><font style=\"font-weight:normal;\"><a title=\"スタビライザ リンクの脱着\" href=\"javascript:CtsProc('0','000000000001680','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:787.400460px;top:210.383772px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ナックル/<br>ハブ/<br>ホイール ベアリング<br><font style=\"font-weight:normal;\"><a title=\"ナックル/ハブ/ホイール ベアリング展開図\" href=\"javascript:CtsProc('0','000000000001675','')\">展開図</a><br><a title=\"ナックル/ハブ/ホイール ベアリングの交換\" href=\"javascript:CtsProc('0','000000000001676','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:120.763766px;top:827.292004px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ロア アーム<br><font style=\"font-weight:normal;\"><a title=\"ロア アームの脱着\" href=\"javascript:CtsProc('0','000000000001677','')\">脱着</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:451.989506px;top:988.572084px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ホイール ボルト<br><font style=\"font-weight:normal;\"><a title=\"ホイール ボルトの交換\" href=\"javascript:CtsProc('0','000000000002884','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:119.315595px;top:863.183383px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ボール ジョイント<br><font style=\"font-weight:normal;\"><a title=\"ボール ジョイントの点検\" href=\"javascript:CtsProc('0','000000000001671','')\">点検</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:119.257668px;top:898.642335px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ボール ジョイント ブーツ<br><font style=\"font-weight:normal;\"><a title=\"ボール ジョイント ブーツの交換\" href=\"javascript:CtsProc('0','000000000000060','')\">交換</a></font></font></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:561.094731px;top:63.090445px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.6pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\"><font style=\"font-weight:normal;\"><a title=\"フロント ダンパ展開図\" href=\"javascript:CtsProc('0','000000000001672','')\">展開図</a><br><a title=\"フロント ダンパの分解、点検、組立\" href=\"javascript:CtsProc('0','000000000001674','')\">分解、点検、組立</a></font></font></nobr>");
+write("</p>");
+write("</v:group>");
+}

@@ -1,0 +1,876 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX2RJ22100030053NNNBBXT00(3608_2.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">コンビネーション メータ自己診断の進め方
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<div>コンビネーション メータは、次に表記したメータ内の回路を自己診断できる機能がある。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ブザー駆動回路
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>インジケータおよび警告灯の駆動回路
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>LCDセグメント
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>スピードメータ駆動回路
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ボディ コントローラ エリア ネットワーク（B-CAN）およびファスト コントローラ エリア ネットワーク（F-CAN）による各ユニット間の多重通信
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>入力スイッチ
+</div>
+</td>
+</tr>
+</table>
+<a name="i01601">
+</a>
+<div class="servinfosub_title">自己診断方法の進め方（HDS使用）
+</div>
+<div>コンビネーション メータの自己診断を行う前に、ヒューズ ボックスのNo.22（7.5A）およびNo.60（50A）ヒューズの溶断、接続状態を確認する。
+</div>
+<div>HDSの‘‘ボディ エレクトリカル’’の‘‘メータ’’を選択し、‘‘ファンクション テスト’’の‘‘コンビネーション メータの自己診断機能’’を行う。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01602">
+</a>
+<div class="servinfosub_title">自己診断方法の進め方（HDS未使用）
+</div>
+<div>コンビネーション メータの自己診断を行う前に、ヒューズ ボックスのNo.22（7.5A）およびNo.60（50A）ヒューズの溶断、接続状態を点検する。
+</div>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>トリップ/リセット スイッチを押したまま保持する。
+</div>
+</li>
+</ol>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>ライティング スイッチ（スモール ポジション）をONにする。
+</div>
+</li>
+</ol>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする。
+</div>
+</li>
+</ol>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>2秒以上5秒間以内にライティング スイッチをOFF、ON、OFFと操作する。
+</div>
+</li>
+</ol>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>5秒間以内にトリップ/リセット スイッチを3回押し、自己診断モードに移行する。
+</div>
+</li>
+</ol>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+イルミネーション コントロールは自己診断モード中でも通常作動をする。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+自己診断モード中のトリップ/リセット スイッチによる表示切替えおよびトリップ リセットは行えない。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+自己診断モード中に車速入力が2km/h以上あった場合は、自己診断モードをキャンセルして通常モードに戻る。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03606">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006334','1');">
+<img width="143" src="../tn/3608_2.0_jpn_9504514_2.0_tn.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01602">
+</a>
+<div class="servinfosub_title">自己診断方法の進め方（HDS未使用）
+</div>
+<div>コンビネーション メータの自己診断を行う前に、ヒューズ ボックスのNo.22（7.5A）およびNo.60（50A）ヒューズの溶断、接続状態を点検する。
+</div>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>トリップ/リセット スイッチを押したまま保持する。
+</div>
+</li>
+</ol>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>ライティング スイッチ（スモール ポジション）をONにする。
+</div>
+</li>
+</ol>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする。
+</div>
+</li>
+</ol>
+<a name="i00040">
+</a>
+<ol>
+<li value="4">
+<div>2秒以上5秒間以内にライティング スイッチをOFF、ON、OFFと操作する。
+</div>
+</li>
+</ol>
+<a name="i00050">
+</a>
+<ol>
+<li value="5">
+<div>5秒間以内にトリップ/リセット スイッチを3回押し、自己診断モードに移行する。
+</div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/3608_2.0_jpn_9504514_2.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+イルミネーション コントロールは自己診断モード中でも通常作動をする。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+自己診断モード中のトリップ/リセット スイッチによる表示切替えおよびトリップ リセットは行えない。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+自己診断モード中に車速入力が2km/h以上あった場合は、自己診断モードをキャンセルして通常モードに戻る。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01603">
+</a>
+<div class="servinfosub_title">インジケータおよび警告灯駆動回路の確認
+</div>
+<div>自己診断モード中、インジケータ、警告灯およびシフト ポジション インジケータを1秒間点滅で点滅し続ける。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01604">
+</a>
+<div class="servinfosub_title">ブザー駆動回路確認
+</div>
+<div>自己診断モード移行直後、インジケータ/警告灯の点滅に同期して断続5回吹鳴する。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01605">
+</a>
+<div class="servinfosub_title">LCDディスプレイの確認
+</div>
+<div>自己診断モード移行直後、インジケータ/警告灯の点滅に同期してインフォメーション ディスプレイ、タコメータ、フューエル メータの全セグメントを5回点滅する。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01606">
+</a>
+<div class="servinfosub_title">スピードメータ駆動回路の確認
+</div>
+<div>自己診断モード移行直後に、スピードメータの表示が最小限位置から最大限位置に駆動した後、最小限位置に戻る。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ブザー吹鳴終了後、各メータ表示が最小限位置に戻ってからトリップ/リセット スイッチを押すごとに動作を繰返す。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>各メータ表示が最小限位置に戻るまでは、トリップ/リセット スイッチを押しても信号を受付けない。
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03607">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006338','1');">
+<img width="143" src="../tn/3608_2.0_jpn_9504515_2.0_tn.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01606">
+</a>
+<div class="servinfosub_title">スピードメータ駆動回路の確認
+</div>
+<div>自己診断モード移行直後に、スピードメータの表示が最小限位置から最大限位置に駆動した後、最小限位置に戻る。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>ブザー吹鳴終了後、各メータ表示が最小限位置に戻ってからトリップ/リセット スイッチを押すごとに動作を繰返す。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>各メータ表示が最小限位置に戻るまでは、トリップ/リセット スイッチを押しても信号を受付けない。
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/3608_2.0_jpn_9504515_2.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01607">
+</a>
+<div class="servinfosub_title">多重通信の確認
+</div>
+<div>インフォメーション ディスプレイのセグメントを診断後、多重通信の診断を行う。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>多重通信に異常がない場合は、インフォメーション ディスプレイを全点灯させる。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>多重通信に異常がある場合は、インフォメーション ディスプレイにErrorを点灯させる。Err1が表示された場合は
+<nobr>F-CAN
+</nobr>
+通信線、
+<nobr>Err2
+</nobr>
+が表示された場合はB-CAN通信線、Err12が表示された場合はF-CAN通信線とB-CAN通信線を点検する。
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03608">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006339','1');">
+<img width="143" src="../tn/3608_2.0_jpn_9504516_2.0_tn.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01607">
+</a>
+<div class="servinfosub_title">多重通信の確認
+</div>
+<div>インフォメーション ディスプレイのセグメントを診断後、多重通信の診断を行う。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>多重通信に異常がない場合は、インフォメーション ディスプレイを全点灯させる。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>多重通信に異常がある場合は、インフォメーション ディスプレイにErrorを点灯させる。Err1が表示された場合は
+<nobr>F-CAN
+</nobr>
+通信線、
+<nobr>Err2
+</nobr>
+が表示された場合はB-CAN通信線、Err12が表示された場合はF-CAN通信線とB-CAN通信線を点検する。
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/3608_2.0_jpn_9504516_2.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01608">
+</a>
+<div class="servinfosub_title">スイッチ入力確認
+</div>
+<div>ブザー駆動回路確認終了後、VSA OFFスイッチ、パーキング ブレーキ スイッチ、トリップ/リセット スイッチ、ECONスイッチ、イルミネーション コントローラ＋/－の各スイッチがONしている間、ブザーを連続吹鳴する。ブザー駆動回路確認の前にONしていたスイッチは、一度OFFしてからONしないと信号を受付けない。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01609">
+</a>
+<div class="servinfosub_title">カスタマイズ リセット
+</div>
+<div>コンビネーション メータはB-CAN通信線にてカスタマイズ リセット信号を各ユニットに送信してカスタマイズ データを工場出荷状態に戻すことができる。またカスタマイズ リセット作動中も自己診断は継続する。
+</div>
+<a name="i02901">
+</a>
+<br>
+<div class="topic_title">カスタマイズ リセットの進め方
+</div>
+<br>
+<a name="i00210">
+</a>
+<ol>
+<li value="1">
+<div>コンビネーション メータの自己診断モード作動中に、ライティング スイッチ（スモール ポジション）をONにした状態でトリップ/リセット スイッチを10秒間以上押したまま保持する。
+</div>
+</li>
+</ol>
+<a name="i00220">
+</a>
+<ol>
+<li value="2">
+<div>トリップ/リセット スイッチを10秒間以上押したまま保持するとブザーが10秒間吹鳴して全カスタマイズ データがリセットされる。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03609">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006341','1');">
+<img width="143" src="../tn/3608_2.0_jpn_9504517_2.0_tn.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01609">
+</a>
+<div class="servinfosub_title">カスタマイズ リセット
+</div>
+<div>コンビネーション メータはB-CAN通信線にてカスタマイズ リセット信号を各ユニットに送信してカスタマイズ データを工場出荷状態に戻すことができる。またカスタマイズ リセット作動中も自己診断は継続する。
+</div>
+<a name="i02901">
+</a>
+<br>
+<div class="topic_title">カスタマイズ リセットの進め方
+</div>
+<br>
+<a name="i00210">
+</a>
+<ol>
+<li value="1">
+<div>コンビネーション メータの自己診断モード作動中に、ライティング スイッチ（スモール ポジション）をONにした状態でトリップ/リセット スイッチを10秒間以上押したまま保持する。
+</div>
+</li>
+</ol>
+<a name="i00220">
+</a>
+<ol>
+<li value="2">
+<div>トリップ/リセット スイッチを10秒間以上押したまま保持するとブザーが10秒間吹鳴して全カスタマイズ データがリセットされる。
+</div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/3608_2.0_jpn_9504517_2.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03605">
+</a>
+<a name="i01610">
+</a>
+<div class="servinfosub_title">自己診断モードの解除
+</div>
+<div>イグニッション スイッチをOFFにする。または車速入力が2km/h以上で解除される。
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

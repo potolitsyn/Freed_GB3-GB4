@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group4\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950.00px; height:304.99px;\" coordsize=\"950.00,304.99\">");
+write("<v:rect id=\"rect4\" name=\"PrtRectId\"class=\"drag\" strokecolor=\"white\" style=\"width:950.00px;height:304.99px;\">");
+write("<img id=\"img4\" name=\"PrtImgId\" src=\"../img/1851_2.0_jpn_9507547_2.0.png\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950.00px;height:304.99px;border-color:#ffffff\">");
+write("</v:rect>");
+write("<p id=\"p4_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:103.756732px;top:82.057151px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">情報センタ</font></nobr>");
+write("</p>");
+write("<p id=\"p4_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:472.081625px;top:88.230646px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">Bluetooth<br>モジュール</font></nobr>");
+write("</p>");
+write("<p id=\"p4_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:483.996603px;top:206.088224px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">ハード<br>ディスク</font></nobr>");
+write("</p>");
+write("<p id=\"p4_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:637.691867px;top:150.366443px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">情報検索<br>I/F</font></nobr>");
+write("</p>");
+write("<p id=\"p4_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:772.994896px;top:92.880810px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">情報検索<br>画面</font></nobr>");
+write("</p>");
+write("<p id=\"p4_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:759.073896px;top:204.491322px;font-weight:normal;font-size:7.5pt;color:black;\" prt_font_size=\"8.8pt\" disp_font_size=\"7.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">操作I/F<br>(タッチ パネル/<br>ハード キー)</font></nobr>");
+write("</p>");
+write("<p id=\"p4_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:257.851828px;top:270.388748px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">Bluetooth携帯電話</font></nobr>");
+write("</p>");
+write("<p id=\"p4_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:620.339200px;top:22.166260px;font-weight:normal;font-size:10.5pt;color:black;\" prt_font_size=\"11.7pt\" disp_font_size=\"10.5pt\">");
+write("<nobr><font style=\"font-weight:normal;\">AVNユニット</font></nobr>");
+write("</p>");
+write("</v:group>");
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC"-//W3C//DTD HTML 4.01 Frameset//EN""http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="ja">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link href="./ESMINFO.CSS" rel="stylesheet" type="text/css">
+<title>Honda ESM Information List.</title>
+<script src="./VINTYPE.JS"></script>
+<script>
+<!--
+var gESM;
+if(typeof(parent.document.ESM)=="object"){
+   gESM=parent.document.ESM;
+}
+else{
+   gESM=new Array;
+}
+document.ESM=gESM;
+gESM.Vin=new Array;
+gESM.VinSel=new Number(0);
+gESM.FrmSel=new Number(0);
+gESM.ndxTyp=new String;
+var gVin=gESM.Vin;
+//-->
+</script>
+<script>
+<!--
+function Initialize(){
+   SVF();
+}
+	/**************************************
+	 * サービスマニュアル画面表示処理
+	**************************************/
+function ToSM(){
+   window.open("../ja/html/HONDAESM.HTML","EsmIndex","status=yes,toolbar=no,menubar=no,resizable=yes,scrollbars=yes");
+   return(false);
+}
+	/**************************************
+	 * 配線図集（PDF）画面表示処理
+	**************************************/
+function ToWD(){
+   window.open("../WID/WD_index.html","EwdIndex","status=yes,toolbar=no,menubar=no,resizable=yes,scrollbars=yes");
+   return(false);
+}
+	/**************************************
+	 * DTC解説（PDF）画面表示処理
+	**************************************/
+function ToAD(){
+   window.open("../DTC/AD_index.html","EwdIndex","status=yes,toolbar=no,menubar=no,resizable=yes,scrollbars=yes");
+   return(false);
+}
+//-->
+</script>
+</head>
+<body id="NEWS" onload="Initialize();">
+   <br><br>
+   <table cellspacing="0" cellpadding="0" width="100%" style="cursor:hand;" onclick="ToSM();">
+      <tr>
+         <td nowrap background="./PNG/BGSEARCL.PNG" width="11px" height="18px" class="TITLE_L"></td>
+         <td nowrap background="./PNG/BGSEARCM.PNG" height="18px" class="TITLE_M">&nbsp;<span class="TITLE">サービスマニュアル 検索</span></td>
+         <td nowrap background="./PNG/BGSEARCR.PNG" width="16px" height="18px" class="TITLE_R"></td>
+      </tr>
+   </table>
+   <br><br>
+   <table cellspacing="0" cellpadding="0" width="100%" style="cursor:hand;" onclick="ToWD();">
+      <tr>
+         <td nowrap background="./PNG/BGSEARCL.PNG" width="11px" height="18px" class="TITLE_L"></td>
+         <td nowrap background="./PNG/BGSEARCM.PNG" height="18px" class="TITLE_M">&nbsp;<span class="TITLE">配線図集（PDF） 検索</span></td>
+         <td nowrap background="./PNG/BGSEARCR.PNG" width="16px" height="18px" class="TITLE_R"></td>
+      </tr>
+   </table>
+   <br><br>
+   <table cellspacing="0" cellpadding="0" width="100%" style="cursor:hand;" onclick="ToAD();">
+      <tr>
+         <td nowrap background="./PNG/BGSEARCL.PNG" width="11px" height="18px" class="TITLE_L"></td>
+         <td nowrap background="./PNG/BGSEARCM.PNG" height="18px" class="TITLE_M">&nbsp;<span class="TITLE">DTC解説（PDF） 検索</span></td>
+         <td nowrap background="./PNG/BGSEARCR.PNG" width="16px" height="18px" class="TITLE_R"></td>
+      </tr>
+   </table>
+</body>
+</html>

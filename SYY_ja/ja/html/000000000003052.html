@@ -1,0 +1,691 @@
+<html lang="ja" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SYYXX08K72100000000NNNBBXT00(521_3.0_jpn)
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strAnc;
+	if(Anc == null) {
+		strAnc = '';
+	}
+	else {
+		strAnc = Anc;
+	}
+	var  strData;
+	strData = strAnc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function PreViewProc(sie_id,sie_title)
+{
+  alert("以下のIdおよびタイトルへリンクします。 \n   ID: "+sie_id+"\n   タイトル: "+sie_title);
+}
+-->
+</script>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">CVT電装系故障診断の進め方
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03607">
+</a>
+<div>PGM-FIコントロール システムとATコントロール システムを統合したPGM-FI ECUは自己診断機能を備えており、イグニッション スイッチがON（
+<font style="font-weight:normal;">
+II
+</font>
+）の位置のときにシステムの入出力系に異常が発生すると、コンビネーション メータ内のD表示灯を等間隔で点滅させて異常の発生を表示する。
+</div>
+<a name="i00010">
+</a>
+<ol>
+<li value="1">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にし、D表示灯（A）の点滅を確認する。
+</div>
+</li>
+</ol>
+<a name="i00020">
+</a>
+<ol>
+<li value="2">
+<div>D表示灯が点滅している場合は、ダイアグノスティック トラブル コード（DTC）を確認し、表示されたDTCの故障診断を行う。D表示灯が点滅していない場合は、DTCを確認し、DTCがある場合は表示されたDTCの故障診断を行い、DTCがない場合は症状別油圧系故障診断を行う。
+</div>
+</li>
+</ol>
+<a name="i00030">
+</a>
+<ol>
+<li value="3">
+<div>すべての故障診断が終了し、必要な修理作業を行った後、故障診断の終了の処理を行う。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03608">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000016152','1');">
+<img width="143" src="../tn/521_3.0_jpn_9511467_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/521_3.0_jpn_9511467_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03607">
+</a>
+<a name="i01601">
+</a>
+<div class="servinfosub_title">DTCの確認
+</div>
+<a name="i00210">
+</a>
+<ol>
+<li value="1">
+<div>データ リンク カプラ（A）にHonda Diagnostic System （HDS）を接続する。
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+HDSの取扱いについては、HDSの取扱説明書を参照のこと。
+</font>
+</div>
+</li>
+</ol>
+<a name="i00220">
+</a>
+<ol>
+<li value="2">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする。HDSがPGM-FI ECUと通信できない場合は、
+<a name="i03610">
+</a>
+<a title="PGM-FIシステム データ リンク回路故障診断" href="javascript:CtsProc('0','000000000001836','')">データ リンク回路を点検する。
+</a>
+</div>
+</li>
+</ol>
+<a name="i00230">
+</a>
+<ol>
+<li value="3">
+<div>HDSに表示されるDTCおよびフリーズ データを確認する。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03609">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000016153','1');">
+<img width="143" src="../tn/521_3.0_jpn_9511468_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/521_3.0_jpn_9511468_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03607">
+</a>
+<a name="i01602">
+</a>
+<div class="servinfosub_title">DTCのクリア
+</div>
+<a name="i00410">
+</a>
+<ol>
+<li value="1">
+<div>イグニッション スイッチをOFFにする。
+</div>
+</li>
+</ol>
+<a name="i00420">
+</a>
+<ol>
+<li value="2">
+<div>データ リンク カプラ（A）にHDSを接続する。
+</div>
+</li>
+</ol>
+<a name="i00430">
+</a>
+<ol>
+<li value="3">
+<div>イグニッション スイッチをON（
+<font style="font-weight:normal;">
+II
+</font>
+）にする。HDSがPGM-FI ECUと通信できない場合は、
+<a name="i03612">
+</a>
+<a title="PGM-FIシステム データ リンク回路故障診断" href="javascript:CtsProc('0','000000000001836','')">データ リンク回路を点検する。
+</a>
+</div>
+</li>
+</ol>
+<a name="i00440">
+</a>
+<ol>
+<li value="4">
+<div>HDSでDTCのクリアを行う。
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03611">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000016154','1');">
+<img width="143" src="../tn/521_3.0_jpn_9511469_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/521_3.0_jpn_9511469_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03607">
+</a>
+<a name="i01603">
+</a>
+<div class="servinfosub_title">OBDステータス
+</div>
+<div>トラブル コード メニューのOBDステータスは車両の持つDTCの現時点での診断結果を表示できる。この機能は作業者が画面上で任意のDTCを入力することにより、修理が完了したかどうかを確認することができる。自己診断結果の画面上の表示は3種類である。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>正常判定:自己診断を完了し、その結果が正常。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>故障判定:自己診断を完了したが、その結果が異常。再修理が必要。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>未完了:そのDTCの実行条件に入っていないため自己診断が完了していない。
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03607">
+</a>
+<a name="i01604">
+</a>
+<div class="servinfosub_title">PGM-FI ECUカプラでの点検
+</div>
+<a name="i03613">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<div>
+<font style="font-weight:normal;">
+PGM-FI ECUは、イグニッション スイッチをOFFにした後でも最長約15分間、PGM-FI 制御システムをモニタしている。PGM-FI ECUが制御システムをモニタしている間に、PGM-FI ECUカプラの接続を外すとPGM-FI ECUを損傷させる恐れがある。このため、イグニッション スイッチをOFFにした後、HDSでSCS回路の短絡を行うことで、PGM-FI ECUの制御システムのモニタリング機能が解除できる。
+</font>
+</div>
+</img>
+</div>
+<a name="i00610">
+</a>
+<ol>
+<li value="1">
+<div>イグニッション スイッチをOFFにする。
+</div>
+</li>
+</ol>
+<a name="i00620">
+</a>
+<ol>
+<li value="2">
+<div>データ リンク カプラ（A）にHDSを接続する。
+</div>
+</li>
+</ol>
+<a name="i00630">
+</a>
+<ol>
+<li value="3">
+<div>HDSでSCS回路の短絡を行う。HDSがPGM-FI ECUと通信できない場合は、
+<a name="i03615">
+</a>
+<a title="PGM-FIシステム データ リンク回路故障診断" href="javascript:CtsProc('0','000000000001836','')">データ リンク回路を点検する。
+</a>
+</div>
+</li>
+</ol>
+<a name="i00640">
+</a>
+<ol>
+<li value="4">
+<div>PGM-FI ECUカプラの接続状態を確認する、および推定故障箇所のカプラの接続状態も確認する。
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+カプラの接続不良の場合でも、D表示灯が点滅することがある。
+</font>
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03614">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000016156','1');">
+<img width="143" src="../tn/521_3.0_jpn_9511470_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/521_3.0_jpn_9511470_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03607">
+</a>
+<a name="i01604">
+</a>
+<a name="i00650">
+</a>
+<ol>
+<li value="5">
+<div>PGM-FI ECUカプラの接続を外し、ハーネス カプラ端子の状態を確認する。必要な場合は、
+<a name="i03616">
+</a>
+<a title="ECUの脱着" href="javascript:CtsProc('0','000000000001840','')">PGM-FI ECUを取外す。
+</a>
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03617">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000016157','1');">
+<img width="143" src="../tn/521_3.0_jpn_9511471_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/521_3.0_jpn_9511471_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03607">
+</a>
+<a name="i01604">
+</a>
+<a name="i00660">
+</a>
+<ol>
+<li value="6">
+<div>DTCによる電装系故障診断にしたがい点検を行う。PGM-FI ECUカプラで点検を行う場合は、カプラ端子の上にある点検孔（A）に合うピン プローブを選択する。
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+<font style="font-weight:normal;">
+DTCによる電装系故障診断は、DTC別故障診断表を参照のこと。
+</font>
+</div>
+</li>
+</ol>
+<a name="i00670">
+</a>
+<ol>
+<li value="7">
+<div>市販のデジタル サーキット テスタ（B）と選択したピン プローブ（C）を使用して、カプラの端子側から点検を行う。
+</div>
+<a name="i03619">
+</a>
+<div>
+<img src="../img/new-attention_jpn_226723_1.0.png">
+<div>
+<font style="font-weight:normal;">
+点検は、点検孔にピン プローブを差込んで行うこと。カプラ端子にピン プローブを当てて点検しないこと。
+</font>
+</div>
+</img>
+</div>
+<div>
+<img src="../img/symbol/jpn_255740_1.0.png">
+</img>
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+故障診断の結果で、PGM-FI ECUのプログラムを最新バージョンにアップ デートする場合は、
+<a name="i03620">
+</a>
+<a title="ECUのアップデート" href="javascript:CtsProc('0','000000000001842','')">「ECUのアップ デート」
+</a>
+を参照する。
+</font>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>
+<font style="font-weight:normal;">
+新品のPGM-FI ECUで再点検する場合は、
+<a name="i03621">
+</a>
+<a title="ECUの脱着" href="javascript:CtsProc('0','000000000001840','')">「ECUの脱着」
+</a>
+を参照して、PGM-FI ECUを交換する。
+</font>
+</div>
+</td>
+</tr>
+</table>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<a name="i03618">
+</a>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000016158','1');">
+<img width="143" src="../tn/521_3.0_jpn_9511472_3.0_tn.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/521_3.0_jpn_9511472_3.0.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i03607">
+</a>
+<a name="i01605">
+</a>
+<div class="servinfosub_title">故障再現手法
+</div>
+<div>車両をリフト アップして故障再現を行う際は以下の点に注意する。
+</div>
+<table class="list1_table" frame="void">
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>VSA装備車はVSAをOFFにする。
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" valign="top" align="right">&#x2022;
+</td>
+<td>
+<div>車両をリフト アップして車輪を空転させると、ABSまたはVSAのDTCを検知する可能性がある。DTCを検知した場合はHDSを使用し、DTCをクリアすること。
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
