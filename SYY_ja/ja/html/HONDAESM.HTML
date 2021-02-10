@@ -187,9 +187,8 @@ function jsShopPopUpHistWindow(url,key,anc)
   var t = (screen.availHeight- h)/2;
   var l = (screen.availWidth - w)/2;
   var newUrl = window.location.href.substring(0,window.location.href.lastIndexOf("/")) + "/JIKOHManualMain.html?url="+escape(url)+"&key="+key+"&anc="+anc;
-  var newUrl = window.location.href.substring(0,window.location.href.lastIndexOf("/")) + "/" + escape(url)+"&key="+key+"&anc="+anc;
   if(win == null || win.closed){
-    win = jsDispPopup(w, h, "location=yes,toolbar=yes,menubar=yes,status=yes,scrollbars=no,resizable=yes,top="+t+",left="+l, newUrl, true);
+    win = jsDispPopup(w, h, "toolbar=yes,menubar=yes,status=yes,scrollbars=no,resizable=yes,top="+t+",left="+l, newUrl, true);
   }
   else {
     win.location.href = newUrl;
